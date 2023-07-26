@@ -1,19 +1,19 @@
 # **DeepLearning-Interview-Awesome-2024**　![Language](https://img.shields.io/badge/language-Jupyter-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![AD](https://img.shields.io/badge/深度学习-图像算法-pink.svg)
 
-- 算法工程师岗位面试必备，深度学习面试题汇总，人工智能生成式任务与AI大模型面试题汇总
+- 算法工程师岗位面试必备，讲透深度学习面试题，详解人工智能生成式任务与AI大模型面试题
 
 
 <b><details><summary>⏰深度学习面试题</summary></b>
 
-| [**BN**](01-Deep-Learning/Reference.md) |
+| [**01.BN**](01-Deep-Learning/Reference.md) |
 | :------------------------------------------- |
-| [**多卡BN如何处理**](01-Deep-Learning/Reference.md) | 
+| [**02.多卡BN如何处理**](01-Deep-Learning/Reference.md) | 
 
 </details>
 
 <b><details><summary>🍳视觉感知算法</summary></b>
 
-| [**CONV**](02-Vision-Perception/Word2Vec.md) |
+| [**01.人脸识别任务中，ArcFace为什么比CosFace效果好**](02-Vision-Perception/Reference.md) |
 | :------------------------------------------- |
 | [**CLIP**](02-Deep-Learning/CNN.md)           | 
 
