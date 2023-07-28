@@ -47,3 +47,9 @@ def fuse_conv_bn(conv, bn):
     - SVM是为了找到具有最大间隔的超平面，损失函数被称为 hinge loss，用于最大间隔分类，公式为 l = max（0 ，1 - z）， 其中 z 为 y（wx+b）， hinge loss 保证了所有普通样本（非支持向量的样本损失为0）不参与决定最终的超平面，减少了对训练样本的依赖程度，这就是为啥svm训练效率这么高。
 
 </details>
+
+# 05.Pytorch DataLoader的主要参数有哪些
+
+- 其中最重要的参数dataset，代表传入的数据集，数据集需要包含__init__, __len__, __getitem__ 三个方法
+
+详细参考：https://www.zdaiot.com/MLFrameworks/Pytorch/Pytorch%20DataLoader%E8%AF%A6%E8%A7%A3/
