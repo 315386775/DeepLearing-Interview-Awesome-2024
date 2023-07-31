@@ -11,6 +11,8 @@
 | [**03.TensorRT为什么能让模型跑更快**](01-Deep-Learning/Reference.md) | 
 | [**04.损失函数的应用-合页损失**](01-Deep-Learning/Reference.md) | 
 | [**05.Pytorch DataLoader的主要参数有哪些**](01-Deep-Learning/Reference.md) | 
+| [**06.神经网络引入注意力机制后效果降低的原因**](01-Deep-Learning/Reference.md) |  
+| [**07. 为什么交叉熵可以作为损失函数**](01-Deep-Learning/Reference.md) |  
 
 
 <b><summary>🍳视觉感知算法</summary></b>
