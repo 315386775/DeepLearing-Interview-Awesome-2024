@@ -26,6 +26,7 @@
 | [**06. Yolov5的正负样本定义**](02-Vision-Perception/Reference.md)           | 
 | [**06. Yolov7的正负样本定义**](02-Vision-Perception/Reference.md)           | 
 | [**06. Yolov8的正负样本定义**](02-Vision-Perception/Reference.md)           | 
+| [**07. Yolov5的Foucs层和Passthrough层有什么区别**](02-Vision-Perception/Reference.md)           | 
 | [**CLIP**](02-Vision-Perception/Reference.md)           | 
 
 
@@ -40,4 +41,12 @@
 
 | [**二分查找**](04-Code-Top/Word2Vec.md) |
 | :------------------------------------------- |
+| [**快速排序**](04-Code-Top/CNN.md)           |  
+
+
+<b><summary>🏳‍🌈编程语言</summary></b>
+
+| [**01. C++中与类型转换相关的4个关键字特点及应用场合**](05-Code-C/Word2Vec.md) |
+| :------------------------------------------- |
+| [**快速排序**](04-Code-Top/CNN.md)           |  
 | [**快速排序**](04-Code-Top/CNN.md)           |  

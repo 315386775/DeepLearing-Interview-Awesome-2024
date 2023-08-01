@@ -114,3 +114,39 @@ def mixup(imgs, labels, sampler=np.random.beta, sampler_args=(1.5, 1.5)):
 ```
 
 参考链接：https://zhuanlan.zhihu.com/p/141878389
+
+# 07. Yolov5的Foucs层和Passthrough层有什么区别
+
+Focus层原理和PassThrough层很类似。它采用切片操作把高分辨率的图片（特征图）拆分成多个低分辨率的图片/特征图，即隔列采样+拼接。
+
+原始的640 × 640 × 3的图像输入Focus结构，采用切片（slice）操作，先变成320 × 320 × 12的特征图，拼接（Concat）后，再经过一次卷积（CBL(后期改为SiLU，即为CBS)）操作，最终变成320 × 320 × 64的特征图。
+
+![Alt](assert/foucs.jpg#pic_center=600x400)
+
+Focus层将w-h平面上的信息转换到通道维度，再通过3*3卷积的方式提取不同特征。采用这种方式可以减少下采样带来的信息损失 。
+
+```python
+class Focus(nn.Module):
+    # Focus wh information into c-space
+    def __init__(self, c1, c2, k=1, s=1, p=None, g=1, act=True):  # ch_in, ch_out, kernel, stride
+        super().__init__()
+        self.conv = Conv(c1 * 4, c2, k, s, p, g, act)
+ 
+    def forward(self, x):  # x(b,c,w,h) -> y(b, 4c, w/2, h/2)
+        return self.conv(torch.cat([x[..., ::2, ::2], x[..., 1::2, ::2], x[..., ::2, 1::2], x[..., 1::2, 1::2]], 1)) 
+        # 图片被分为4块。x[..., ::2, ::2]即行按2叠加取，列也是，对应上面原理图的“1”块块）， x[..., 1::2, ::2]对应“3”块块，x[..., ::2, 1::2]指“2”块块，x[..., 1::2, 1::2]指“4”块块。都是每隔一个采样（采奇数列）。用cat连接这些采样图，生成通道数为12的特征图
+```
+
+# 8. YOLO9000为什么可以检测9000个类？
+
+- 采用了一种联合训练的方法，
+
+- WordTree如何表达对象的类别？首先在训练集的构建方面：按照各个类别之间的从属关系建立一种树型结构WordTree，对于物体的标签，采用one-hot编码的形式，数据集中的每个物体的类别标签被组织成1个长度为9418的向量，向量中除了在WordTree中从该物体对应的名词到根节点的路径上出现的词对应的类别标号处为1，其余位置为0。
+
+- 在训练的过程中，当网络遇到来自检测数据集的图片时，用完整的YOLOv2loss进行反向传播计算，当网络遇到来自分类数据集的图片时，只用分类部分的loss进行反向传播。在类别概率预测上使用层次softmax处理，是每个层次类别上分别使用softmax。
+
+- 预测时如何确定一个WordTree所对应的对象？既然各节点预测的是条件概率，那么一个节点的绝对概率就是它到根节点路径上所有条件概率的乘积。从根节点开始向下遍历，对每一个节点，在它的所有子节点中，选择概率最大的那个（一个节点下面的所有子节点是互斥的），一直向下遍历直到某个节点的子节点概率低于设定的阈值（意味着很难确定它的下一层对象到底是哪个），或达到叶子节点，那么该节点就是该WordTree对应的对象。
+
+- 层次化Softmax的pytorch参考链接：https://geek-docs.com/pytorch/pytorch-questions/241_pytorch_tensorflow_hierarchical_softmax_implementation.html
+
+- 参考链接：https://zhuanlan.zhihu.com/p/47575929
