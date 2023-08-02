@@ -137,6 +137,11 @@ class Focus(nn.Module):
         # 图片被分为4块。x[..., ::2, ::2]即行按2叠加取，列也是，对应上面原理图的“1”块块）， x[..., 1::2, ::2]对应“3”块块，x[..., ::2, 1::2]指“2”块块，x[..., 1::2, 1::2]指“4”块块。都是每隔一个采样（采奇数列）。用cat连接这些采样图，生成通道数为12的特征图
 ```
 
+# 06. Yolov5的一些相关细节
+
+- Letterbox的操作及其应用，训练时没有采用缩减黑边的方式，还是采用传统填充的方式，即缩放到416*416大小。只是在测试，使用模型推理时，才采用缩减黑边的方式，提高目标检测，推理的速度。第一步计算长和宽的最小缩放比，第二步计算缩放后的尺寸，第三步计算最小填充；实际中使用了一次cv2.resize，一次cv2.copyMakeBorder；
+
+
 # 8. YOLO9000为什么可以检测9000个类？
 
 - 采用了一种联合训练的方法，
@@ -150,3 +155,16 @@ class Focus(nn.Module):
 - 层次化Softmax的pytorch参考链接：https://geek-docs.com/pytorch/pytorch-questions/241_pytorch_tensorflow_hierarchical_softmax_implementation.html
 
 - 参考链接：https://zhuanlan.zhihu.com/p/47575929
+
+
+# 08. DETR的检测算法的创新点
+
+- DETR将目标检测看作一种set prediction问题，CNN提取基础特征，送入*Transformer做关系建模*，得到的输出通过*二分图匹配算法*与图片上的ground truth做匹配。
+
+- 问题1：将CNN backbone输出的feature map转化为能够被Transformer Encoder处理的序列化数据的过程？维度压缩，序列化特征，结合位置编码；
+
+- 问题2：object queries是什么？object queries是N个learnable embedding，训练刚开始时可以随机初始化。在训练过程中，因为需要生成不同的boxes，object queries会被迫使变得不同来反映位置信息，所以也可以称为leant positional encoding；
+
+- 问题3：Loss如何设计？二分图匹配需要一一配对，前面输出的N个；只要定义好每对prediction box和image object匹配的cost；如果预测的prediction box类别和image object类别相同的概率越大（越小），或者两者的box差距越小（越大），配对的cost 越小（越大）。
+
+- 参考链接：https://zhuanlan.zhihu.com/p/267156624
