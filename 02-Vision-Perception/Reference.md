@@ -168,3 +168,64 @@ class Focus(nn.Module):
 - 问题3：Loss如何设计？二分图匹配需要一一配对，前面输出的N个；只要定义好每对prediction box和image object匹配的cost；如果预测的prediction box类别和image object类别相同的概率越大（越小），或者两者的box差距越小（越大），配对的cost 越小（越大）。
 
 - 参考链接：https://zhuanlan.zhihu.com/p/267156624
+- 参考链接：https://www.idea.edu.cn/news/2907.html
+
+- 怎么理解Query，在 DETR 中，Object query 是由 transformer 解码器产生的，它由一组预定义的向量组成，每个向量代表一个预测框。这些向量可以被视为检测模型的输出类别和空间信息的结合，其中类别信息用于区分不同的目标，而空间信息则描述了目标在图像中的位置。而 DETR 中使用 object query 向量代替 anchor box，可以在不依赖于预先设定 anchor box 的情况下进行目标检测，从而更好地适应不同大小和形状的目标。
+
+![Alt](assert/detr.png#pic_center=600x400)
+
+# 13. 目标检测中旋转框IOU的计算方式
+
+- 旋转框的两种编码方式：a: 中心点，尺度，角度；b: 顶点；
+
+- 暴力方式：每次让一个框不动，另一个框旋转到和不动框垂直，然后计算IoU，最终取最小值，代表性的PIoU Loss。
+
+- 传入两个旋转矩形的四个顶点坐标，然后计算它们之间的重叠面积（Rotated IoU）
+
+```python
+import numpy as np
+
+def rotated_iou(rect1, rect2):
+    """
+    计算旋转矩形之间的重叠面积（Rotated IoU）
+
+    参数：
+    rect1：第一个旋转矩形的四个顶点坐标，格式为[[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+    rect2：第二个旋转矩形的四个顶点坐标，格式为[[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+
+    返回值：
+    旋转矩形之间的重叠面积（Rotated IoU）
+    """
+
+    # 计算两个旋转矩形的最小外接矩形的坐标和宽高
+    x_min1, y_min1, x_max1, y_max1 = np.min(rect1[:, 0]), np.min(rect1[:, 1]), np.max(rect1[:, 0]), np.max(rect1[:, 1])
+    x_min2, y_min2, x_max2, y_max2 = np.min(rect2[:, 0]), np.min(rect2[:, 1]), np.max(rect2[:, 0]), np.max(rect2[:, 1])
+    w1, h1 = x_max1 - x_min1, y_max1 - y_min1
+    w2, h2 = x_max2 - x_min2, y_max2 - y_min2
+
+    # 计算两个旋转矩形的面积
+    area1 = w1 * h1
+    area2 = w2 * h2
+
+    # 计算两个旋转矩形的交集的面积
+    intersection = np.maximum(0, np.minimum(x_max1, x_max2) - np.maximum(x_min1, x_min2)) * \
+                   np.maximum(0, np.minimum(y_max1, y_max2) - np.maximum(y_min1, y_min2))
+
+    # 计算旋转矩形的并集的面积
+    union = area1 + area2 - intersection
+
+    # 计算旋转矩形之间的重叠面积（Rotated IoU）
+    iou = intersection / union
+
+    return iou
+```
+
+# 14. 局部注意力如何实现
+
+- 局部注意力则把加权求和的范围缩小到给定窗口大小的局部范围。于是，local Attention如何确定局部范围成为关键。第一种是采用自注意力机制来建模query对的关系。第二种是对query-independent的全局上下文建模。
+
+- 参考链接：https://zhuanlan.zhihu.com/p/64988633
+
+- Non-local block想要计算出每一个位置特定的全局上下文，但是经过训练之后，全局上下文是不受位置依赖的。三步实现注意力机制：1）全局attention pooling：采用1x1卷积和softmax函数来获取attention权值，然后执行attention pooling来获得全局上下文特征。2）特征转换：采用1x1卷积；3）特征聚合：采用相加操作将全局上下文特征聚合到每个位置的特征上。
+
+- 卷积只能对局部区域进行context modeling，导致感受野受限制，而Non-local和SENet实际上是对整个输入feature进行context modeling，感受野可以覆盖到整个输入feature上，这对于网络来说是一个有益的语义信息补充。另外，网络仅仅通过卷积堆叠来提取特征，其实可以认为是用同一个形式的函数来拟合输入，导致网络提取特征缺乏多样性，而Non-local和SENet正好增加了提取特征的多样性，弥补了多样性的不足。

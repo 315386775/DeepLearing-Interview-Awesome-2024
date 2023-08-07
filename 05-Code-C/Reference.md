@@ -35,3 +35,28 @@ from functools import reduce  # reduce() 函数会对参数序列中元素进行
 product	= reduce((lambda x, y:x*y),[1,2,3,4])  # 24
 
 ```
+
+# 02. 用Numpy的广播机制实现矩阵之间距离的计算
+
+- 在符合广播条件的前提下，广播机制会为尺寸较小的向量添加一个轴（广播轴），使其维度信息与较大向量的相同。
+
+- 计算 m*2 的矩阵与 n * 2 的矩阵中，m*2 的每一行到 n*2 的两两之间欧氏距离。
+
+```python
+# L2 = sqrt((x1-x2)^2 + (y1-y2)^2 + (z1-z2)^2)
+
+def L2_dist_1(cloud1, cloud2):
+    m, n = len(cloud1), len(cloud2)
+    # project 01
+    # cloud1 = np.repeat(cloud1, n, axis=0) # (n*m,2)
+    # cloud1 = np.reshape(cloud1, (m, n, -1)) # (m,n,2) (n,2)
+
+    # project 02
+    # cloud1 = cloud1[:, None, :] # (m,1,2)
+    
+    # project 03
+    cloud1 = np.expand_dims(cloud1, 1)
+    
+    dist = np.sqrt(np.sum((cloud1 - cloud2)**2, axis=2))
+    return dist
+```

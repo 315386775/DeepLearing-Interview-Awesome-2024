@@ -68,3 +68,58 @@ def fuse_conv_bn(conv, bn):
 
 - 参考链接：https://zhuanlan.zhihu.com/p/32230623
 
+
+# 09. 有哪些权重初始化的方法
+
+-  Xavier 只能针对类似 sigmoid 和 tanh 之类的饱和激活函数，而无法应用于 ReLU 之类的非饱和激活函数。a = np.sqrt(3/self.neurals)
+
+- KaimingInit 将 weight 以 Kaiming 的方式初始化，将 bias 初始化成指定常量，通常用于初始化卷积，Kaiming初始化建议初始化每层权值为一个均值为0标准差为2 n l \sqrt{\frac{2}{n_l}} 
+n 的高斯分布，并且偏差为0。
+
+- 参考链接：https://zhuanlan.zhihu.com/p/148034113
+
+- 初始化权值可能会对训练过程有什么影响？为什么初始化权值要以方差作为衡量条件？
+我认为网络学习的是训练数据的空间分布，即训练收敛时，整个输出空间应该是输入空间分布的某种稳定投影。从层的角度来看，假如2层网络：A->B，B希望获得稳定输出，但由于每次学习更新导致A也在变化，所以B想稳定就比较难。怎么办，保证A和B的分布一样，这样学习就简单一点，即可以理解成信息流通更流畅。
+
+# 10. MMengine的一些特性
+
+- 可以通过指定 init_cfg=dict(type='Pretrained', checkpoint='path/to/ckpt') 来加载预训练权重
+
+- 对不同层进行初始化
+
+```python
+# 对卷积做 Kaiming 初始化，线性层做 Xavier 初始化
+toy_net = ToyNet(
+    init_cfg=[
+        dict(type='Kaiming', layer='Conv2d'),
+        dict(type='Xavier', layer='Linear')
+    ], )
+toy_net.init_weights()
+```
+
+# 11. Modules的一些属性问题
+
+```python
+def children(self):
+# model.children():每一次迭代返回的每一个元素实际上是 Sequential 类型,而Sequential类型又可以使用下标index索引来获取每一个Sequenrial 里面的具体层，比如conv层、dense层等；
+def named_children(self):
+# 每一次迭代返回的每一个元素实际上是 一个元组类型，元组的第一个元素是名称，第二个元素就是对应的层或者是Sequential。
+def modules(self):
+# 将整个模型的所有构成（包括包装层、单独的层、自定义层等）由浅入深依次遍历出来，只不过modules()返回的每一个元素是直接返回的层对象本身，
+def named_modules(self, memo=None, prefix=''):
+# named_modules()返回的每一个元素是一个元组，第一个元素是名称，第二个元素才是层对象本身。
+>>> net = torch.nn.Linear(2, 2)
+>>> net.state_dict()
+OrderedDict([('weight', tensor([[-0.3558,  0.2153],
+        [-0.2785,  0.6982]])), ('bias', tensor([ 0.5771, -0.6232]))])
+>>> net.state_dict().keys()
+odict_keys(['weight', 'bias'])
+# 函数state_dict的作用是返回一个包含module的所有state的dictionary，而这个字典的Keys对应的就是parameter和buffer的名字names
+# 函数load_state_dict的作用和上边介绍的state_dict的作用刚好相反，是将parameter和buffer加载到Module及其SubModule中去。
+def parameters(self, recurse=True):
+    for name, param in self.named_parameters(recurse=recurse):
+        yield param
+# 来遍历网络模型中的参数
+```
+
+- 参考链接：https://zhuanlan.zhihu.com/p/156127643
