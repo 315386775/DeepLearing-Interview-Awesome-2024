@@ -60,3 +60,100 @@ def L2_dist_1(cloud1, cloud2):
     dist = np.sqrt(np.sum((cloud1 - cloud2)**2, axis=2))
     return dist
 ```
+
+# 04. Pytorch实现注意力机制、多头注意力
+
+```python
+class ScaledDotProductAttention(nn.Module):
+    """ Scaled Dot-Product Attention """
+
+    def __init__(self, scale):
+        super().__init__()
+
+        self.scale = scale
+        self.softmax = nn.Softmax(dim=2)
+
+    def forward(self, q, k, v, mask=None):
+        u = torch.bmm(q, k.transpose(1, 2)) # 1.Matmul
+        u = u / self.scale # 2.Scale
+
+        if mask is not None:
+            u = u.masked_fill(mask, -np.inf) # 3.Mask
+
+        attn = self.softmax(u) # 4.Softmax
+        output = torch.bmm(attn, v) # 5.Output
+
+        return attn, output
+
+
+if __name__ == "__main__":
+    n_q, n_k, n_v = 2, 4, 4
+    d_q, d_k, d_v = 128, 128, 64
+
+    q = torch.randn(batch, n_q, d_q)
+    k = torch.randn(batch, n_k, d_k)
+    v = torch.randn(batch, n_v, d_v)
+    mask = torch.zeros(batch, n_q, n_k).bool()
+
+    attention = ScaledDotProductAttention(scale=np.power(d_k, 0.5))
+    attn, output = attention(q, k, v, mask=mask)
+
+    print(attn)
+    print(output)
+
+```
+```python
+from math import sqrt
+
+import torch
+import torch.nn as nn
+
+
+class MultiHeadSelfAttention(nn.Module):
+    dim_in: int  # input dimension
+    dim_k: int   # key and query dimension
+    dim_v: int   # value dimension
+    num_heads: int  # number of heads, for each head, dim_* = dim_* // num_heads
+
+    def __init__(self, dim_in, dim_k, dim_v, num_heads=8):
+        super(MultiHeadSelfAttention, self).__init__()
+        assert dim_k % num_heads == 0 and dim_v % num_heads == 0, "dim_k and dim_v must be multiple of num_heads"
+        self.dim_in = dim_in
+        self.dim_k = dim_k
+        self.dim_v = dim_v
+        self.num_heads = num_heads
+        self.linear_q = nn.Linear(dim_in, dim_k, bias=False)
+        self.linear_k = nn.Linear(dim_in, dim_k, bias=False)
+        self.linear_v = nn.Linear(dim_in, dim_v, bias=False)
+        self._norm_fact = 1 / sqrt(dim_k // num_heads)
+
+    def forward(self, x):
+        # x: tensor of shape (batch, n, dim_in)
+        batch, n, dim_in = x.shape
+        assert dim_in == self.dim_in
+
+        nh = self.num_heads
+        dk = self.dim_k // nh  # dim_k of each head
+        dv = self.dim_v // nh  # dim_v of each head
+
+        q = self.linear_q(x).reshape(batch, n, nh, dk).transpose(1, 2)  # (batch, nh, n, dk)
+        k = self.linear_k(x).reshape(batch, n, nh, dk).transpose(1, 2)  # (batch, nh, n, dk)
+        v = self.linear_v(x).reshape(batch, n, nh, dv).transpose(1, 2)  # (batch, nh, n, dv)
+
+        dist = torch.matmul(q, k.transpose(2, 3)) * self._norm_fact  # batch, nh, n, n
+        dist = torch.softmax(dist, dim=-1)  # batch, nh, n, n
+
+        att = torch.matmul(dist, v)  # batch, nh, n, dv
+        att = att.transpose(1, 2).reshape(batch, n, self.dim_v)  # batch, n, dim_v
+
+        # self attention
+        # dist = torch.bmm(q, k.transpose(1, 2)) * self._norm_fact  # batch, n, n
+        # dist = torch.softmax(dist, dim=-1)  # batch, n, n
+
+        # att = torch.bmm(dist, v)
+
+        return att
+
+```
+
+- 参考链接：https://zhuanlan.zhihu.com/p/366592542
