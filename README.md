@@ -17,6 +17,8 @@
 | [**09. 有哪些权重初始化的方法**](01-Deep-Learning/Reference.md) |  
 | [**10. MMengine的一些特性**](01-Deep-Learning/Reference.md) |  
 | [**11. Modules的一些属性问题**](01-Deep-Learning/Reference.md) |  
+| [**12. 激活函数的对比与优缺点**](01-Deep-Learning/Reference.md) |  
+| [**13. Transformer/CNN/RNN的时间复杂度对比**](01-Deep-Learning/Reference.md) |  
 
 
 <b><summary>🍳视觉感知算法</summary></b>
@@ -60,10 +62,12 @@
 | [**02. Python装饰器及其作用**](05-Code-C/Reference.md) |
 | [**03. map,lambda,filter,reduce的用法**](05-Code-C/Reference.md) |      |  
 | [**04. Pytorch实现注意力机制、多头注意力**](05-Code-C/Reference.md) |      |  
+| [**05. C++实现Conv2D**](05-Code-C/Reference.md) |      |  
 
 <b><summary>🛺自动驾驶</summary></b>
 
-| [**01. C++中与类型转换相关的4个关键字特点及应用场合**](06-AD/Reference.md) |
+| [**01. 相机内外参数**](06-AD/Reference.md) |
 | :------------------------------------------- |
-| [**02. Python装饰器及其作用**](05-Code-C/Reference.md) |
-| [**03. map,lambda,filter,reduce的用法**](05-Code-C/Reference.md) |      |  
+| [**02. 坐标系的变换**](05-Code-C/Reference.md) |
+| [**03. 放射变换与逆投影变换分别是什么**](05-Code-C/Reference.md) |      |  
+| [**03. 01. 相机内外惨**](05-Code-C/Reference.md) |      |  

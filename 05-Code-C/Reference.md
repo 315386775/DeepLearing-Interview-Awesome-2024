@@ -157,3 +157,77 @@ class MultiHeadSelfAttention(nn.Module):
 ```
 
 - 参考链接：https://zhuanlan.zhihu.com/p/366592542
+
+
+# 05. C++实现Conv2D
+
+```c++
+cv::Mat_<float> spatialConvolution(const cv::Mat_<float>& src, const cv::Mat_<float>& kernel)
+{
+    Mat dst(src.rows,src.cols,src.type());
+
+    Mat_<float> flipped_kernel; 
+    flip(kernel, flipped_kernel, -1);
+
+    const int dx = kernel.cols / 2;
+    const int dy = kernel.rows / 2;
+
+    for (int i = 0; i<src.rows; i++) 
+    {
+        for (int j = 0; j<src.cols; j++) 
+        {
+            float tmp = 0.0f;
+            for (int k = 0; k<flipped_kernel.rows; k++) 
+            {
+              for (int l = 0; l<flipped_kernel.cols; l++) 
+              {
+                int x = j - dx + l;
+                int y = i - dy + k;
+                if (x >= 0 && x < src.cols && y >= 0 && y < src.rows)
+                    tmp += src.at<float>(y, x) * flipped_kernel.at<float>(k, l);
+              }
+            }
+            dst.at<float>(i, j) = saturate_cast<float>(tmp);
+        }
+    }
+    return dst.clone();
+}
+
+cv::Mat convolution2D(cv::Mat& image, cv::Mat& kernel) {
+    int image_height = image.rows;
+    int image_width = image.cols;
+    int kernel_height = kernel.rows;
+    int kernel_width = kernel.cols;
+    cv::Mat output(image_height - kernel_height + 1, image_width - kernel_width + 1, CV_32S);
+
+    for (int i = 0; i < output.rows; i++) {
+        for (int j = 0; j < output.cols; j++) {
+            for (int k = 0; k < kernel_height; k++) {
+                for (int l = 0; l < kernel_width; l++) {
+                    output.at<int>(i, j) += image.at<int>(i + k, j + l) * kernel.at<int>(k, l);
+                }
+            }
+        }
+    }
+
+    return output;
+}
+
+```
+
+```python
+#
+
+def convolution2D(image, kernel):
+    image_height, image_width = image.shape
+    kernel_height, kernel_width = kernel.shape
+    output = np.zeros((image_height - kernel_height + 1, image_width - kernel_width + 1))
+
+    for i in range(output.shape[0]):
+        for j in range(output.shape[1]):
+            output[i, j] = np.sum(image[i:i+kernel_height, j:j+kernel_width] * kernel)
+
+    return output
+
+
+```
