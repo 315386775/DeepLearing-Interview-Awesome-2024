@@ -1,6 +1,9 @@
 # **DeepLearning-Interview-Awesome-2024**　![Language](https://img.shields.io/badge/language-Jupyter-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![AD](https://img.shields.io/badge/深度学习-感知算法-pink.svg)
 
-- 算法工程师岗位面试必备，讲透深度学习面试题，详解人工智能生成式任务与AI大模型面试题
+
+- 算法工程师岗位面试必备，手工整理，1000余道题目QA，讲透深度学习面试题，详解人工智能生成式任务与AI大模型面试题。其中题目来源：a. 结合面试与被面试的经验，涉及的相关题目；b. 通过朋友、知识星球及人脉等相关渠道整理的来自国内公司的实际面试题；c. 通过自己的理解进行相关方向的延申与题目整理。
+
+- 新增LLM专题面试QA！（20230818）
 
 
 <b><summary>⏰深度学习面试题</summary></b>
@@ -19,6 +22,7 @@
 | [**11. Modules的一些属性问题**](01-Deep-Learning/Reference.md) |  
 | [**12. 激活函数的对比与优缺点**](01-Deep-Learning/Reference.md) |  
 | [**13. Transformer/CNN/RNN的时间复杂度对比**](01-Deep-Learning/Reference.md) |  
+| [**14. 深度可分离卷积**](01-Deep-Learning/Reference.md) |  
 
 
 <b><summary>🍳视觉感知算法</summary></b>
@@ -38,19 +42,22 @@
 | [**12. CLIP的核心创新点**](02-Vision-Perception/Reference.md)           | 
 | [**13. 目标检测中旋转框IOU的计算方式**](02-Vision-Perception/Reference.md)           | 
 | [**14. 局部注意力如何实现**](02-Vision-Perception/Reference.md)           | 
+| [**15. 视觉任务中的长尾问题的常见解决方案**](02-Vision-Perception/Reference.md)           | 
 
 
 <b><summary>🏆AIGC与大模型</summary></b>
 
-| [**01. LLMM**](03-AIGC/Reference.md) |
+| [**01. LLM**](03-AIGC/Reference.md) |
 | :------------------------------------------- |
 | [**02. CLIP**](03-Deep-Learning/Reference.md)           | 
+| [**03. SAM分割一切模型**](03-Deep-Learning/Reference.md)           | 
 
 
 <b><summary>🚩Leetcode高频100题</summary></b>
 
-| [**01. 二分查找**](04-Code-Top/Reference.md) |
+| [**01. 不错的刷题框架推荐**](04-Code-Top/Reference.md) |
 | :------------------------------------------- |
+| [**02. 快速排序**](04-Code-Top/Reference.md)           |  
 | [**02. 快速排序**](04-Code-Top/Reference.md)           |  
 
 

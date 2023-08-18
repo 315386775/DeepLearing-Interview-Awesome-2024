@@ -229,3 +229,11 @@ def rotated_iou(rect1, rect2):
 - Non-local block想要计算出每一个位置特定的全局上下文，但是经过训练之后，全局上下文是不受位置依赖的。三步实现注意力机制：1）全局attention pooling：采用1x1卷积和softmax函数来获取attention权值，然后执行attention pooling来获得全局上下文特征。2）特征转换：采用1x1卷积；3）特征聚合：采用相加操作将全局上下文特征聚合到每个位置的特征上。
 
 - 卷积只能对局部区域进行context modeling，导致感受野受限制，而Non-local和SENet实际上是对整个输入feature进行context modeling，感受野可以覆盖到整个输入feature上，这对于网络来说是一个有益的语义信息补充。另外，网络仅仅通过卷积堆叠来提取特征，其实可以认为是用同一个形式的函数来拟合输入，导致网络提取特征缺乏多样性，而Non-local和SENet正好增加了提取特征的多样性，弥补了多样性的不足。
+
+# 15. 视觉任务中的长尾问题的常见解决方案
+
+- 两种基本方法：重采样、重加权，其中长尾分类最优的Decoupling算法依赖于2-stage的分步训练，特征提取backbone需要在长尾分布下学，而classifier又需要re-balancing的学。
+
+- 但上述方法的问题是需要在训练/学习之前，了解“未来”将要看到的数据分布，这显然不符合人类的学习模式，De-confound-TDE
+
+- 参考链接：https://zhuanlan.zhihu.com/p/259569655

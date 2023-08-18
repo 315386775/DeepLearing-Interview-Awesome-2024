@@ -141,3 +141,43 @@ def parameters(self, recurse=True):
 
 
 # 13. Transformer/CNN/RNN的时间复杂度对比
+
+- https://zhuanlan.zhihu.com/p/264749298
+
+
+
+# 14.
+
+- https://zhuanlan.zhihu.com/p/70703846
+
+- https://zhuanlan.zhihu.com/p/51566209
+
+ShuffleNet v1中提出的通道洗牌（Channel Shuffle）操作非常具有创新点，其对于解决分组卷积中通道通信困难上非常简单高效。
+
+ShuffleNet v2分析了模型性能更直接的指标：运行时间。通道分割也是创新点满满。通过仔细分析通道分割，我们发现了它和DenseNet有异曲同工之妙，在这里轻量模型和高精度模型交汇在了一起。
+
+![Alt](assert/shuffle.png#pic_center=600x400)
+
+```python
+def channel_shuffle(x, groups):
+    """
+    Parameters
+        x: Input tensor of with `channels_last` data format
+        groups: int number of groups per channel
+    Returns
+        channel shuffled output tensor
+    Examples
+        Example for a 1D Array with 3 groups
+        >>> d = np.array([0,1,2,3,4,5,6,7,8])
+        >>> x = np.reshape(d, (3,3))
+        >>> x = np.transpose(x, [1,0])
+        >>> x = np.reshape(x, (9,))
+        '[0 1 2 3 4 5 6 7 8] --> [0 3 6 1 4 7 2 5 8]'
+    """
+    height, width, in_channels = x.shape.as_list()[1:]
+    channels_per_group = in_channels // groups
+    x = K.reshape(x, [-1, height, width, groups, channels_per_group])
+    x = K.permute_dimensions(x, (0, 1, 2, 4, 3))  # transpose
+    x = K.reshape(x, [-1, height, width, in_channels])
+    return x
+```
