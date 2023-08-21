@@ -1,9 +1,13 @@
 # **DeepLearning-Interview-Awesome-2024**　![Language](https://img.shields.io/badge/language-Jupyter-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![AD](https://img.shields.io/badge/深度学习-感知算法-pink.svg)
 
 
-- 算法工程师岗位面试必备，手工整理，1000余道题目QA，讲透深度学习面试题，详解人工智能生成式任务与AI大模型面试题。其中题目来源：a. 结合面试与被面试的经验，涉及的相关题目；b. 通过朋友、知识星球及人脉等相关渠道整理的来自国内公司的实际面试题；c. 通过自己的理解进行相关方向的延申与题目整理。
+- 算法工程师岗位面试必备，我们整理了1000多道题目，从基础知识到高级应用都有涉及。我们将详细解析这些题目，帮助求职者更好地理解和掌握相关的知识和技能。涵盖了深度学习、视觉感知、大模型LLM专题和手撕项目代码等相关内容。这些题目的来源包括以下几个方面：
 
-- 新增LLM专题面试QA！（20230818）
+    a. 结合面试和被面试的经验，整理了一些与算法工程师岗位相关的常见面试题目； 
+    b. 通过网络资源、同学朋友、付费社区等渠道，收集了国内公司实际面试的题目，涉及自动驾驶、智慧工业、智慧医疗、智慧商业、人脸、金融等领域的大中小厂； 
+    c. 根据我们的的理解以及最新的前言知识，延伸了一些与相关方向相关的题目。
+
+- 我们希望通过这些题目的整理和解析，能够为求职者提供一个系统、全面的面试准备资源，帮助你们在面试中表现出色，取得成功。
 
 
 <b><summary>⏰深度学习面试题</summary></b>
@@ -23,6 +27,7 @@
 | [**12. 激活函数的对比与优缺点**](01-Deep-Learning/Reference.md) |  
 | [**13. Transformer/CNN/RNN的时间复杂度对比**](01-Deep-Learning/Reference.md) |  
 | [**14. 深度可分离卷积**](01-Deep-Learning/Reference.md) |  
+| [**15. CNN和MLP的区别**](01-Deep-Learning/Reference.md) |  
 
 
 <b><summary>🍳视觉感知算法</summary></b>

@@ -181,3 +181,9 @@ def channel_shuffle(x, groups):
     x = K.reshape(x, [-1, height, width, in_channels])
     return x
 ```
+
+# 15. 比较CNN和多层感知机MLP
+
+- MLP由全连接层构成，每个神经元都和上一层中的所有节点连接，存在参数冗余；相比之下，CNN由于权重共享，参数更少，方便网络的训练与设计深层网络；
+- MLP只接受向量输入，会丢失像素间的空间信息；CNN接受矩阵和向量输入，能利用像素间的空间关系
+- MLP是CNN的一个特例，当CNN卷积核大小与输入大小相同时其计算过程等价于MLP
