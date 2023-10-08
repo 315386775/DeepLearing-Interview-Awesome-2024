@@ -40,6 +40,7 @@
 | [**05. 介绍mixup及其变体**](02-Vision-Perception/Reference.md)           | 
 | [**06. Yolov5的正负样本定义**](02-Vision-Perception/Reference.md)           | 
 | [**07. Yolov5的一些相关细节**](02-Vision-Perception/Reference.md)           | 
+| [**07. Yolov5与Yolov4相比neck部分有什么不同**](02-Vision-Perception/Reference.md)           | 
 | [**08. Yolov7的正负样本定义**](02-Vision-Perception/Reference.md)           | 
 | [**09. Yolov8的正负样本定义**](02-Vision-Perception/Reference.md)           | 
 | [**10. Yolov5的Foucs层和Passthrough层有什么区别**](02-Vision-Perception/Reference.md)           | 
@@ -75,6 +76,7 @@
 | [**03. map,lambda,filter,reduce的用法**](05-Code-C/Reference.md) |      |  
 | [**04. Pytorch实现注意力机制、多头注意力**](05-Code-C/Reference.md) |      |  
 | [**05. C++实现Conv2D**](05-Code-C/Reference.md) |      |  
+| [**06. Numpy实现bbox_iou的计算**](05-Code-C/Reference.md) |      |  
 
 <b><summary>🛺自动驾驶</summary></b>
 

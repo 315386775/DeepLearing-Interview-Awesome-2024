@@ -228,6 +228,29 @@ def convolution2D(image, kernel):
             output[i, j] = np.sum(image[i:i+kernel_height, j:j+kernel_width] * kernel)
 
     return output
+```
 
+# 06. Numpy实现bbox_iou的计算
 
+```python
+#
+def calculate_iou(bbox1, bbox2):
+    # 计算bbox的面积
+    area1 = (bbox1[:, 2] - bbox1[:, 0]) * (bbox1[:, 3] - bbox1[:, 1])
+    area2 = (bbox2[:, 2] - bbox2[:, 0]) * (bbox2[:, 3] - bbox2[:, 1])
+    # 换一种更高级的方式计算面积
+    # area2 = np.prod(bbox2[:, 2:] - bbox2[:, :2], axis=1)
+    
+    # 计算交集的左上角坐标和右下角坐标
+    lt = np.maximum(bbox1[:, None, :2], bbox2[:, :2]) # [m, n, 2]
+    rb = np.minimum(bbox1[:, None, 2:], bbox2[:, 2:])
+    
+    # 计算交集面积
+    wh = np.clip(rb - lt, a_min=0, a_max=None)
+    inter = wh[:,:,0] * wh[:,:,1]
+    
+    # 计算并集面积
+    union = area1[:, None] + area2 - inter
+    
+    return inter / union
 ```
