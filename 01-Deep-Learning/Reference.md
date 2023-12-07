@@ -187,3 +187,39 @@ def channel_shuffle(x, groups):
 - MLP由全连接层构成，每个神经元都和上一层中的所有节点连接，存在参数冗余；相比之下，CNN由于权重共享，参数更少，方便网络的训练与设计深层网络；
 - MLP只接受向量输入，会丢失像素间的空间信息；CNN接受矩阵和向量输入，能利用像素间的空间关系
 - MLP是CNN的一个特例，当CNN卷积核大小与输入大小相同时其计算过程等价于MLP
+
+# 16. MMCV中Hook机制简介及创建一个新的Hook
+
+- Runner是一个模型训练的工厂，HOOK可以理解为一种触发器，也可以理解为一种训练框架的架构规范，它规定了在算法训练过程中的种种操作，并且我们可以通过继承HOOK类，然后注册HOOK自定义我们想要的操作。
+- MMCV在./mmcv/runner/hooks/hook.py中定义了Hook的基类以及Hook的注册器HOOKS。作为基类，Hook本身没有实现具体的函数，只是提供了before_run、after_run等6个接口函数，其他所有的Hooks都通过继承Hook类并重写相应的函数完整指定功能。
+- Hook 的主要目的是扩展功能，而不是修改已经实现的功能。如果我们实现一个定制化的 Hook，使用时需要定义、注册、调用3个步骤。自定义Hook在./mmcv/runner/hooks目录下构建，在执行runner.run()前会调用BaseRunner类中的register_training_hooks方法进行注册，使用build_from_cfg进行实例获取，然后调用BaseRunner类的register_hook()进行注册，这样所有Hook实例就都被纳入到runner中的一个list中。在runner执行过程中，会在特定的程序位点通过call_hook()函数调用相应的Hook。
+
+```python
+import torch
+from mmcv.runner.hooks import HOOKS, Hook
+
+@HOOKS.register_module()
+class CheckInvalidLossHook(Hook):
+    def __init__(self, interval=50):
+        self.interval = interval
+
+    def after_train_iter(self, runner):
+        if self.every_n_iters(runner, self.interval):
+            assert torch.isfinite(runner.outputs['loss']), \
+                runner.logger.info('loss become infinite or NaN!')
+
+def register_checkpoint_hook(self, checkpoint_config):
+    hook = mmcv.build_from_cfg(checkpoint_config, HOOKS)
+    self.register_hook(hook, priority='NORMAL')
+```
+
+# 17. 深度学习训练中如何区分错误样本和难例样本
+
+- 一种方式是通过损失处理，论文标题：Unsupervised Label Noise Modeling and Loss Correction，可以使用一个Beta分布来刻画正常样本和噪音样本，从而将二者区分。
+
+
+# 18. PyTorch 节省显存的常用策略
+
+- 混合精度训练
+- 大 batch 训练或者称为梯度累加：具体实现是在 loss = loss / cumulative_iters
+- gradient checkpointing 梯度检查点
