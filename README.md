@@ -3,7 +3,7 @@
 
 本项目涵盖了**大模型(LLMs)专题**、**计算机视觉与感知算法专题**、**深度学习基础与框架专题**、**自动驾驶、智慧医疗等行业垂域专题**、**手撕项目代码专题**、**优异开源资源推荐专题**共计6大专题模块。我们将持续整理汇总最新的面试题并详细解析这些题目，希望能成为大家斩获offer路上一份有效的辅助资料。
 
-喜欢本项目的请右上角点个star，同时欢迎大家一起共创该项目，部分题目对应的更深度的解析可至[博客查阅](https://315386775.github.io/)：
+2024算法面试题目持续更新，具体请 follow [2024年深度学习算法与大模型面试指南](https://github.com/315386775/DeepLearing-Interview-Awesome-2024)，喜欢本项目的请右上角点个star，同时欢迎大家一起共创该项目。部分题目对应的更深度的解析可至[博客查阅](https://315386775.github.io/)
 
 <b><summary>🏆大模型(LLMs)专题</summary></b>
 
@@ -71,6 +71,7 @@
 | [**02. 坐标系的变换**](IndustryAlgorithm/Reference.md) |
 | [**03. 放射变换与逆投影变换分别是什么**](IndustryAlgorithm/Reference.md) |      |  
 | [**04. 卡尔曼滤波Q和R怎么调**](IndustryAlgorithm/Reference.md) |      |  
+| [**05. 如何理解BEV空间及生成BEV特征**](IndustryAlgorithm/Reference.md) |      |  
 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
@@ -81,6 +82,8 @@
 | [**03. Conv2D卷积的Python和C++实现**](CodeAnything/Reference.md) |      |  
 | [**04. Numpy实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
 | [**05. Numpy实现Focalloss**](CodeAnything/Reference.md) |      |  
+| [**06. Python实现非极大值抑制nms、softnms**](CodeAnything/Reference.md) |      |  
+| [**07. Python实现BN批量归一化**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>

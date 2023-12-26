@@ -183,6 +183,17 @@ def convolution2D(image, kernel):
 # 06. Numpy实现bbox_iou的计算
 
 ```python
+
+def IoU(boxA,boxB):#x1,y1,x2,y2
+    xA=max(boxA[0],boxB[0])
+    yA=max(boxA[1],boxB[1])
+    xB=min(boxA[2],boxB[2])
+    yB=min(boxA[3],boxB[3])
+    interArea=max(0,xB-xA+1)*max(0,yB-yA+1)
+    boxAArea=(boxA[2]-boxA[0]+1)*(boxA[3]-boxA[1]+1)
+    boxBArea=(boxB[2]-boxB[0]+1)*(boxB[3]-boxB[1]+1)
+    iou=interArea/(boxAArea+boxBArea-interArea)
+    return iou
 #
 def calculate_iou(bbox1, bbox2):
     # 计算bbox的面积
@@ -236,9 +247,130 @@ y_pred = np.array([0.9, 0.1, 0.8, 0.2])
 loss = multiclass_focal_log_loss(y_true, y_pred)
 print(loss)
 ```
+# 06. Python实现nms、softnms
+
+```python
+def nms(bboxes, scores, iou_thresh):
+    """
+    :param bboxes: 检测框列表
+    :param scores: 置信度列表
+    :param iou_thresh: IOU阈值
+    :return:
+    """
+    x1 = bboxes[:, 0]
+    y1 = bboxes[:, 1]
+    x2 = bboxes[:, 2]
+    y2 = bboxes[:, 3]
+    areas = (y2 - y1) * (x2 - x1)
+
+    result = []
+    index = scores.argsort()[::-1]  # 对检测框按照置信度进行从高到低的排序，并获取索引
+
+    while index.size > 0:
+        i = index[0]
+        result.append(i)  # 将置信度最高的加入结果列表
+
+        # 计算其他边界框与该边界框的IOU
+        x11 = np.maximum(x1[i], x1[index[1:]])
+        y11 = np.maximum(y1[i], y1[index[1:]])
+        x22 = np.minimum(x2[i], x2[index[1:]])
+        y22 = np.minimum(y2[i], y2[index[1:]])
+        w = np.maximum(0, x22 - x11 + 1)
+        h = np.maximum(0, y22 - y11 + 1)
+        overlaps = w * h
+        ious = overlaps / (areas[i] + areas[index[1:]] - overlaps)
+        # 只保留满足IOU阈值的索引
+        idx = np.where(ious <= iou_thresh)[0]
+        index = index[idx + 1]  # 处理剩余的边框
+    bboxes, scores = bboxes[result], scores[result]
+    return bboxes, scores
+```
+
+要实现 Soft-NMS（软性非极大值抑制），需要对原始的 NMS 算法进行一些修改。Soft-NMS 通过逐渐降低重叠边界框的置信度，而不是直接将它们排除，从而更平滑地抑制重叠边界框的影响。
+
+```python
+def soft_nms(bboxes, scores, iou_thresh, sigma=0.5, score_thresh=0.001):
+    x1 = bboxes[:, 0]
+    y1 = bboxes[:, 1]
+    x2 = bboxes[:, 2]
+    y2 = bboxes[:, 3]
+    areas = (y2 - y1) * (x2 - x1)
+
+    for i in range(len(scores)):
+        max_idx = i
+        max_score = scores[i]
+
+        # 与其他边界框计算IOU，并更新置信度
+        for j in range(i + 1, len(scores)):
+            if scores[j] > score_thresh:
+                x11 = np.maximum(x1[i], x1[j])
+                y11 = np.maximum(y1[i], y1[j])
+                x22 = np.minimum(x2[i], x2[j])
+                y22 = np.minimum(y2[i], y2[j])
+                w = np.maximum(0, x22 - x11 + 1)
+                h = np.maximum(0, y22 - y11 + 1)
+                overlaps = w * h
+                iou = overlaps / (areas[i] + areas[j] - overlaps)
+                decay = np.exp(-(iou * iou) / sigma)
+                scores[j] = scores[j] * decay
+
+                # 保留置信度最高的边界框
+                if scores[j] > max_score:
+                    max_idx = j
+                    max_score = scores[j]
+
+        # 交换置信度最高的边界框和当前边界框的位置
+        bboxes[i], bboxes[max_idx] = bboxes[max_idx], bboxes[i]
+        scores[i], scores[max_idx] = scores[max_idx], scores[i]
+
+    # 过滤置信度低于阈值的边界框
+    selected_idx = np.where(scores > score_thresh)
+    bboxes = bboxes[selected_idx]
+    scores = scores[selected_idx]
+
+    return bboxes, scores
+```
+
+# 07. Python实现BN批量归一化
+
+实现BN需要求的：均值、方差、参数beta、参数gamma。
+
+![Alt](assert/bn.png#pic_center)
+
+```python
+class MyBN:
+    def __init__(self, momentum, eps, num_features):
+        """
+        初始化参数值
+        :param momentum: 追踪样本整体均值和方差的动量
+        :param eps: 防止数值计算错误
+        :param num_features: 特征数量
+        """
+        # 对每个batch的mean和var进行追踪统计
+        self._running_mean = 0
+        self._running_var = 1
+        self._momentum = momentum
+        self._eps = eps
+        # 对应论文中需要更新的beta和gamma，采用pytorch文档中的初始化值
+        self._beta = np.zeros(shape=(num_features, ))
+        self._gamma = np.ones(shape=(num_features, ))
+
+    def batch_norm(self, x):
+        x_mean = x.mean(axis=0)
+        x_var = x.var(axis=0)
+        # 对应running_mean的更新公式
+        self._running_mean = (1-self._momentum)*x_mean + self._momentum*self._running_mean
+        self._running_var = (1-self._momentum)*x_var + self._momentum*self._running_var
+        # 对应论文中计算BN的公式
+        x_hat = (x-x_mean)/np.sqrt(x_var+self._eps)
+        y = self._gamma*x_hat + self._beta
+        return y
+```
+
+更详细请查阅[BN](https://zhuanlan.zhihu.com/p/100672008)
 
 
-# 01. C++中与类型转换相关的4个关键字特点及应用场合
+# 111. C++中与类型转换相关的4个关键字特点及应用场合
 
 ```c++
 static_cast<type_id> ()  // 主要用于C++内置基本类型之间的转换

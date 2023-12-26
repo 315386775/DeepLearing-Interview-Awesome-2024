@@ -68,7 +68,7 @@ Stable Diffusion 总共包含三个主要的组件，其中每个组件都拥有
 
 # 06. Transformer为何使用多头注意力机制
 
-多头保证了transformer可以注意到不同子空间的信息，捕捉到更加丰富的特征信息。论文原作者发现这样效果确实好，更详细得解析可以查阅[Multi-head Attention](https://www.zhihu.com/question/341222779)
+多头保证了transformer可以注意到不同子空间的信息，捕捉到更加丰富的特征信息。论文原作者发现这样效果确实好，更详细的解析可以查阅[Multi-head Attention](https://www.zhihu.com/question/341222779)
 
 # 07. 监督微调SFT后LLM表现下降的原因
 
@@ -87,6 +87,12 @@ SFT（Supervised Fine-Tuning）是一种常见的微调技术，它通过在特�
 - 减小批量大小：这可以减少每次训练需要处理的数据量，从而减少内存使用。
 - 使用梯度累积：这种方法可以在不减小批量大小的情况下，减少内存使用。
 - 使用模型并行：这种方法可以将模型的不同部分放在不同的设备上进行训练，从而减少每个设备需要的内存。
+
+09. 连接文本和图像的CLIP架构简介
+
+CLIP 把自然语言级别的抽象概念带到计算机视觉里了。确定一系列query，然后通过搜索引擎搜集图像，最后通过50万条query，搜索得到4亿个图像文本对。然后将Text Decoder从文本中提取的语义特征和Image Decoder从图像中提取的语义特征进行匹配训练。
+
+[如何评价OpenAI最新的工作CLIP](https://www.zhihu.com/question/438649654)
 
 # 16. Transfomer中Attention的计算量如何计算
 
