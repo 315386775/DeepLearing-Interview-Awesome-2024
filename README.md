@@ -8,10 +8,15 @@
 
 <b><summary>🏆大模型(LLMs)专题</summary></b>
 
-| [**01. LLM**](LLMs/Reference.md) |
+| [**01. 大模型常用微调方法LORA和Ptuning的原理**](LLMs/Reference.md) |
 | :------------------------------------------- |
-| [**02. CLIP**](LLMs/Reference.md)           | 
-| [**03. SAM分割一切模型**](LLMs/Reference.md)           | 
+| [**02. 介绍一下stable diffusion的原理**](LLMs/Reference.md)           | 
+| [**03. 为何现在的大模型大部分是Decoder only结构**](LLMs/Reference.md)           | 
+| [**04. 如何缓解 LLMs 复读机问题**](LLMs/Reference.md)           | 
+| [**05. 为什么transformer中使用LayerNorm而不是BatchNorm**](LLMs/Reference.md)           | 
+| [**06. Transformer为何使用多头注意力机制**](LLMs/Reference.md)           | 
+| [**07. 监督微调SFT后LLM表现下降的原因**](LLMs/Reference.md)           | 
+| [**08. 微调阶段样本量规模增大导致的OOM错误**](LLMs/Reference.md)           | 
 
 
 <b><summary>🍳计算机视觉与感知算法专题</summary></b>
@@ -71,22 +76,20 @@
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
-| [**01. C++中与类型转换相关的4个关键字特点及应用场合**](CodeAnything/Reference.md) |
+| [**01. Pytorch实现注意力机制、多头注意力**](CodeAnything/Reference.md) |
 | :------------------------------------------- |
-| [**02. 用Numpy的广播机制实现矩阵之间距离的计算**](CodeAnything/Reference.md) |
-| [**02. Python装饰器及其作用**](CodeAnything/Reference.md) |
-| [**03. map,lambda,filter,reduce的用法**](CodeAnything/Reference.md) |      |  
-| [**04. Pytorch实现注意力机制、多头注意力**](CodeAnything/Reference.md) |      |  
-| [**05. C++实现Conv2D**](CodeAnything/Reference.md) |      |  
-| [**06. Numpy实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
+| [**02. Numpy广播机制实现矩阵间L2距离的计算**](CodeAnything/Reference.md) | 
+| [**03. Conv2D卷积的Python和C++实现**](CodeAnything/Reference.md) |      |  
+| [**04. Numpy实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>
 
-| [**01. 不错的刷题框架推荐**](AwesomeProjects/Reference.md) |
+| [**01. 多个优异的数据结构与算法项目推荐**](AwesomeProjects/Reference.md) |
 | :------------------------------------------- |
-| [**02. 快速排序**](AwesomeProjects/Reference.md)           |  
-| [**02. 快速排序**](AwesomeProjects/Reference.md)           |  
+| [**02. 大模型岗位面试总结：共24家，9个offer**](AwesomeProjects/Reference.md)           |  
+| [**03. 视觉检测分割一切源码及在线Demo**](AwesomeProjects/Reference.md)           |  
+| [**04. 动手学深度学习Pytorch**](AwesomeProjects/Reference.md)           |  
 
 
 
