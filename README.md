@@ -1,8 +1,7 @@
 # **DeepLearning-Interview-Awesome-2024**　![Language](https://img.shields.io/badge/language-Jupyter-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![AD](https://img.shields.io/badge/深度学习-感知算法-pink.svg)
 
-行业忽冷忽热，算法光速前进，算法行业求职者、高校应届毕业生及行业从业人员们更应紧跟学术前沿、扎实项目功底。本项目持续整理各个行业的面试题，从基础知识到高级应用都有涉及。我们将详细解析这些题目，帮助大家更好地理解和掌握相关的知识和技能。
 
-本项目涵盖了**大模型(LLMs)专题**、**计算机视觉与感知算法专题**、**深度学习基础与框架专题**、**自动驾驶、智慧医疗等行业垂域专题**、**手撕项目代码专题**、**优异开源资源推荐专题**共计6大专题模块。这些题目的来源包括以下几个方面：
+本项目涵盖了**大模型(LLMs)专题**、**计算机视觉与感知算法专题**、**深度学习基础与框架专题**、**自动驾驶、智慧医疗等行业垂域专题**、**手撕项目代码专题**、**优异开源资源推荐专题**共计6大专题模块。我们将持续整理汇总最新的面试题并详细解析这些题目，希望能成为大家斩获offer路上一份有效的辅助资料。
 
 喜欢本项目的请右上角点个star，同时欢迎大家一起共创该项目，部分题目对应的更深度的解析可至[博客查阅](https://315386775.github.io/)：
 
@@ -21,7 +20,7 @@
 
 <b><summary>🍳计算机视觉与感知算法专题</summary></b>
 
-| [**01.人脸识别任务中，ArcFace为什么比CosFace效果好**](VisionPerception/Reference.md) |
+| [**01. 人脸识别任务中，ArcFace为什么比CosFace效果好**](VisionPerception/Reference.md) |
 | :------------------------------------------- |
 | [**02. FCOS如何解决重叠样本，以及centerness的作用**](VisionPerception/Reference.md)           | 
 | [**03. Centernet为什么可以去除NMS，以及正负样本的定义**](VisionPerception/Reference.md)           | 
@@ -43,13 +42,13 @@
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
 
-| [**01.卷积和BN如何融合提升推理速度**](DeepLearning/Reference.md) |
+| [**01. 卷积和BN如何融合提升推理速度**](DeepLearning/Reference.md) |
 | :------------------------------------------- |
-| [**02.多卡BN如何处理**](DeepLearning/Reference.md) | 
-| [**03.TensorRT为什么能让模型跑更快**](DeepLearning/Reference.md) | 
-| [**04.损失函数的应用-合页损失**](DeepLearning/Reference.md) | 
-| [**05.Pytorch DataLoader的主要参数有哪些**](DeepLearning/Reference.md) | 
-| [**06.神经网络引入注意力机制后效果降低的原因**](DeepLearning/Reference.md) |  
+| [**02. 多卡BN如何处理**](DeepLearning/Reference.md) | 
+| [**03. TensorRT为什么能让模型跑更快**](DeepLearning/Reference.md) | 
+| [**04. 损失函数的应用-合页损失**](DeepLearning/Reference.md) | 
+| [**05. Pytorch DataLoader的主要参数有哪些**](DeepLearning/Reference.md) | 
+| [**06. 神经网络引入注意力机制后效果降低的原因**](DeepLearning/Reference.md) |  
 | [**07. 为什么交叉熵可以作为损失函数**](DeepLearning/Reference.md) |  
 | [**08. 优化算法之异同 SGD/AdaGrad/Adam**](DeepLearning/Reference.md) |  
 | [**09. 有哪些权重初始化的方法**](DeepLearning/Reference.md) |  
@@ -62,6 +61,7 @@
 | [**16. MMCV中Hook机制简介及创建一个新的Hook**](DeepLearning/Reference.md) | 
 | [**17. 深度学习训练中如何区分错误样本和难例样本**](DeepLearning/Reference.md)           |  
 | [**18. PyTorch 节省显存的常用策略**](DeepLearning/Reference.md)           |  
+| [**19. 深度学习模型训练时的Warmup预热学习率作用**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -71,7 +71,6 @@
 | [**02. 坐标系的变换**](IndustryAlgorithm/Reference.md) |
 | [**03. 放射变换与逆投影变换分别是什么**](IndustryAlgorithm/Reference.md) |      |  
 | [**04. 卡尔曼滤波Q和R怎么调**](IndustryAlgorithm/Reference.md) |      |  
-| [**05. 相机内外惨**](IndustryAlgorithm/Reference.md) |      |  
 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
@@ -81,6 +80,7 @@
 | [**02. Numpy广播机制实现矩阵间L2距离的计算**](CodeAnything/Reference.md) | 
 | [**03. Conv2D卷积的Python和C++实现**](CodeAnything/Reference.md) |      |  
 | [**04. Numpy实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
+| [**05. Numpy实现Focalloss**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>

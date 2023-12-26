@@ -205,6 +205,38 @@ def calculate_iou(bbox1, bbox2):
     return inter / union
 ```
 
+# 05. Numpy实现Focalloss
+
+![Alt](assert/focal.jpg#pic_center)
+
+Focal loss其实就是相当于给不同的概率，不同的权重来调整loss，从而让模型更加注意区分错误样本和难区分的样本。
+
+```python
+
+import numpy as np
+
+def multiclass_focal_log_loss(y_true, y_pred, class_weights = None, alpha = 0.5, gamma = 2):
+    """
+    Numpy version of the Focal Loss
+    """
+    pt = np.where(y_true == 1, y_pred, 1-y_pred)
+    alpha_t = np.where(y_true == 1, alpha, 1-alpha)
+    # FL = - alpha_t (1-pt)^gamma log(pt)
+    focal_loss = - alpha_t * (1 - pt) ** gamma * np.log(pt))
+    if class_weights is None:
+        focal_loss = np.mean(focal_loss)
+    else:
+        focal_loss = np.sum(np.multiply(focal_loss, class_weights))
+    return focal_loss
+
+# 示例用法
+y_true = np.array([1, 0, 1, 0])
+y_pred = np.array([0.9, 0.1, 0.8, 0.2])
+
+loss = multiclass_focal_log_loss(y_true, y_pred)
+print(loss)
+```
+
 
 # 01. C++中与类型转换相关的4个关键字特点及应用场合
 
