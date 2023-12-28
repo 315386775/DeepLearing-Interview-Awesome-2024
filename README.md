@@ -81,6 +81,7 @@
 | [**19. 深度学习模型训练时的Warmup预热学习率作用**](DeepLearning/Reference.md)           |  
 | [**20. MMdetection中添加一个自定义的backbone网络，需要改哪些代码**](DeepLearning/Reference.md)           |  
 | [**21. PyTorch中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           |  
+| [**22. 考虑一个filter[-1 -1 -1; 0 0 0; 1 1 1] 用于卷积。该滤波器将从输入图像中提取哪些边缘**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
