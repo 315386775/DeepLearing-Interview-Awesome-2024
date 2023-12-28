@@ -229,3 +229,8 @@ def register_checkpoint_hook(self, checkpoint_config):
 Warmup是在ResNet论文中提到的一种学习率预热的方法，它在训练开始的时候先选择使用一个较小的学习率，训练了一些epoches或者steps(比如4个epoches,10000steps)，再修改为预先设置的学习来进行训练。
 
 由于刚开始训练时，模型的权重(weights)是随机初始化的，此时若选择一个较大的学习率，可能带来模型的不稳定(振荡)，选择Warmup预热学习率的方式，可以使得开始训练的几个epoches或者一些steps内学习率较小，在预热的小学习率下，模型可以慢慢趋于稳定，等模型相对稳定后再选择预先设置的学习率进行训练，使得模型收敛速度变得更快，模型效果更佳。
+
+
+# 21. PyTorch中的 ModuleList 和 Sequential的区别和使用场景
+
+[ModuleList](https://zhuanlan.zhihu.com/p/64990232)

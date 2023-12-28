@@ -16,6 +16,11 @@
 | [**06. Transformer为何使用多头注意力机制**](LLMs/Reference.md)           | 
 | [**07. 监督微调SFT后LLM表现下降的原因**](LLMs/Reference.md)           | 
 | [**08. 微调阶段样本量规模增大导致的OOM错误**](LLMs/Reference.md)           | 
+| [**09. Attention计算复杂度以及如何改进**](LLMs/Reference.md)           | 
+| [**10. BERT用于分类任务的优点，后续改进工作有哪些？**](LLMs/Reference.md)           | 
+| [**11. SAM分割一切网络中的Promot类型以及如何输入进网络**](LLMs/Reference.md)           | 
+| [**12. Transformer的层融合是如何做到的，其中Residue Network与Layer Norm如何算子融合**](LLMs/Reference.md)           | 
+| [**13. 简单介绍下Transformer算法**](LLMs/Reference.md)           | 
 
 
 <b><summary>🍳计算机视觉与感知算法专题</summary></b>
@@ -38,6 +43,12 @@
 | [**14. 局部注意力如何实现**](VisionPerception/Reference.md)           | 
 | [**15. 视觉任务中的长尾问题的常见解决方案**](VisionPerception/Reference.md)           | 
 | [**16. Yolov5中的objectness的作用**](VisionPerception/Reference.md)           | 
+| [**17. 匈牙利匹配方法介绍**](VisionPerception/Reference.md)           | 
+| [**18. Focal loss的参数如何调，以及存在什么问题**](VisionPerception/Reference.md)           | 
+| [**19. 训练一个二分类任务，其中数据有80%的标注正确，20%标注失败**](VisionPerception/Reference.md) |      |  
+| [**20. 目标检测设置很多不同的anchor，能否改善小目标及非正常尺寸目标的性能，除计算速度外还存在什么问题**](VisionPerception/Reference.md) |      |  
+| [**21. Anchor-free的target assign怎么解决多个目标中心点位置比较靠近的问题**](VisionPerception/Reference.md) |      |  
+| [**22. 如果在分类任务中几个类别有重叠（类间差异小）怎么办，如何设计网络结构**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -62,6 +73,8 @@
 | [**17. 深度学习训练中如何区分错误样本和难例样本**](DeepLearning/Reference.md)           |  
 | [**18. PyTorch 节省显存的常用策略**](DeepLearning/Reference.md)           |  
 | [**19. 深度学习模型训练时的Warmup预热学习率作用**](DeepLearning/Reference.md)           |  
+| [**20. MMdetection中添加一个自定义的backbone网络，需要改哪些代码**](DeepLearning/Reference.md)           |  
+| [**21. PyTorch中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -72,6 +85,12 @@
 | [**03. 放射变换与逆投影变换分别是什么**](IndustryAlgorithm/Reference.md) |      |  
 | [**04. 卡尔曼滤波Q和R怎么调**](IndustryAlgorithm/Reference.md) |      |  
 | [**05. 如何理解BEV空间及生成BEV特征**](IndustryAlgorithm/Reference.md) |      |  
+| [**06. 如何在标注存在错误的数据上训练模型**](IndustryAlgorithm/Reference.md) |      |  
+| [**07. 视频与图像中的目标检测具体有什么区别**](IndustryAlgorithm/Reference.md) |      |  
+| [**08. 栏杆检测为什么不用网络学习**](IndustryAlgorithm/Reference.md) |      |  
+| [**09. 卡尔曼滤波怎么用同一个filter同时适配车辆横穿的场景**](IndustryAlgorithm/Reference.md) |      |  
+| [**10. BEV特征怎么进行数据增强**](IndustryAlgorithm/Reference.md) |      |  
+
 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
@@ -84,6 +103,10 @@
 | [**05. Numpy实现Focalloss**](CodeAnything/Reference.md) |      |  
 | [**06. Python实现非极大值抑制nms、softnms**](CodeAnything/Reference.md) |      |  
 | [**07. Python实现BN批量归一化**](CodeAnything/Reference.md) |      |  
+| [**08. Pytorch手写Conv+Bn+Relu，及如何合并**](CodeAnything/Reference.md) |      |  
+| [**09. 描述图像resize的过程并实现**](CodeAnything/Reference.md) |      |  
+| [**10. PyTorch卷积与BatchNorm的融合**](CodeAnything/Reference.md) |      |  
+| [**11. 分割网络损失函数Dice Loss代码实现**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>

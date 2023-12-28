@@ -369,6 +369,29 @@ class MyBN:
 
 更详细请查阅[BN](https://zhuanlan.zhihu.com/p/100672008)
 
+# 10. PyTorch卷积与BatchNorm的融合
+
+更详细请查阅[CONV-BN](https://zhuanlan.zhihu.com/p/49329030)
+
+
+# 11. 分割网络损失函数Dice Loss代码实现
+
+```python
+# 防止分母为0
+smooth = 100
+ 
+# 定义Dice系数
+def dice_coef(y_true, y_pred):
+    y_truef = K.flatten(y_true)  # 将y_true拉为一维
+    y_predf = K.flatten(y_pred)
+    intersection = K.sum(y_truef * y_predf)
+    return (2 * intersection + smooth) / (K.sum(y_truef) + K.sum(y_predf) + smooth)
+ 
+# 定义Dice损失函数
+def dice_coef_loss(y_true, y_pred):
+    return 1-dice_coef(y_true, y_pred)
+```
+
 
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
 

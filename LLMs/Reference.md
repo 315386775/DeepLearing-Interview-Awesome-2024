@@ -56,6 +56,8 @@ Stable Diffusion 总共包含三个主要的组件，其中每个组件都拥有
 
 # 05. 为什么transformer块使用LayerNorm而不是BatchNorm
 
+Batch Normalization 是对这批样本的同一维度特征做归一化， Layer Normalization 是对这单个样本的所有维度特征做归一化。LN不依赖于batch的大小和输入sequence的长度，因此可以用于batchsize为1和RNN中sequence的normalize操作。
+
 - 为什么BN在NLP中效果差
   
   - BN计算特征的均值和方差是需要在batch_size维度，而这个维度表示一个特征，比如身高、体重、肤色等，如果将BN用于NLP中，其需要对每一个单词做处理，让每一个单词是对应到了MLP中的每一个特征明显是违背直觉得；
@@ -88,13 +90,13 @@ SFT（Supervised Fine-Tuning）是一种常见的微调技术，它通过在特�
 - 使用梯度累积：这种方法可以在不减小批量大小的情况下，减少内存使用。
 - 使用模型并行：这种方法可以将模型的不同部分放在不同的设备上进行训练，从而减少每个设备需要的内存。
 
-09. 连接文本和图像的CLIP架构简介
+# 09. 连接文本和图像的CLIP架构简介
 
 CLIP 把自然语言级别的抽象概念带到计算机视觉里了。确定一系列query，然后通过搜索引擎搜集图像，最后通过50万条query，搜索得到4亿个图像文本对。然后将Text Decoder从文本中提取的语义特征和Image Decoder从图像中提取的语义特征进行匹配训练。
 
 [如何评价OpenAI最新的工作CLIP](https://www.zhihu.com/question/438649654)
 
-# 16. Transfomer中Attention的计算量如何计算
+# 09. Attention计算复杂度以及如何改进
 
 - 代码中的to_qkv()函数，即用于生成q、k、v三个特征向量
 
@@ -104,3 +106,22 @@ CLIP 把自然语言级别的抽象概念带到计算机视觉里了。确定一
 self.to_qkv = nn.Linear(dim, inner_dim * 3, bias=False)
 self.to_out = nn.Linear(inner_dim, dim)
 ```
+
+- 在标准的Transformer中，Attention计算的时间复杂度为O(N^2)，其中N是输入序列的长度。为了降低计算复杂度，可以采用以下几种方法：
+  - 使用自注意力机制，减少计算复杂度。自注意力机制不需要计算输入序列之间的交叉关系，而是计算每个输入向量与自身之间的关系，从而减少计算量。
+  - 使用局部注意力机制，只计算输入序列中与当前位置相关的子序列的交互，从而降低计算复杂度。
+  - 采用基于近似的方法，例如使用随机化和采样等方法来近似计算，从而降低计算复杂度。
+  - 使用压缩注意力机制，通过将输入向量映射到低维空间来减少计算量，例如使用哈希注意力机制和低秩注意力机制等。
+
+# 10. BERT用于分类任务的优点，后续改进工作有哪些？
+
+在分类任务中，BERT的结构中包含了双向的Transformer编码器，这使得BERT能够更好地捕捉文本中的双向上下文信息，从而在文本分类任务中表现更好。BERT的后续改进工作主要包括以下方面：
+
+- 基于BERT的预训练模型的改进，例如RoBERTa、ALBERT等；
+- 通过调整BERT的架构和超参数来进一步优化模型性能，例如Electra、DeBERTa等；
+- 改进BERT在特定任务上的应用方法，例如ERNIE、MT-DNN等；
+
+
+# 11. 介绍transformer算法
+
+Transformer本身是一个典型的encoder-decoder模型，Encoder端和Decoder端均有6个Block，Encoder端的Block包括两个模块，多头self-attention模块以及一个前馈神经网络模块；Decoder端的Block包括三个模块，多头self-attention模块，多头Encoder-Decoder attention交互模块，以及一个前馈神经网络模块；需要注意：Encoder端和Decoder端中的每个模块都有残差层和Layer Normalization层。
