@@ -125,3 +125,25 @@ self.to_out = nn.Linear(inner_dim, dim)
 # 11. 介绍transformer算法
 
 Transformer本身是一个典型的encoder-decoder模型，Encoder端和Decoder端均有6个Block，Encoder端的Block包括两个模块，多头self-attention模块以及一个前馈神经网络模块；Decoder端的Block包括三个模块，多头self-attention模块，多头Encoder-Decoder attention交互模块，以及一个前馈神经网络模块；需要注意：Encoder端和Decoder端中的每个模块都有残差层和Layer Normalization层。
+
+# 14. 在大型语言模型 (llms) 中减少幻觉的策略有哪些？
+
+- DoLa：通过对比层解码提高大型语言模型的真实性：大型预训练 LLM 中的简单解码策略可减少幻觉;
+- 在高质量数据上微调模型——在高质量数据上微调小型法学硕士模型已显示出有希望的结果，并有助于减少幻觉;
+- 上下文学习：使用上下文学习为模型提供更好的上下文;
+- 限制：将输出限制为受限列表，而不是自由浮动文本;
+
+[LLMS](https://medium.com/@masteringllm/4-interview-questions-on-large-language-models-llms-1447516a8db4)
+
+
+# 15. 你能否概括介绍一下 ChatGPT 的训练过程？
+
+- 𝗣𝗿𝗲-𝘁𝗿𝗮𝗶𝗻𝗶𝗻𝗴：预训练，大型语言模型在来自互联网的广泛数据集上进行训练，其中 Transformer 架构是自然语言处理的最佳选择，这里的主要目标是使模型能够预测给定文本序列中的下一个单词。此阶段使模型具备理解语言模式的能力，但尚未具备理解指令或问题的能力。
+
+- 监督微调或者指令微调。模型将用户消息作为输入，模型通过最小化其预测与提供的响应之间的差异来学习生成响应，此阶段标志着模型从仅仅理解语言模式到理解并响应指令的转变。
+
+- 采用人类反馈强化学习 (RHFL) 作为后续微调步骤。
+
+# 16. 在大型语言模型 (llms) 上下文中的标记是什么？
+
+将输入文本分解为多个片段，每一部分大约是一个单词大小的序列，我们称之为子词标记，该过程称为标记化。标记可以是单词或只是字符块。

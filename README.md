@@ -27,6 +27,10 @@
 | [**11. SAM分割一切网络中的Promot类型以及如何输入进网络**](LLMs/Reference.md)           | 
 | [**12. Transformer的层融合是如何做到的，其中Residue Network与Layer Norm如何算子融合**](LLMs/Reference.md)           | 
 | [**13. 简单介绍下Transformer算法**](LLMs/Reference.md)           | 
+| [**14. 在大型语言模型 (llms) 中减少幻觉的策略有哪些？**](LLMs/Reference.md)           | 
+| [**15. 你能否概括介绍一下 ChatGPT 的训练过程？**](LLMs/Reference.md)           | 
+| [**16. 在大型语言模型 (llms) 上下文中的标记是什么？**](LLMs/Reference.md)           | 
+| [**17. Adaptive Softmax在大型语言模型中有何用处？**](LLMs/Reference.md)           | 
 
 
 <b><summary>🍳计算机视觉与感知算法专题</summary></b>
@@ -55,6 +59,7 @@
 | [**20. 目标检测设置很多不同的anchor，能否改善小目标及非正常尺寸目标的性能，除计算速度外还存在什么问题**](VisionPerception/Reference.md) |      |  
 | [**21. Anchor-free的target assign怎么解决多个目标中心点位置比较靠近的问题**](VisionPerception/Reference.md) |      |  
 | [**22. 如果在分类任务中几个类别有重叠（类间差异小）怎么办，如何设计网络结构**](VisionPerception/Reference.md) |      |  
+| [**23. 在目标Crowded的场景下，经常在两个真正目标中间会出现误检的原因?**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -97,6 +102,9 @@
 | [**08. 栏杆检测为什么不用网络学习**](IndustryAlgorithm/Reference.md) |      |  
 | [**09. 卡尔曼滤波怎么用同一个filter同时适配车辆横穿的场景**](IndustryAlgorithm/Reference.md) |      |  
 | [**10. BEV特征怎么进行数据增强**](IndustryAlgorithm/Reference.md) |      |  
+| [**11. 辅助驾驶场景中，模型对60米之内的中大目标预测的bbox坐标不稳定，有较大的抖动问题，导致测距不稳定，怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
+| [**12. 辅助驾驶场景中，对公交站、房屋顶等特定背景误检，怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
+| [**13. 辅助驾驶场景中，大于100m的车辆车型分类出现跳动怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
 
 
 
