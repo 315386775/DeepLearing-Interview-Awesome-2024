@@ -147,3 +147,12 @@ Transformer本身是一个典型的encoder-decoder模型，Encoder端和Decoder�
 # 16. 在大型语言模型 (llms) 上下文中的标记是什么？
 
 将输入文本分解为多个片段，每一部分大约是一个单词大小的序列，我们称之为子词标记，该过程称为标记化。标记可以是单词或只是字符块。
+
+
+# 18. 大模型微调的LORA原理及Lora怎么训练？
+
+[大模型实战：使用 LoRA（低阶适应）微调 LLM](https://zhuanlan.zhihu.com/p/672999750)
+
+# 19. lora的矩阵怎么初始化？为什么要初始化为全0？
+
+[大模型实战：使用 LoRA（低阶适应）微调 LLM](https://zhuanlan.zhihu.com/p/672999750)

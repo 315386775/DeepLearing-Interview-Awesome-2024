@@ -31,6 +31,9 @@
 | [**15. 你能否概括介绍一下 ChatGPT 的训练过程？**](LLMs/Reference.md)           | 
 | [**16. 在大型语言模型 (llms) 上下文中的标记是什么？**](LLMs/Reference.md)           | 
 | [**17. Adaptive Softmax在大型语言模型中有何用处？**](LLMs/Reference.md)           | 
+| [**18. 大模型微调的LORA原理及Lora怎么训练？**](LLMs/Reference.md)           | 
+| [**19. lora的矩阵怎么初始化？为什么要初始化为全0？**](LLMs/Reference.md)           | 
+
 
 
 <b><summary>🍳计算机视觉与感知算法专题</summary></b>
@@ -60,6 +63,9 @@
 | [**21. Anchor-free的target assign怎么解决多个目标中心点位置比较靠近的问题**](VisionPerception/Reference.md) |      |  
 | [**22. 如果在分类任务中几个类别有重叠（类间差异小）怎么办，如何设计网络结构**](VisionPerception/Reference.md) |      |  
 | [**23. 在目标Crowded的场景下，经常在两个真正目标中间会出现误检的原因?**](VisionPerception/Reference.md) |      |  
+| [**24. 在Unet网络结构中，四次降采样对于分割网络到底是不是必须的？**](VisionPerception/Reference.md) |      |  
+| [**25. 为什么UNet++可以被剪枝，怎么去决定剪多少？**](VisionPerception/Reference.md) |      |  
+| [**26. 在A场景下进行目标的标记及训练，如何在B场景下取得好的效果？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -87,6 +93,8 @@
 | [**20. MMdetection中添加一个自定义的backbone网络，需要改哪些代码**](DeepLearning/Reference.md)           |  
 | [**21. PyTorch中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           |  
 | [**22. 考虑一个filter[-1 -1 -1; 0 0 0; 1 1 1] 用于卷积。该滤波器将从输入图像中提取哪些边缘**](DeepLearning/Reference.md)           |  
+| [**23. 深度学习中为什么不对 bias 偏置进行正则化？**](DeepLearning/Reference.md)           |  
+| [**24. 正则化为什么可以增加模型泛化能力**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -105,6 +113,9 @@
 | [**11. 辅助驾驶场景中，模型对60米之内的中大目标预测的bbox坐标不稳定，有较大的抖动问题，导致测距不稳定，怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
 | [**12. 辅助驾驶场景中，对公交站、房屋顶等特定背景误检，怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
 | [**13. 辅助驾驶场景中，大于100m的车辆车型分类出现跳动怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
+| [**14. 医学影像由于标注专业性差异，出现多人标注不一致情况怎么解决？如何用算法的方式减少误差？**](IndustryAlgorithm/Reference.md) |      |  
+| [**15. NLP中给定当前query和历史query以及对应实体，如何对当前query的实体进行建模？**](IndustryAlgorithm/Reference.md)           | 
+
 
 
 
