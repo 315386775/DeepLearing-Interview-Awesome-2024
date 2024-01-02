@@ -142,6 +142,12 @@
 | [**02. 大模型岗位面试总结：共24家，9个offer**](AwesomeProjects/Reference.md)           |  
 | [**03. 视觉检测分割一切源码及在线Demo**](AwesomeProjects/Reference.md)           |  
 | [**04. 动手学深度学习Pytorch**](AwesomeProjects/Reference.md)           |  
+| [**05. 一种用于保存、搜索、访问、探索和与您喜爱的所有网站、文档和文件聊天的工具**](AwesomeProjects/Reference.md)           |  
+| [**06. 收集一些免费的ChatGPT镜像站点**](AwesomeProjects/Reference.md)           |  
+| [**07. 关于大型语言模型(LLM)的一切**](AwesomeProjects/Reference.md)           |  
+| [**08. 深度学习调优指南中文版**](AwesomeProjects/Reference.md)           |  
+
+
 
 
 
