@@ -66,6 +66,7 @@
 | [**24. 在Unet网络结构中，四次降采样对于分割网络到底是不是必须的？**](VisionPerception/Reference.md) |      |  
 | [**25. 为什么UNet++可以被剪枝，怎么去决定剪多少？**](VisionPerception/Reference.md) |      |  
 | [**26. 在A场景下进行目标的标记及训练，如何在B场景下取得好的效果？**](VisionPerception/Reference.md) |      |  
+| [**27. 如何修改Yolov5目标检测，从而实现旋转目标检测？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>

@@ -276,3 +276,7 @@ def rotated_iou(rect1, rect2):
 # 26. 在A场景下进行目标的标记及训练，如何在B场景下取得好的效果？
 
 域迁移方向
+
+# 27. 如何修改Yolov5目标检测，从而实现旋转目标检测？
+
+[Yolo旋转目标检测](https://yunyang1994.gitee.io/2021/04/20/%E4%BF%AE%E6%94%B9-YOLOv5-%E6%BA%90%E7%A0%81%E5%9C%A8-DOTAv1.5-%E9%81%A5%E6%84%9F%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8A%E8%BF%9B%E8%A1%8C%E6%97%8B%E8%BD%AC%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/)
