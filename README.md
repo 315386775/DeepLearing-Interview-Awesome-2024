@@ -95,6 +95,9 @@
 | [**22. 考虑一个filter[-1 -1 -1; 0 0 0; 1 1 1] 用于卷积。该滤波器将从输入图像中提取哪些边缘**](DeepLearning/Reference.md)           |  
 | [**23. 深度学习中为什么不对 bias 偏置进行正则化？**](DeepLearning/Reference.md)           |  
 | [**24. 正则化为什么可以增加模型泛化能力**](DeepLearning/Reference.md)           |  
+| [**25. 深度学习模型中如何融入传统图像处理的特征？直接拼接融合有什么问题？**](DeepLearning/Reference.md)           |  
+| [**26. 多任务学习中各个任务损失的权重应该如何设计呢？**](DeepLearning/Reference.md)           |  
+| [**27. 为什么Adam常常打不过SGD？症结点与改善方案？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
