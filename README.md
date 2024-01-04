@@ -67,6 +67,11 @@
 | [**25. 为什么UNet++可以被剪枝，怎么去决定剪多少？**](VisionPerception/Reference.md) |      |  
 | [**26. 在A场景下进行目标的标记及训练，如何在B场景下取得好的效果？**](VisionPerception/Reference.md) |      |  
 | [**27. 如何修改Yolov5目标检测，从而实现旋转目标检测？**](VisionPerception/Reference.md) |      |  
+| [**28. ViT、DEIT是如何处理变长序列输入的？**](VisionPerception/Reference.md) |      |  
+| [**29. Transformer的注意力机制常用softmax函数，可以使用sigmoid代替吗？**](VisionPerception/Reference.md) |      |  
+| [**30. VIT中对输入图像的处理是如何将patch变化为token的？**](VisionPerception/Reference.md) |      |  
+| [**31. VIT直接用于分割检测等预测密集型的任务上存在什么问题？**](VisionPerception/Reference.md) |      |  
+| [**32. DETR用二分图匹配实现label assignment，简述其过程**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
