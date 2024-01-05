@@ -155,6 +155,12 @@
 | [**06. 收集一些免费的ChatGPT镜像站点**](AwesomeProjects/Reference.md)           |  
 | [**07. 关于大型语言模型(LLM)的一切**](AwesomeProjects/Reference.md)           |  
 | [**08. 深度学习调优指南中文版**](AwesomeProjects/Reference.md)           |  
+| [**09. 多模态大型语言模型的最新论文和数据集集锦**](AwesomeProjects/Reference.md)           |  
+| [**10. ChatPaper：ChatGPT来加速科研流程的工具**](AwesomeProjects/Reference.md)           |  
+| [**11. 消费级硬件上进行LLaMA的微调**](AwesomeProjects/Reference.md)           |  
+| [**12. Stability AI提供的一系列生成模型**](AwesomeProjects/Reference.md)           |  
+| [**13. 自监督方式学习强大视觉特征的框架DINOv2**](AwesomeProjects/Reference.md)           |  
+| [**14. 快速的场景分割FastSAM**](AwesomeProjects/Reference.md)           |  
 
 
 
