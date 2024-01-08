@@ -156,3 +156,17 @@ Transformer本身是一个典型的encoder-decoder模型，Encoder端和Decoder�
 # 19. lora的矩阵怎么初始化？为什么要初始化为全0？
 
 [大模型实战：使用 LoRA（低阶适应）微调 LLM](https://zhuanlan.zhihu.com/p/672999750)
+
+# 20. Stable Diffusion里是如何用文本来控制生成的？
+
+Stable Diffusion是一种潜在扩散模型，主要通过自动编码器（VAE），U-Net以及文本编码器三个核心组件完成用文本来控制生成的图像。Unet的Attention模块Latent Feature和Context Embedding作为输入，将两者进行Cross Attenetion操作，将图像信息和文本信息进行了融合，整体上是一个经典的Transformer流程。
+
+# 21. Stable Diffusion相比Diffusion主要解决的问题是什么？
+
+Diffusion的缺点是在反向扩散过程中需要把完整尺寸的图片输入到U-Net，这使得当图片尺寸以及time step t足够大时，Diffusion会非常的慢。
+
+# 22. Diffusion每一轮训练样本选择一个随机时间步长？
+
+训练过程包含：每一个训练样本选择一个随机时间步长，将time step 对应的高斯噪声应用到图片中，将time step转化为对应embedding；
+
+模型在训练过程中 loss 会逐渐降低，越到后面 loss 的变化幅度越小。如果时间步长是递增的，那么必然会使得模型过多的关注较早的时间步长（因为早期 loss 大），而忽略了较晚的时间步长信息。

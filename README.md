@@ -33,6 +33,9 @@
 | [**17. Adaptive Softmax在大型语言模型中有何用处？**](LLMs/Reference.md)           | 
 | [**18. 大模型微调的LORA原理及Lora怎么训练？**](LLMs/Reference.md)           | 
 | [**19. lora的矩阵怎么初始化？为什么要初始化为全0？**](LLMs/Reference.md)           | 
+| [**20. Stable Diffusion里是如何用文本来控制生成的？**](LLMs/Reference.md)           | 
+| [**21. Stable Diffusion相比Diffusion主要解决的问题是什么？**](LLMs/Reference.md)           | 
+| [**22. Diffusion每一轮训练样本选择一个随机时间步长？**](LLMs/Reference.md)           | 
 
 
 
