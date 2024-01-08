@@ -307,3 +307,16 @@ softmax有强制稀疏化的效果，sigmoid受到类别不均匀的影响。如
 # 32. DETR用二分图匹配实现label assignment，简述其过程
 
 [DETR](https://zhuanlan.zhihu.com/p/366938351)
+
+# 33. 有哪些可以解决目标检测中正负样本不平衡问题的方法
+
+方法大致可以分为两种：
+
+1）Hard Sampling: 从所有样本中选择来训练模型: hard negative mining, OHEM
+2）Soft sampling： 为样本赋予不同的权值: Focal Loss, GHM, PISA
+
+- Focal Loss认为正负样本的不平衡，本质上是因为难易样本的不平衡，于是通过修改交叉熵，使得训练过程更加关注那些困难样本，
+- 而GHM在Focal Loss的基础上继续研究，发现难易样本的不平衡本质上是因为梯度范数分布的不平衡，和Focal Loss的最大区别是GHM认为最困难的那些样本应当认为是异常样本，让检测器强行去拟合异常样本对训练过程是没有帮助的。
+- PISA则是跳出了Focal Loss的思路，认为采样策略应当从mAP这个指标出发，通过IoU Hierarchical Local Rank (IoU-HLR)，对样本进行排序并权值重标定，从而使得recall和precision都能够提升。
+
+# 34. ORB特征提取的缺陷及如何进行改进

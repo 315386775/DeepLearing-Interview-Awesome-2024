@@ -36,6 +36,8 @@
 | [**20. Stable Diffusion里是如何用文本来控制生成的？**](LLMs/Reference.md)           | 
 | [**21. Stable Diffusion相比Diffusion主要解决的问题是什么？**](LLMs/Reference.md)           | 
 | [**22. Diffusion每一轮训练样本选择一个随机时间步长？**](LLMs/Reference.md)           | 
+| [**23. Bert的预训练任务有什么？为什么引入下一个句子预测任务？**](LLMs/Reference.md)           | 
+| [**24. 在微调时，垂直领域可能会遗忘一些通用领域的能力，如何解决？**](LLMs/Reference.md)           | 
 
 
 
@@ -75,6 +77,8 @@
 | [**30. VIT中对输入图像的处理是如何将patch变化为token的？**](VisionPerception/Reference.md) |      |  
 | [**31. VIT直接用于分割检测等预测密集型的任务上存在什么问题？**](VisionPerception/Reference.md) |      |  
 | [**32. DETR用二分图匹配实现label assignment，简述其过程**](VisionPerception/Reference.md) |      |  
+| [**33. 有哪些可以解决目标检测中正负样本不平衡问题的方法**](VisionPerception/Reference.md) |      |  
+| [**34. ORB特征提取的缺陷及如何进行改进**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -111,7 +115,7 @@
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
 
-| [**01. 相机内外参数**](IndustryAlgorithm/Reference.md) |
+| [**01. 相机内参和外参的含义？如果将图像放大两倍，内外参如何变化？**](IndustryAlgorithm/Reference.md) |
 | :------------------------------------------- |
 | [**02. 坐标系的变换**](IndustryAlgorithm/Reference.md) |
 | [**03. 放射变换与逆投影变换分别是什么**](IndustryAlgorithm/Reference.md) |      |  
@@ -127,6 +131,9 @@
 | [**13. 辅助驾驶场景中，大于100m的车辆车型分类出现跳动怎么解决？**](IndustryAlgorithm/Reference.md) |      |  
 | [**14. 医学影像由于标注专业性差异，出现多人标注不一致情况怎么解决？如何用算法的方式减少误差？**](IndustryAlgorithm/Reference.md) |      |  
 | [**15. NLP中给定当前query和历史query以及对应实体，如何对当前query的实体进行建模？**](IndustryAlgorithm/Reference.md)           | 
+| [**16. 解释KF中的噪声矩阵含义。运动方程中估计噪声是变大还是变小？修正方程中估计噪声是变大还是变小？**](IndustryAlgorithm/Reference.md)           | 
+| [**17. 举出几种光流方法，说明LK光流的建模方式？**](IndustryAlgorithm/Reference.md)           | 
+| [**18. 如何在数据量十分有限，但特征数量极多的情况下选出一套合适的特征组合？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
