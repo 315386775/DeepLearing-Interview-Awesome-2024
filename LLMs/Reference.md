@@ -173,4 +173,8 @@ Diffusion的缺点是在反向扩散过程中需要把完整尺寸的图片输�
 
 # 25. 在大型语言模型 (llms)中数据模态的对齐如何处理？
 
-Qformer
+- Qformer
+
+# 26. 训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？
+
+- Detecting Everything in the Open World: Towards Universal Object Detection

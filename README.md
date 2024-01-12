@@ -39,6 +39,7 @@
 | [**23. Bert的预训练任务有什么？为什么引入下一个句子预测任务？**](LLMs/Reference.md)           | 
 | [**24. 在微调时，垂直领域可能会遗忘一些通用领域的能力，如何解决？**](LLMs/Reference.md)           | 
 | [**25. 在大型语言模型 (llms)中数据模态的对齐如何处理？**](LLMs/Reference.md)           | 
+| [**26. 训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
 
 
 
@@ -81,6 +82,7 @@
 | [**33. 有哪些可以解决目标检测中正负样本不平衡问题的方法**](VisionPerception/Reference.md) |      |  
 | [**34. ORB特征提取的缺陷及如何进行改进**](VisionPerception/Reference.md) |      |  
 | [**35. SAM在本地的模型推理效果明显差于线上web版本，有什么方式可以优化其效果？**](VisionPerception/Reference.md) |      |  
+| [**36. 目标检测如何选取正负样本将会极大的影响最后的检测效果，举例ATSS如何处理的？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -139,6 +141,7 @@
 | [**19. SAM的点提示和框提示输入尺寸，框提示是否支持多个框？**](IndustryAlgorithm/Reference.md)           | 
 | [**20. 车道线检测的任务通常采用分割方案，如何将方案降级至检测，甚至是车道线分类？**](IndustryAlgorithm/Reference.md)           | 
 | [**21. 车道线检测的任务中如何处理异行线，比如道路交叉口？**](IndustryAlgorithm/Reference.md)           | 
+| [**22. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
