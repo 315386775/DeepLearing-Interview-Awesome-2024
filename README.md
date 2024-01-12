@@ -83,6 +83,7 @@
 | [**34. ORB特征提取的缺陷及如何进行改进**](VisionPerception/Reference.md) |      |  
 | [**35. SAM在本地的模型推理效果明显差于线上web版本，有什么方式可以优化其效果？**](VisionPerception/Reference.md) |      |  
 | [**36. 目标检测如何选取正负样本将会极大的影响最后的检测效果，举例ATSS如何处理的？**](VisionPerception/Reference.md) |      |  
+| [**37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>

@@ -320,3 +320,8 @@ softmax有强制稀疏化的效果，sigmoid受到类别不均匀的影响。如
 - PISA则是跳出了Focal Loss的思路，认为采样策略应当从mAP这个指标出发，通过IoU Hierarchical Local Rank (IoU-HLR)，对样本进行排序并权值重标定，从而使得recall和precision都能够提升。
 
 # 34. ORB特征提取的缺陷及如何进行改进
+
+
+37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？
+
+- OTA
