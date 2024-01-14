@@ -392,6 +392,29 @@ def dice_coef_loss(y_true, y_pred):
     return 1-dice_coef(y_true, y_pred)
 ```
 
+# 12. Numpy实现一个函数来计算两个向量之间的余弦相似度
+
+```python
+import numpy as np
+
+def cosine_similarity(vector1, vector2):
+    dot_product = np.dot(vector1, vector2)
+    magnitude1 = np.linalg.norm(vector1)
+    magnitude2 = np.linalg.norm(vector2)
+    return dot_product / (magnitude1 * magnitude2)
+```
+
+# 13. Numpy实现Sigmoid函数
+
+```python
+import numpy as np
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+```
+
+
+
 
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
 

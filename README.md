@@ -40,6 +40,8 @@
 | [**24. 在微调时，垂直领域可能会遗忘一些通用领域的能力，如何解决？**](LLMs/Reference.md)           | 
 | [**25. 在大型语言模型 (llms)中数据模态的对齐如何处理？**](LLMs/Reference.md)           | 
 | [**26. 训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
+| [**27. 举例说明强化学习如何发挥作用？**](LLMs/Reference.md)           | 
+| [**28. 如何理解强化学习中的奖励最大化？**](LLMs/Reference.md)           | 
 
 
 
@@ -116,6 +118,7 @@
 | [**25. 深度学习模型中如何融入传统图像处理的特征？直接拼接融合有什么问题？**](DeepLearning/Reference.md)           |  
 | [**26. 多任务学习中各个任务损失的权重应该如何设计呢？**](DeepLearning/Reference.md)           |  
 | [**27. 为什么Adam常常打不过SGD？症结点与改善方案？**](DeepLearning/Reference.md)           |  
+| [**28. 如何处理不平衡的数据集？？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -143,6 +146,7 @@
 | [**20. 车道线检测的任务通常采用分割方案，如何将方案降级至检测，甚至是车道线分类？**](IndustryAlgorithm/Reference.md)           | 
 | [**21. 车道线检测的任务中如何处理异行线，比如道路交叉口？**](IndustryAlgorithm/Reference.md)           | 
 | [**22. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
+| [**23. 银行经理收到一个数据集，其中包含数千名申请贷款的申请人的记录。AI算法如何帮助经理了解他可以批准哪些贷款？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
@@ -161,6 +165,8 @@
 | [**09. 描述图像resize的过程并实现**](CodeAnything/Reference.md) |      |  
 | [**10. PyTorch卷积与BatchNorm的融合**](CodeAnything/Reference.md) |      |  
 | [**11. 分割网络损失函数Dice Loss代码实现**](CodeAnything/Reference.md) |      |  
+| [**12. Numpy实现一个函数来计算两个向量之间的余弦相似度**](CodeAnything/Reference.md) |      |  
+| [**13. Numpy实现Sigmoid函数**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>
