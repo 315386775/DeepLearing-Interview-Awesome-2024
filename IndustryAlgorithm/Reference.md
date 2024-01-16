@@ -91,3 +91,17 @@ Bev就是鸟瞰图，从上往下看应该就是二维的一个平面。如果�
 
 构建机器学习模型：有 n 种机器学习算法可用于预测申请人的贷款请求是否获得批准。其中一个例子是 K 最近邻，它是一种分类和回归算法。它将申请人的贷款请求分为两类，即批准和拒绝。
 
+# 24. 简述BEVformer的Decoder逻辑？
+
+在获取到需要用到的query、query_pos、reference_points参数后，后面的逻辑有些类似 Deformabe DETR 的 Decoder 过程，简单概括如下几点：
+
+- 利用query和query_pos去做常规的 Self-Attention 运算更新query；
+- 利用 Self-Attention 得到的 query，之前获得的 bev_embedding作为value，query_pos，由 query生成的reference_points（虽然生成的x，y，z参考点位置，但是 BEV Embedding 是二维的，所以参考点只选择了前两维）仿照 Deformable Attention Module 的 pipeline 做可变形注意力；
+
+
+# 25. BEVFormer中的Spatial Cross-Attention的步骤？
+
+Step 1 Lift each BEV query to be a pillar
+Step 2 Project the 3D points in pillar to 2D points in views
+Step 3 Sample features from regions in hit views
+Step 4 Fuse by weight

@@ -147,6 +147,8 @@
 | [**21. 车道线检测的任务中如何处理异行线，比如道路交叉口？**](IndustryAlgorithm/Reference.md)           | 
 | [**22. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
 | [**23. 银行经理收到一个数据集，其中包含数千名申请贷款的申请人的记录。AI算法如何帮助经理了解他可以批准哪些贷款？**](IndustryAlgorithm/Reference.md)           | 
+| [**24. 简述BEVformer的Decoder逻辑？**](IndustryAlgorithm/Reference.md)           | 
+| [**25. BEVFormer中的Spatial Cross-Attention的步骤？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
