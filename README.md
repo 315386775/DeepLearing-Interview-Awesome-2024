@@ -37,11 +37,17 @@
 | [**21. Stable Diffusion相比Diffusion主要解决的问题是什么？**](LLMs/Reference.md)           | 
 | [**22. Diffusion每一轮训练样本选择一个随机时间步长？**](LLMs/Reference.md)           | 
 | [**23. Bert的预训练任务有什么？为什么引入下一个句子预测任务？**](LLMs/Reference.md)           | 
-| [**24. 在微调时，垂直领域可能会遗忘一些通用领域的能力，如何解决？**](LLMs/Reference.md)           | 
+| [**24. 领域数据训练后，通用能力往往会有所下降，如何缓解模型遗忘通用能力？**](LLMs/Reference.md)           | 
 | [**25. 在大型语言模型 (llms)中数据模态的对齐如何处理？**](LLMs/Reference.md)           | 
 | [**26. 训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
 | [**27. 举例说明强化学习如何发挥作用？**](LLMs/Reference.md)           | 
 | [**28. 如何理解强化学习中的奖励最大化？**](LLMs/Reference.md)           | 
+| [**29. 如何提升大语言模型的Prompt泛化性？**](LLMs/Reference.md)           | 
+| [**30. Instruction Tuning与Prompt tuning方法的区别？**](LLMs/Reference.md)           | 
+| [**31. 知识蒸馏是将复杂模型的知识转移到简单模型的方法，针对知识蒸馏有哪些改进点？**](LLMs/Reference.md)           | 
+| [**32. Transformer中的Attention计算复杂度以及如何改进？**](LLMs/Reference.md)           | 
+| [**33. 进行SFT操作的时候，基座模型选用Chat还是Base?**](LLMs/Reference.md)           | 
+| [**34. 开源大模型进行预训练的过程中会加入书籍、论文等数据，这部分数据如何组织与处理?**](LLMs/Reference.md)           | 
 
 
 
