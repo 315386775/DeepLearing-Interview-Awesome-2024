@@ -124,7 +124,9 @@
 | [**25. 深度学习模型中如何融入传统图像处理的特征？直接拼接融合有什么问题？**](DeepLearning/Reference.md)           |  
 | [**26. 多任务学习中各个任务损失的权重应该如何设计呢？**](DeepLearning/Reference.md)           |  
 | [**27. 为什么Adam常常打不过SGD？症结点与改善方案？**](DeepLearning/Reference.md)           |  
-| [**28. 如何处理不平衡的数据集？？**](DeepLearning/Reference.md)           |  
+| [**28. 如何处理不平衡的数据集？**](DeepLearning/Reference.md)           |  
+| [**29. Pytorch代码中如何尽量避免.to(device)的操作？**](DeepLearning/Reference.md)           |  
+| [**30. Pytorch中nn.Identity()/torch.chunk/torch.masked_select/torch.gather操作的应用场景？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
