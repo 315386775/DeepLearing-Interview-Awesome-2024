@@ -92,6 +92,8 @@
 | [**35. SAM在本地的模型推理效果明显差于线上web版本，有什么方式可以优化其效果？**](VisionPerception/Reference.md) |      |  
 | [**36. 目标检测如何选取正负样本将会极大的影响最后的检测效果，举例ATSS如何处理的？**](VisionPerception/Reference.md) |      |  
 | [**37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？**](VisionPerception/Reference.md) |      |  
+| [**38. 在CNN网络中，更大的核是否可以取得更高的精度？**](VisionPerception/Reference.md) |      |  
+| [**39. 在轻量化模型中，举例一些从参数量、浮点运算量、模型推理时延进行优化的代表模型？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -157,7 +159,10 @@
 | [**23. 银行经理收到一个数据集，其中包含数千名申请贷款的申请人的记录。AI算法如何帮助经理了解他可以批准哪些贷款？**](IndustryAlgorithm/Reference.md)           | 
 | [**24. 简述BEVformer的Decoder逻辑？**](IndustryAlgorithm/Reference.md)           | 
 | [**25. BEVFormer中的Spatial Cross-Attention的步骤？**](IndustryAlgorithm/Reference.md)           | 
-
+| [**26. 车上多个摄像头图像投影到2D平面如何实现？**](IndustryAlgorithm/Reference.md)           | 
+| [**27. 假如你的车子有4个激光雷达，你如何设计点云分割算法？**](IndustryAlgorithm/Reference.md)           | 
+| [**28. 假如当前需要你把场景里的砖头分割出来，靠点云分割能否正确识别？**](IndustryAlgorithm/Reference.md)           | 
+| [**29. 点云中的水雾怎么去除？**](IndustryAlgorithm/Reference.md)           | 
 
 
 

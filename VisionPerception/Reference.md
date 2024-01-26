@@ -287,6 +287,8 @@ def rotated_iou(rect1, rect2):
 
 随着图像分辨率的变化 patch 的数量 N 会发生了变化。当 N 发生变化时，模型的权重不需要做出任何变化也可以以同样的方式计算出 Q、K、V的值，所以 Visual transformer 的模型结构适用于任何长度的 sequence 。最终输出预测的时候，看样子序列长了好多，但其实还是只取 cls token 输出作为输出预测。
 
+FlexiViT：一个适应所有 Patch 大小的 ViT 模型
+
 
 # 29. Transformer的注意力机制常用softmax函数，可以使用sigmoid代替吗？
 
@@ -322,6 +324,18 @@ softmax有强制稀疏化的效果，sigmoid受到类别不均匀的影响。如
 # 34. ORB特征提取的缺陷及如何进行改进
 
 
-37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？
+# 37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？
 
 - OTA
+
+# 38. 在CNN网络中，更大的核是否可以取得更高的精度？
+
+单尺度核尺寸的局限性，模型需要大尺寸核捕获高分辨率模式，同时需要小尺寸核捕获低分辨率模式以及获得更高的精度和效率。比如混合深度分离卷积(MDConv)，它将不同尺寸卷积核混叠到同一个卷积OP单元中，故而它可以轻易的捕获不同分辨率的特征模式。
+
+# 39. 在轻量化模型中，举例一些从参数量、浮点运算量、模型推理时延进行优化的代表模型？
+
+在移动端比较流行的轻量化神经网络模型，包括 MobileViT、MobileNet、EfficientNet、和 SqueezeNet 等。
+
+- 较早期的 SqueezeNet 和较新的 MobileViT，其实现轻量化的方式主要是在模型的参数数量方面进行了优化；
+- 而对于每秒浮点运算量的优化，流行模型有 EfficientNet、MobileNet、ShuffleNet、GhostNet 和 MixNet 等。
+- 较少有方法像 MobileNet-V3 和 ShuffleNet-V2 等一样，直接针对模型推理时延进行优化。
