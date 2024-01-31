@@ -94,6 +94,8 @@
 | [**37. Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？**](VisionPerception/Reference.md) |      |  
 | [**38. 在CNN网络中，更大的核是否可以取得更高的精度？**](VisionPerception/Reference.md) |      |  
 | [**39. 在轻量化模型中，举例一些从参数量、浮点运算量、模型推理时延进行优化的代表模型？**](VisionPerception/Reference.md) |      |  
+| [**40. FPN的特征融合为什么是相加操作呢？**](VisionPerception/Reference.md) |      |  
+| [**41. 如何理解concat和add这两种常见的feature map特征融合方式?**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
