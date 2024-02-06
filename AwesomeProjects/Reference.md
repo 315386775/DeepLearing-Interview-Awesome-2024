@@ -74,3 +74,7 @@ Knowledge：个人知识库，用于保存、搜索、访问和浏览所有你�
 
 简介：致力于实现快速的场景分割功能，利用了深度学习技术，能够有效地将图像中的各个部分分割开来，适用于各种场景和不同的物体。
 地址：github.com/CASIA-IVA-Lab/FastSAM
+
+# 15. 语言大模型面试题
+
+https://www.mlstack.cafe/blog/large-language-models-llms-interview-questions

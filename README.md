@@ -165,6 +165,7 @@
 | [**27. 假如你的车子有4个激光雷达，你如何设计点云分割算法？**](IndustryAlgorithm/Reference.md)           | 
 | [**28. 假如当前需要你把场景里的砖头分割出来，靠点云分割能否正确识别？**](IndustryAlgorithm/Reference.md)           | 
 | [**29. 点云中的水雾怎么去除？**](IndustryAlgorithm/Reference.md)           | 
+| [**30. 针对目标检测任务，？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
@@ -184,6 +185,7 @@
 | [**11. 分割网络损失函数Dice Loss代码实现**](CodeAnything/Reference.md) |      |  
 | [**12. Numpy实现一个函数来计算两个向量之间的余弦相似度**](CodeAnything/Reference.md) |      |  
 | [**13. Numpy实现Sigmoid函数**](CodeAnything/Reference.md) |      |  
+| [**14. 使用Pytorch搭建一个CNN卷积神经网络**](CodeAnything/Reference.md) |      |  
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>
@@ -203,6 +205,7 @@
 | [**12. Stability AI提供的一系列生成模型**](AwesomeProjects/Reference.md)           |  
 | [**13. 自监督方式学习强大视觉特征的框架DINOv2**](AwesomeProjects/Reference.md)           |  
 | [**14. 快速的场景分割FastSAM**](AwesomeProjects/Reference.md)           |  
+| [**15. 语言大模型面试题**](AwesomeProjects/Reference.md)           |  
 
 
 
