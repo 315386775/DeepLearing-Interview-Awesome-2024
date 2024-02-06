@@ -48,6 +48,8 @@
 | [**32. Transformer中的Attention计算复杂度以及如何改进？**](LLMs/Reference.md)           | 
 | [**33. 进行SFT操作的时候，基座模型选用Chat还是Base?**](LLMs/Reference.md)           | 
 | [**34. 开源大模型进行预训练的过程中会加入书籍、论文等数据，这部分数据如何组织与处理?**](LLMs/Reference.md)           | 
+| [**35. 你能提供一些大型语言模型中对齐问题的示例吗？**](LLMs/Reference.md)           | 
+| [**36. Adaptive Softmax在大型语言模型中有何用处？**](LLMs/Reference.md)           | 
 
 
 
