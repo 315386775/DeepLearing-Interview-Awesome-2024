@@ -212,7 +212,7 @@
 
 **欢迎大家一起共创该项目，也可加博主微信探讨交流**
 
-![Alt](assert/wechat.png#pic_center=600x400)
+![Alt](assert/wechat.png#pic_center=300x200)
 
 
 
