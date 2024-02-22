@@ -123,3 +123,12 @@ Step 4 Fuse by weight
 # 29. 点云中的水雾怎么去除？
 
 水雾可通过加强激光雷达强度或采用毫米波雷达等多传感器融合的方法来增强激光的穿透能力，从而去除水雾。
+
+# 30. 车宽测距和接地点测距分别使用了什么样的先验知识？这些先验如果不成立的时候能有什么手段来放宽限制？
+
+[CNN靠什么得到深度线索](https://zhuanlan.zhihu.com/p/95758284)
+
+# 31. 车辆行驶过程中 Pitch 角度的三种方法？
+
+[单目相机的测距](https://funnywii.com/archives/%E5%8D%95%E7%9B%AE%E7%9B%B8%E6%9C%BA%E7%9A%84%E6%B5%8B%E8%B7%9D-thedistanceestimationofmonocularcamera)
+

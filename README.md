@@ -5,7 +5,7 @@
 
 2024算法面试题目持续更新，具体请 follow [2024年深度学习算法与大模型面试指南](https://github.com/315386775/DeepLearing-Interview-Awesome-2024)，喜欢本项目的请右上角点个star，同时也欢迎大家一起共创该项目。
 
-该项目是持续更新：
+该项目持续更新：
 
 - 本文录入题目的原则：**高新深**，其中高是指-各大厂公司近年高频算法面试题，新是指-题目要新紧跟学术和工业界的发展，比如录入了大量大模型领域的面试题，深是指-题目要有一定的内容与深度，可以引人思考，比如面向业务场景改进的面试题；
 - 目前录入列表的题目，存在部分没有答案解析的题目，或者解析内容不全的题目，我们会尽快补上所有解析；
@@ -167,7 +167,8 @@
 | [**27. 假如你的车子有4个激光雷达，你如何设计点云分割算法？**](IndustryAlgorithm/Reference.md)           | 
 | [**28. 假如当前需要你把场景里的砖头分割出来，靠点云分割能否正确识别？**](IndustryAlgorithm/Reference.md)           | 
 | [**29. 点云中的水雾怎么去除？**](IndustryAlgorithm/Reference.md)           | 
-| [**30. 针对目标检测任务，？**](IndustryAlgorithm/Reference.md)           | 
+| [**30. 车宽测距和接地点测距分别使用了什么样的先验知识？这些先验如果不成立的时候能有什么手段来放宽限制？**](IndustryAlgorithm/Reference.md)           | 
+| [**31. 车辆行驶过程中 Pitch 角度的三种方法？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
@@ -209,7 +210,9 @@
 | [**14. 快速的场景分割FastSAM**](AwesomeProjects/Reference.md)           |  
 | [**15. 语言大模型面试题**](AwesomeProjects/Reference.md)           |  
 
+**欢迎大家一起共创该项目，也可加博主微信探讨交流**
 
+![Alt](assert/wechat.png#pic_center=600x400)
 
 
 
