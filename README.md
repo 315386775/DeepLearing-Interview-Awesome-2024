@@ -50,6 +50,9 @@
 | [**34. 开源大模型进行预训练的过程中会加入书籍、论文等数据，这部分数据如何组织与处理?**](LLMs/Reference.md)           | 
 | [**35. 你能提供一些大型语言模型中对齐问题的示例吗？**](LLMs/Reference.md)           | 
 | [**36. Adaptive Softmax在大型语言模型中有何用处？**](LLMs/Reference.md)           | 
+| [**37. BERT的预训练过程中是否使用了位置编码和注意力机制？**](LLMs/Reference.md)           | 
+| [**38. 如何解决chatglm微调的灾难性遗忘问题？**](LLMs/Reference.md)           | 
+| [**39. Stable Diffusion的训练过程和预测过程是什么样的？**](LLMs/Reference.md)           | 
 
 
 
@@ -98,6 +101,7 @@
 | [**39. 在轻量化模型中，举例一些从参数量、浮点运算量、模型推理时延进行优化的代表模型？**](VisionPerception/Reference.md) |      |  
 | [**40. FPN的特征融合为什么是相加操作呢？**](VisionPerception/Reference.md) |      |  
 | [**41. 如何理解concat和add这两种常见的feature map特征融合方式?**](VisionPerception/Reference.md) |      |  
+| [**42. GAN中的模式坍缩的识别和解决？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -133,6 +137,7 @@
 | [**28. 如何处理不平衡的数据集？**](DeepLearning/Reference.md)           |  
 | [**29. Pytorch代码中如何尽量避免.to(device)的操作？**](DeepLearning/Reference.md)           |  
 | [**30. Pytorch中nn.Identity()/torch.chunk/torch.masked_select/torch.gather操作的应用场景？**](DeepLearning/Reference.md)           |  
+| [**31. 如何将大模型有效地切割成若干个子模型？如何将切割后的子模型分配到多个节点上进行并行训练？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
