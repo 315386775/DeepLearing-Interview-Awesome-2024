@@ -132,3 +132,9 @@ Step 4 Fuse by weight
 
 [单目相机的测距](https://funnywii.com/archives/%E5%8D%95%E7%9B%AE%E7%9B%B8%E6%9C%BA%E7%9A%84%E6%B5%8B%E8%B7%9D-thedistanceestimationofmonocularcamera)
 
+
+# 34. 单目3D目标检测的预测信息包含哪些，在预测3D框中心偏差时针对截断目标如何处理？
+
+[截断目标单目3D预测](https://developer.aliyun.com/article/1376388)
+
+

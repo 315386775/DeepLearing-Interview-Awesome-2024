@@ -102,6 +102,7 @@
 | [**40. FPN的特征融合为什么是相加操作呢？**](VisionPerception/Reference.md) |      |  
 | [**41. 如何理解concat和add这两种常见的feature map特征融合方式?**](VisionPerception/Reference.md) |      |  
 | [**42. GAN中的模式坍缩的识别和解决？**](VisionPerception/Reference.md) |      |  
+| [**43. 简述深度估计任务中常用到的光度重建损失？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>
@@ -173,7 +174,10 @@
 | [**28. 假如当前需要你把场景里的砖头分割出来，靠点云分割能否正确识别？**](IndustryAlgorithm/Reference.md)           | 
 | [**29. 点云中的水雾怎么去除？**](IndustryAlgorithm/Reference.md)           | 
 | [**30. 车宽测距和接地点测距分别使用了什么样的先验知识？这些先验如果不成立的时候能有什么手段来放宽限制？**](IndustryAlgorithm/Reference.md)           | 
-| [**31. 车辆行驶过程中 Pitch 角度的三种方法？**](IndustryAlgorithm/Reference.md)           | 
+| [**31. 车辆行驶过程中 Pitch 角度估计的三种方法？**](IndustryAlgorithm/Reference.md)           | 
+| [**32. 如何消除一堆3D点云中的角点？**](IndustryAlgorithm/Reference.md)           | 
+| [**33. 如何将 3D 世界坐标点转换为 2D 图像坐标？**](IndustryAlgorithm/Reference.md)           | 
+| [**34. 单目3D目标检测的预测信息包含哪些，在预测3D框中心偏差时针对截断目标如何处理？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
