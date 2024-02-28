@@ -137,4 +137,7 @@ Step 4 Fuse by weight
 
 [截断目标单目3D预测](https://developer.aliyun.com/article/1376388)
 
+# 35. 通过几何关系估计深度过程中，由于高度的误差使得深度的估计不确定性高，如何缓解？
+
+[单目3D预测](https://zhuanlan.zhihu.com/p/435139846)
 

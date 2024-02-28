@@ -261,3 +261,22 @@ Diffusion的缺点是在反向扩散过程中需要把完整尺寸的图片输�
 # 38. 如何解决chatglm微调的灾难性遗忘问题？
 
 https://zhuanlan.zhihu.com/p/628438318
+
+# 40. GPT3、LLAMA的Layer Normalization 的区别是什么？
+
+- GPT3：采用了Post-Layer Normalization（后标准化）的结构，即先进行自注意力或前馈神经网络的计算，然后进行Layer Normalization。这种结构有助于稳定训练过程，提高模型性能。
+
+- LLAMA：采用了Pre-Layer Normalization（前标准化）的结构，即先进行Layer Normalization，然后进行自注意力或前馈神经网络的计算。这种结构有助于提高模型的泛化能力和鲁棒性。
+
+# 41. MHA多头注意力和MQA多查询注意力的区别？
+
+- 与MHA不同的是，MQA 让所有的头之间共享同一份 Key 和 Value 矩阵，每个头只单独保留了一份 Query 参数，从而大大减少 Key 和 Value 矩阵的参数量。
+
+# 42. 推理优化技术 Flash Attention 的作用是什么？
+
+Flash Attention 是一种高效的注意力机制实现，如共享张量核心和高效的内存使用，以减少内存占用并提高计算速度。这种方法特别适用于具有长序列和大型模型参数的场景，例如自然语言处理和推荐系统。
+
+# 43. ZeRO，零冗余优化器的三个阶段？
+
+- 将优化器状态分割到不同设备上，减少内存占用；除了优化器状态，还将模型参数分割到不同设备上；将梯度和优化器状态也分割到不同设备上，实现最大的内存节省。
+

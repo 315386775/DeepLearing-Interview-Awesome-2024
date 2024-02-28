@@ -53,6 +53,10 @@
 | [**37. BERT的预训练过程中是否使用了位置编码和注意力机制？**](LLMs/Reference.md)           | 
 | [**38. 如何解决chatglm微调的灾难性遗忘问题？**](LLMs/Reference.md)           | 
 | [**39. Stable Diffusion的训练过程和预测过程是什么样的？**](LLMs/Reference.md)           | 
+| [**40. GPT3、LLAMA的Layer Normalization 的区别是什么？**](LLMs/Reference.md)           | 
+| [**41. MHA多头注意力和MQA多查询注意力的区别？**](LLMs/Reference.md)           | 
+| [**42. 推理优化技术 Flash Attention 的作用是什么？**](LLMs/Reference.md)           | 
+| [**43. ZeRO，零冗余优化器的三个阶段？**](LLMs/Reference.md)           | 
 
 
 
@@ -139,6 +143,7 @@
 | [**29. Pytorch代码中如何尽量避免.to(device)的操作？**](DeepLearning/Reference.md)           |  
 | [**30. Pytorch中nn.Identity()/torch.chunk/torch.masked_select/torch.gather操作的应用场景？**](DeepLearning/Reference.md)           |  
 | [**31. 如何将大模型有效地切割成若干个子模型？如何将切割后的子模型分配到多个节点上进行并行训练？**](DeepLearning/Reference.md)           |  
+| [**32. Pytorch训练时经常会合并多个数据集，ConcatDataset具体做了什么？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -178,6 +183,7 @@
 | [**32. 如何消除一堆3D点云中的角点？**](IndustryAlgorithm/Reference.md)           | 
 | [**33. 如何将 3D 世界坐标点转换为 2D 图像坐标？**](IndustryAlgorithm/Reference.md)           | 
 | [**34. 单目3D目标检测的预测信息包含哪些，在预测3D框中心偏差时针对截断目标如何处理？**](IndustryAlgorithm/Reference.md)           | 
+| [**35. 通过几何关系估计深度过程中，由于高度的误差使得深度的估计不确定性高，如何缓解？**](IndustryAlgorithm/Reference.md)           | 
 
 
 
