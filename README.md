@@ -13,6 +13,7 @@
 
 <b><summary>🏆大模型(LLMs)专题</summary></b>
 
+
 | [**01. 大模型常用微调方法LORA和Ptuning的原理**](LLMs/Reference.md) |
 | :------------------------------------------- |
 | [**02. 介绍一下stable diffusion的原理**](LLMs/Reference.md)           | 
@@ -107,6 +108,8 @@
 | [**41. 如何理解concat和add这两种常见的feature map特征融合方式?**](VisionPerception/Reference.md) |      |  
 | [**42. GAN中的模式坍缩的识别和解决？**](VisionPerception/Reference.md) |      |  
 | [**43. 简述深度估计任务中常用到的光度重建损失？**](VisionPerception/Reference.md) |      |  
+| [**44. 解释YOLOv5模型输出(1, 25200, 85)的含义，及解码过程？**](VisionPerception/Reference.md) |      |  
+| [**45. 解释Centernet模型输出offset/scale/heatmap三个头的含义，及解码过程？**](VisionPerception/Reference.md) |      |  
 
 
 <b><summary>⏰深度学习基础与框架专题</summary></b>

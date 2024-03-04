@@ -359,3 +359,38 @@ add是描述图像的特征下的信息量增多了，但是描述图像的维�
 2. 使用Wasserstein GAN (WGAN)：WGAN使用Wasserstein距离作为损失函数，可以提供更平滑的梯度信息，有助于提高训练的稳定性，并降低模式坍塌的风险。
 
 3. 使用WGAN-GP（Wasserstein GAN with Gradient Penalty）：在WGAN的基础上，通过添加梯度惩罚项，进一步增强训练稳定性。
+
+# 44. 解释YOLOv5模型输出(1, 25200, 85)的含义，及解码过程？
+
+在Yolov5中，输出张量的形状通常是(1, 25200, 85)，其中1表示批量大小，25200是预测框的数量（通常为3 x (H/32) x (W/32) + 3 x (H/16) x (W/16) + 3 x (H/8) x (W/8)，其中H和W是输入图像的高度和宽度），85是每个预测框的编码信息（4个坐标、1个置信度和80个类别概率）。
+
+```python
+def process_output(output):
+    predictions = np.squeeze(output[0])
+
+    # Filter out object confidence scores below threshold
+    obj_conf = predictions[:, 4]
+    predictions = predictions[obj_conf > self.conf_threshold]
+    obj_conf = obj_conf[obj_conf > self.conf_threshold]
+
+    # Multiply class confidence with bounding box confidence
+    predictions[:, 5:] *= obj_conf[:, np.newaxis]
+
+    # Get the scores
+    scores = np.max(predictions[:, 5:], axis=1)
+
+    # Filter out the objects with a low score
+    predictions = predictions[obj_conf > self.conf_threshold]
+    scores = scores[scores > self.conf_threshold]
+
+    # Get the class with the highest confidence
+    class_ids = np.argmax(predictions[:, 5:], axis=1)
+
+    # Get bounding boxes for each object
+    boxes = self.extract_boxes(predictions)
+
+    # Apply non-maxima suppression to suppress weak, overlapping bounding boxes
+    indices = nms(boxes, scores, self.iou_threshold)
+    
+    return boxes[indices], scores[indices], class_ids[indices]
+```
