@@ -317,3 +317,13 @@ ConcatDataset继承自Dataset类, 构造函数要求一个列表L作为输入，
 
 https://zhuanlan.zhihu.com/p/222772996
 
+
+# 05. Pytorch Lighting的设计哲学，及你觉得好用的点
+
+Pytorch-lightning 的核心设计哲学是将 深度学习项目中的 研究代码(定义模型) 和 工程代码 (训练模型) 相互分离。深度学习项目代码可以分成如下4部分：
+
+- 研究代码 (Research code)，用户继承LightningModule实现。
+- 工程代码 (Engineering code)，用户无需关注通过调用Trainer实现。
+- 非必要代码 （Non-essential research code，logging, etc...），用户通过调用Callbacks实现。
+- 数据 (Data)，用户通过torch.utils.data.DataLoader实现，也可以封装成pl.LightningDataModule。
+

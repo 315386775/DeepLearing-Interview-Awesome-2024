@@ -162,6 +162,7 @@
 | [**02. MMengine 的一些特性，其基础配置包含哪些内容**](DeepLearning/Reference.md) |  
 | [**03. MMdetect 中添加一个自定义的backbone网络，需要改哪些代码**](DeepLearning/Reference.md)           |  
 | [**04. MMCV 中Hook机制简介及创建一个新的Hook**](DeepLearning/Reference.md) | 
+| [**05. Pytorch Lighting的设计哲学，及你觉得好用的点**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
