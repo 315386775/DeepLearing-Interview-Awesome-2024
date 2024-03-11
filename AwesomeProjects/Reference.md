@@ -78,3 +78,7 @@ Knowledge：个人知识库，用于保存、搜索、访问和浏览所有你�
 # 15. 语言大模型面试题
 
 https://www.mlstack.cafe/blog/large-language-models-llms-interview-questions
+
+# 16. 整理开源的中文大语言模型
+
+https://github.com/HqWu-HITCS/Awesome-Chinese-LLM

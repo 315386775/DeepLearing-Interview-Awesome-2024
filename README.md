@@ -83,6 +83,7 @@
 | [**06. 通用模块：FPN的特征融合为什么是相加操作呢？**](VisionPerception/Reference.md) | 
 | [**07. 通用模块：如何理解concat和add这两种常见的feature map特征融合方式？**](VisionPerception/Reference.md) | 
 | [**08. 通用模块：Transformer的注意力机制常用softmax函数，可以使用sigmoid代替吗？**](VisionPerception/Reference.md) | 
+| [**09. 通用模块：在设计轻量化模型时，有哪些一些基本的原则？concat和add相比哪个更耗时？**](VisionPerception/Reference.md) | 
 
 - 目标分类
 
@@ -175,6 +176,7 @@
 | [**04. 算子问题：Transformer/CNN/RNN的时间复杂度对比**](DeepLearning/Reference.md) |  
 | [**05. 算子问题：深度可分离卷积**](DeepLearning/Reference.md) |  
 | [**06. 算子问题：CNN和MLP的区别**](DeepLearning/Reference.md) |  
+| [**06. 算子问题：max pooling如何操作？什么场景下 average 比 max pooling 更合适**](DeepLearning/Reference.md) |  
 | [**07. 损失函数：损失函数的应用-合页损失**](DeepLearning/Reference.md) | 
 | [**08. 损失函数：为什么交叉熵可以作为损失函数**](DeepLearning/Reference.md) |  
 | [**09. 优化算法：优化算法之异同 SGD/AdaGrad/Adam**](DeepLearning/Reference.md) |  
@@ -244,24 +246,36 @@
 | [**04. 如何在数据量十分有限，但特征数量极多的情况下选出一套合适的特征组合？**](IndustryAlgorithm/Reference.md)           | 
 | [**05. SAM的点提示和框提示输入尺寸，框提示是否支持多个框？**](IndustryAlgorithm/Reference.md)           | 
 | [**06. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
+| [**07. 提供一个图片数据集，其中一部分是噪声图片也就是标签是错误的，请问怎么训练模型尽可能把效果达到最好？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
-| [**01. Pytorch实现注意力机制、多头注意力**](CodeAnything/Reference.md) |
+| [**01. Pytorch 实现注意力机制、多头注意力**](CodeAnything/Reference.md) |
 | :------------------------------------------- |
-| [**02. Numpy广播机制实现矩阵间L2距离的计算**](CodeAnything/Reference.md) | 
-| [**03. Conv2D卷积的Python和C++实现**](CodeAnything/Reference.md) |      |  
-| [**04. Numpy实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
-| [**05. Numpy实现Focalloss**](CodeAnything/Reference.md) |      |  
-| [**06. Python实现非极大值抑制nms、softnms**](CodeAnything/Reference.md) |      |  
-| [**07. Python实现BN批量归一化**](CodeAnything/Reference.md) |      |  
-| [**08. Pytorch手写Conv+Bn+Relu，及如何合并**](CodeAnything/Reference.md) |      |  
-| [**09. 描述图像resize的过程并实现**](CodeAnything/Reference.md) |      |  
-| [**10. PyTorch卷积与BatchNorm的融合**](CodeAnything/Reference.md) |      |  
-| [**11. 分割网络损失函数Dice Loss代码实现**](CodeAnything/Reference.md) |      |  
-| [**12. Numpy实现一个函数来计算两个向量之间的余弦相似度**](CodeAnything/Reference.md) |      |  
-| [**13. Numpy实现Sigmoid函数**](CodeAnything/Reference.md) |      |  
-| [**14. 使用Pytorch搭建一个CNN卷积神经网络**](CodeAnything/Reference.md) |      |  
+| [**02. Pytorch 搭建一个基础模块，包含Conv+Bn+Relu**](CodeAnything/Reference.md) |      |  
+| [**03. Pytorch 搭建一个CNN卷积神经网络**](CodeAnything/Reference.md) |      |  
+| [**04. PyTorch 卷积与BatchNorm的融合**](CodeAnything/Reference.md) |      |  
+| [**05. PyTorch 分割网络损失函数Dice Loss的代码实现**](CodeAnything/Reference.md) |      |  
+| [**06. PyTorch 实现Focalloss**](CodeAnything/Reference.md) |      |  
+| [**07. Pytorch 实现BN批量归一化**](CodeAnything/Reference.md) |      |  
+| [**08. Pytorch 针对L1损失的输入需要做数值的截断，构建CustomL1Loss类**](CodeAnything/Reference.md) |      |  
+| [**08. Pytorch 实现SGD优化算法**](CodeAnything/Reference.md) |      |  
+| [**08. Pytorch 实现Triplet Loss**](CodeAnything/Reference.md) |      |  
+| [**09. Numpy 广播机制实现矩阵间L2距离的计算**](CodeAnything/Reference.md) | 
+| [**10. Numpy 输入boxA, boxB实现bbox_iou的计算**](CodeAnything/Reference.md) |      |  
+| [**11. Numpy 输入两组坐标实现IOU的计算**](CodeAnything/Reference.md) |      |  
+| [**12. Numpy 实现Focalloss**](CodeAnything/Reference.md) |      |  
+| [**13. Numpy 实现非极大值抑制NMS**](CodeAnything/Reference.md) |      |  
+| [**14. Numpy 实现改进版本的非极大值抑制Soft-nms**](CodeAnything/Reference.md) |      |  
+| [**15. Numpy 实现一个函数来计算两个向量之间的余弦相似度**](CodeAnything/Reference.md) |      |  
+| [**16. Numpy 实现Sigmoid函数**](CodeAnything/Reference.md) |      |  
+| [**17. Numpy 实现Softmax函数**](CodeAnything/Reference.md) |      |  
+| [**18. Numpy 实现K-means聚类**](CodeAnything/Reference.md) |      |  
+| [**18. Numpy 完成稀疏矩阵的类，并实现add和multiply的操作**](CodeAnything/Reference.md) |      |  
+| [**19. C++ 描述图像resize的过程并实现**](CodeAnything/Reference.md) |      |  
+| [**20. C++ Conv2D卷积的实现**](CodeAnything/Reference.md) |      |  
+
+
 
 
 <b><summary>🚩优异开源资源推荐专题</summary></b>
@@ -282,6 +296,7 @@
 | [**13. 自监督方式学习强大视觉特征的框架DINOv2**](AwesomeProjects/Reference.md)           |  
 | [**14. 快速的场景分割FastSAM**](AwesomeProjects/Reference.md)           |  
 | [**15. 语言大模型面试题**](AwesomeProjects/Reference.md)           |  
+| [**16. Awesome Chinese LLM 整理开源的中文大语言模型**](AwesomeProjects/Reference.md)           |  
 
 **欢迎大家一起共创该项目，也可加博主微信探讨交流**
 

@@ -392,6 +392,22 @@ def dice_coef_loss(y_true, y_pred):
     return 1-dice_coef(y_true, y_pred)
 ```
 
+# 08. Pytorch 针对L1损失的输入需要做数值的截断，构建CustomL1Loss类
+
+```python
+class CustomL1Loss(nn.Module):
+    def __init__(self, low=-128, high=128):
+        super().__init__()
+        self.low, self.high = low, high
+        self.l1_loss = nn.SmoothL1Loss()
+
+    def forward(self, output, target):
+        output = torch.clip(output, min=self.low, max=self.high)
+        target = torch.clip(target, min=self.low, max=self.high)
+        return self.l1_loss(output, target)
+```
+
+
 # 12. Numpy实现一个函数来计算两个向量之间的余弦相似度
 
 ```python
@@ -411,9 +427,66 @@ import numpy as np
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
+
+def softmax(x):
+    shift_x = x - np.max(x)
+    exp_x = np.exp(shift_x)
+    return exp_x / np.sum(exp_x)
 ```
 
+# 18. Numpy 完成稀疏矩阵的类，并实现add和multiply的操作
 
+```python
+class SparseMatrix:
+    def __init__(self, matrix):
+        self.matrix = matrix
+
+    def add(self, other_matrix):
+        result = []
+        for i in range(len(self.matrix)):
+            row = []
+            for j in range(len(self.matrix[0])):
+                row.append(self.matrix[i][j] + other_matrix.matrix[i][j])
+            result.append(row)
+        return SparseMatrix(result)
+
+    def multiply(self, other_matrix):
+        result = []
+        for i in range(len(self.matrix)):
+            row = []
+            for j in range(len(other_matrix.matrix[0])):
+                element = 0
+                for k in range(len(self.matrix[0])):
+                    element += self.matrix[i][k] * other_matrix.matrix[k][j]
+                row.append(element)
+            result.append(row)
+        return SparseMatrix(result)
+
+    def __str__(self):
+        return '\n'.join([' '.join(map(str, row)) for row in self.matrix])
+
+# 测试
+matrix1 = SparseMatrix([[1, 0, 0], [0, 0, 2]])
+matrix2 = SparseMatrix([[0, 0, 3], [0, 4, 0]])
+```
+
+# 08. Pytorch 实现SGD优化算法
+
+```python
+from torch import optim
+from optimizers.misc import validator, Optimizer
+
+
+class SGD(Optimizer):
+    def __init__(self, params, lr):
+        self.lr = lr
+        super(SGD, self).__init__(params)
+
+    def step(self):
+        for p in self.params:
+            if p.grad is not None:
+                p.data -= self.lr * p.grad.data
+```
 
 
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
