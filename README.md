@@ -123,6 +123,8 @@
 | [**10. 样本匹配策略：Anchor-Based检测器在正负样本标签分配阶段，如何去除对anchor的依赖？**](VisionPerception/Reference.md) | 
 | [**11. 样本匹配策略：目标检测如何选取正负样本将会极大的影响最后的检测效果，举例ATSS如何处理的？**](VisionPerception/Reference.md) |
 | [**12. 损失函数优化：FCOS的损失函数中centerness的作用**](VisionPerception/Reference.md) |
+| [**12. 样本匹配策略：FCOS构建正负样本阶段，如果大尺度和小尺度的重叠，比如人和手中的苹果，怎么处理？**](VisionPerception/Reference.md) |
+| [**12. 损失函数优化：FCOS使用 area-based 方法解决正样本分配的歧义性问题，其对大目标不太友好？还有没有更优的方案？**](VisionPerception/Reference.md) |
 | [**13. 损失函数优化：有哪些可以解决目标检测中正负样本不平衡问题的方法**](VisionPerception/Reference.md) | 
 | [**14. 细节问题：Yolov5与Yolov4相比neck部分有什么不同**](VisionPerception/Reference.md)           | 
 | [**15. 细节问题：Yolov5的Foucs层和Passthrough层有什么区别**](VisionPerception/Reference.md)           | 
