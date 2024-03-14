@@ -17,7 +17,7 @@
 
 欢迎关注微信公众号：***码科智能***，每日八点一刻更新计算机视觉及大模型相关开源项目/代码指南/论文解读等内容。
 
-<img src="assert/markai.png" alt="Alt" style="display: block; margin: 0 auto; width: 400px; height: 380px;">
+<img src="assert/markai.png" alt="Alt" style="display: block; margin: 0 auto; width: 200px; height: 190px;">
 
 ### 六大专题及题目列表
 
