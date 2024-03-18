@@ -145,6 +145,8 @@
 | [**03. 模型问题：分割一切网络SAM如何处理目标的分割掩码输出？**](VisionPerception/Reference.md) |
 | [**04. 模型问题：SAM在本地的模型推理效果明显差于线上web版本，有什么方式可以优化其效果？**](VisionPerception/Reference.md) |
 | [**05. 基座模型：VIT直接用于分割检测等预测密集型的任务上存在什么问题？**](VisionPerception/Reference.md) |
+| [**06. 模型问题：分割网络采用编解码的方式，在解码器中使用反池化/空洞卷积/双线性插值对特征图进行上采样的区别？**](VisionPerception/Reference.md) |
+| [**06. 模型问题：分割网络编码部分常用的最大池化和下采样的组合实现了不变性，但对定位精度有一定的影响，与一个全连接条件随机场(CRF)相结合实现定位的优化？**](VisionPerception/Reference.md) |
 
 
 - 对抗网络/视频理解/图像增强/深度估计等
