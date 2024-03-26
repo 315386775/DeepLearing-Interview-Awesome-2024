@@ -54,6 +54,8 @@
 | [**39. Stable Diffusion的训练过程和预测过程是什么样的？**](LLMs/Reference.md)           | 
 | [**11. 基座模型：SAM分割一切网络中的Promot类型以及如何输入进网络**](LLMs/Reference.md)           | 
 | [**26. 基座模型：训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
+| [**26. 基座模型：Grounding DINO可以根据文字提示检测任意目标，简述网络的基本架构？**](LLMs/Reference.md)           | 
+| [**26. 基座模型：Grounding DINO如何进行零样本迁移，比如要检测电路板中的电容电阻？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
