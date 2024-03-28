@@ -150,6 +150,14 @@
 | [**06. 模型问题：分割网络采用编解码的方式，在解码器中使用反池化/空洞卷积/双线性插值对特征图进行上采样的区别？**](VisionPerception/Reference.md) |
 | [**06. 模型问题：分割网络编码部分常用的最大池化和下采样的组合实现了不变性，但对定位精度有一定的影响，与一个全连接条件随机场(CRF)相结合实现定位的优化？**](VisionPerception/Reference.md) |
 
+- 3D目标检测
+
+| [**01. 单目3D：FCOS3D训练阶段如何定义正负样本**](VisionPerception/Reference.md) |
+| :------------------------------------------- |
+| [**02. 单目3D：简述FCOS3D的head部分的结构，以及预测2.5D中心点offset的参考点定义？**](VisionPerception/Reference.md)           |
+| [**03. 单目3D：简述FCOS3D的解码过程，及其中在2D图像上的三维目标框如何获取？**](VisionPerception/Reference.md)           |
+| [**03. 单目3D：FCOS3D及大多数单目3D都是基于孤立的实例或像素来估计深度，而忽略了不同物体之间的几何关系，你有什么改进策略？**](VisionPerception/Reference.md)           |
+
 
 - 对抗网络/视频理解/图像增强/深度估计等
 
