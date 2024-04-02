@@ -56,6 +56,7 @@
 | [**26. 基座模型：训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
 | [**26. 基座模型：Grounding DINO可以根据文字提示检测任意目标，简述网络的基本架构？**](LLMs/Reference.md)           | 
 | [**26. 基座模型：Grounding DINO如何进行零样本迁移，比如要检测电路板中的电容电阻？**](LLMs/Reference.md)           | 
+| [**26. 基座模型：SAM网络轻量化的几种思路，及代表性工作？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
@@ -94,6 +95,7 @@
 | [**07. 通用模块：如何理解concat和add这两种常见的feature map特征融合方式？**](VisionPerception/Reference.md) | 
 | [**08. 通用模块：Transformer的注意力机制常用softmax函数，可以使用sigmoid代替吗？**](VisionPerception/Reference.md) | 
 | [**09. 通用模块：在设计轻量化模型时，有哪些一些基本的原则？concat和add相比哪个更耗时？**](VisionPerception/Reference.md) | 
+| [**10. 通用模块：轻量级CNN网络，常采用深度可分离卷积，其中的点卷积FLOPs和MAC如何计算？**](VisionPerception/Reference.md) | 
 
 - 目标分类
 
@@ -148,7 +150,7 @@
 | [**04. 模型问题：SAM在本地的模型推理效果明显差于线上web版本，有什么方式可以优化其效果？**](VisionPerception/Reference.md) |
 | [**05. 基座模型：VIT直接用于分割检测等预测密集型的任务上存在什么问题？**](VisionPerception/Reference.md) |
 | [**06. 模型问题：分割网络采用编解码的方式，在解码器中使用反池化/空洞卷积/双线性插值对特征图进行上采样的区别？**](VisionPerception/Reference.md) |
-| [**06. 模型问题：分割网络编码部分常用的最大池化和下采样的组合实现了不变性，但对定位精度有一定的影响，与一个全连接条件随机场(CRF)相结合实现定位的优化？**](VisionPerception/Reference.md) |
+| [**07. 模型问题：分割网络编码部分常用的最大池化和下采样的组合实现了不变性，但对定位精度有一定的影响，与一个全连接条件随机场(CRF)相结合实现定位的优化？**](VisionPerception/Reference.md) |
 
 - 3D目标检测
 
@@ -156,7 +158,7 @@
 | :------------------------------------------- |
 | [**02. 单目3D：简述FCOS3D的head部分的结构，以及预测2.5D中心点offset的参考点定义？**](VisionPerception/Reference.md)           |
 | [**03. 单目3D：简述FCOS3D的解码过程，及其中在2D图像上的三维目标框如何获取？**](VisionPerception/Reference.md)           |
-| [**03. 单目3D：FCOS3D及大多数单目3D都是基于孤立的实例或像素来估计深度，而忽略了不同物体之间的几何关系，你有什么改进策略？**](VisionPerception/Reference.md)           |
+| [**04. 单目3D：FCOS3D及大多数单目3D都是基于孤立的实例或像素来估计深度，而忽略了不同物体之间的几何关系，你有什么改进策略？**](VisionPerception/Reference.md)           |
 
 
 - 对抗网络/视频理解/图像增强/深度估计等
@@ -188,6 +190,7 @@
 | [**03. MMdetect 中添加一个自定义的backbone网络，需要改哪些代码**](DeepLearning/Reference.md)           |  
 | [**04. MMCV 中Hook机制简介及创建一个新的Hook**](DeepLearning/Reference.md) | 
 | [**05. Pytorch Lighting的设计哲学，及你觉得好用的点**](DeepLearning/Reference.md) | 
+| [**06. MMdetect 在构建模型结构时具备灵活便捷的特点，比如 ResNet style 可选参数允许 pytorch 和 caffe，两者有什么区别？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
