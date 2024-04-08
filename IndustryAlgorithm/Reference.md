@@ -141,3 +141,6 @@ Step 4 Fuse by weight
 
 [单目3D预测](https://zhuanlan.zhihu.com/p/435139846)
 
+# 36. Nuscenes数据集中相机传感器配置及标注内容包含哪些？
+
+[Nuscenes数据集](https://bbs.huaweicloud.com/blogs/349392)

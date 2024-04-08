@@ -44,6 +44,7 @@
 | [**10. BERT用于分类任务的优点，后续改进工作有哪些？**](LLMs/Reference.md)           | 
 | [**23. BERT的预训练任务有什么？为什么引入下一个句子预测任务？**](LLMs/Reference.md)           | 
 | [**37. BERT的预训练过程中是否使用了位置编码和注意力机制？**](LLMs/Reference.md)           | 
+| [**38. LangChain 通常被用作「粘合剂」，将构建 LLM 应用所需的各个模块连接在一起，请介绍下其核心模块？**](LLMs/Reference.md)           | 
 
 - 视觉模型
 
@@ -96,6 +97,8 @@
 | [**08. 通用模块：Transformer的注意力机制常用softmax函数，可以使用sigmoid代替吗？**](VisionPerception/Reference.md) | 
 | [**09. 通用模块：在设计轻量化模型时，有哪些一些基本的原则？concat和add相比哪个更耗时？**](VisionPerception/Reference.md) | 
 | [**10. 通用模块：轻量级CNN网络，常采用深度可分离卷积，其中的点卷积FLOPs和MAC如何计算？**](VisionPerception/Reference.md) | 
+| [**11. 损失函数：Focal loss支持0/1这样的离散类别标签，如果标签是0~1连续值该如何处理？**](VisionPerception/Reference.md)           | 
+| [**11. 损失函数：Focal loss过多关注难分样本，因此会受到离群点的影响，怎么同时衰减易分样本和特别难分的样本呢？**](VisionPerception/Reference.md)           | 
 
 - 目标分类
 
@@ -249,6 +252,7 @@
 | [**33. 如何将 3D 世界坐标点转换为 2D 图像坐标？**](IndustryAlgorithm/Reference.md)           | 
 | [**34. 单目3D目标检测的预测信息包含哪些，在预测3D框中心偏差时针对截断目标如何处理？**](IndustryAlgorithm/Reference.md)           | 
 | [**35. 通过几何关系估计深度过程中，由于高度的误差使得深度的估计不确定性高，如何缓解？**](IndustryAlgorithm/Reference.md)           |
+| [**36. Nuscenes数据集中相机传感器配置，及标注内容包含哪些？**](IndustryAlgorithm/Reference.md)           |
 
 - 智慧医疗
 
@@ -272,6 +276,7 @@
 | [**05. SAM的点提示和框提示输入尺寸，框提示是否支持多个框？**](IndustryAlgorithm/Reference.md)           | 
 | [**06. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
 | [**07. 提供一个图片数据集，其中一部分是噪声图片也就是标签是错误的，请问怎么训练模型尽可能把效果达到最好？**](IndustryAlgorithm/Reference.md)           | 
+| [**08. 现在要预测目标在图像上的旋转角度，比如遥感影像场景下的车辆目标旋转角度，你该如何优雅的编解码以实现更好的预测？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
