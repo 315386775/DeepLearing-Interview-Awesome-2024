@@ -162,6 +162,7 @@
 | [**02. 单目3D：简述FCOS3D的head部分的结构，以及预测2.5D中心点offset的参考点定义？**](VisionPerception/Reference.md)           |
 | [**03. 单目3D：简述FCOS3D的解码过程，及其中在2D图像上的三维目标框如何获取？**](VisionPerception/Reference.md)           |
 | [**04. 单目3D：FCOS3D及大多数单目3D都是基于孤立的实例或像素来估计深度，而忽略了不同物体之间的几何关系，你有什么改进策略？**](VisionPerception/Reference.md)           |
+| [**05. 点云3D：PointPillars将点云转换为稀疏伪图像的过程，其中Scatter运算的步骤详述？**](VisionPerception/Reference.md)           |
 
 
 - 对抗网络/视频理解/图像增强/深度估计等
@@ -184,6 +185,7 @@
 | [**06. PyTorch 节省显存的常用策略**](DeepLearning/Reference.md)           |  
 | [**07. PyTorch 的Modules一些属性问题**](DeepLearning/Reference.md) |  
 | [**08. PyTorch 中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           | 
+| [**09. PyTorch 中 ConcatDataset的使用场景及用法**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 
@@ -194,6 +196,8 @@
 | [**04. MMCV 中Hook机制简介及创建一个新的Hook**](DeepLearning/Reference.md) | 
 | [**05. Pytorch Lighting的设计哲学，及你觉得好用的点**](DeepLearning/Reference.md) | 
 | [**06. MMdetect 在构建模型结构时具备灵活便捷的特点，比如 ResNet style 可选参数允许 pytorch 和 caffe，两者有什么区别？**](DeepLearning/Reference.md) | 
+| [**07. 简述 MMdetection 中 Box Assigner分配器的两种方式？**](DeepLearning/Reference.md) | 
+| [**08. 简述 MMdetection 中 正/负样本采样器的类型，比如RandomSampler？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
