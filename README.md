@@ -186,6 +186,7 @@
 | [**07. PyTorch 的Modules一些属性问题**](DeepLearning/Reference.md) |  
 | [**08. PyTorch 中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           | 
 | [**09. PyTorch 中 ConcatDataset的使用场景及用法**](DeepLearning/Reference.md)           | 
+| [**10. PyTorch 中 nn.Upsample和interpolate插值的区别**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 
@@ -198,6 +199,8 @@
 | [**06. MMdetect 在构建模型结构时具备灵活便捷的特点，比如 ResNet style 可选参数允许 pytorch 和 caffe，两者有什么区别？**](DeepLearning/Reference.md) | 
 | [**07. 简述 MMdetection 中 Box Assigner分配器的两种方式？**](DeepLearning/Reference.md) | 
 | [**08. 简述 MMdetection 中 正/负样本采样器的类型，比如RandomSampler？**](DeepLearning/Reference.md) | 
+| [**09. torch.onnx.export()中该如何设置 input_names, output_names, dynamic_axes？**](DeepLearning/Reference.md) | 
+| [**10. 使用 torch.onnx.is_in_onnx_export()来使模型在转换到 ONNX 时有何不同的行为？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
