@@ -144,3 +144,10 @@ Step 4 Fuse by weight
 # 36. Nuscenes数据集中相机传感器配置及标注内容包含哪些？
 
 [Nuscenes数据集](https://bbs.huaweicloud.com/blogs/349392)
+
+# 09. 鱼眼相机具备更大的视场角，因此常用在一些监控场景下，如何在鱼眼图像下做检测或分割任务？
+
+矫正卷积：ADAPTING CNNS FOR FISHEYE CAMERAS WITHOUT RETRAINING
+
+https://arxiv.org/pdf/2404.08187.pdf
+

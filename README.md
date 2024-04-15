@@ -55,9 +55,13 @@
 | [**39. Stable Diffusion的训练过程和预测过程是什么样的？**](LLMs/Reference.md)           | 
 | [**11. 基座模型：SAM分割一切网络中的Promot类型以及如何输入进网络**](LLMs/Reference.md)           | 
 | [**26. 基座模型：训练通用目标检测器常会使用多源图像进行训练，如何处理新类别歧视？**](LLMs/Reference.md)           | 
-| [**26. 基座模型：Grounding DINO可以根据文字提示检测任意目标，简述网络的基本架构？**](LLMs/Reference.md)           | 
-| [**26. 基座模型：Grounding DINO如何进行零样本迁移，比如要检测电路板中的电容电阻？**](LLMs/Reference.md)           | 
-| [**26. 基座模型：SAM网络轻量化的几种思路，及代表性工作？**](LLMs/Reference.md)           | 
+| [**27. 基座模型：Grounding DINO可以根据文字提示检测任意目标，简述网络的基本架构？**](LLMs/Reference.md)           | 
+| [**28. 基座模型：Grounding DINO如何进行零样本迁移，比如要检测电路板中的电容电阻？**](LLMs/Reference.md)           | 
+| [**29. 基座模型：SAM网络轻量化的几种思路，及代表性工作？**](LLMs/Reference.md)           | 
+| [**30. Stable Diffusion XL是一个二阶段的级联扩散模型，简述其工作流？**](LLMs/Reference.md)           | 
+| [**31. 将文本与图像的语义信息进行Attention机制，而Text Condition是三维的，而Latent Feature是四维的？**](LLMs/Reference.md)           | 
+| [**32. 举例介绍SDXL模型的文本编码全过程？**](LLMs/Reference.md)           | 
+| [**33. 在SD 1.4和SD 1.5的经典失败案例中，生成图像中的猫出现头部缺失的问题的本质原因及优化方案？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
@@ -284,6 +288,7 @@
 | [**06. 为什么 larger batch size 对对比学习的影响比对监督学习的影响要大？**](IndustryAlgorithm/Reference.md)           | 
 | [**07. 提供一个图片数据集，其中一部分是噪声图片也就是标签是错误的，请问怎么训练模型尽可能把效果达到最好？**](IndustryAlgorithm/Reference.md)           | 
 | [**08. 现在要预测目标在图像上的旋转角度，比如遥感影像场景下的车辆目标旋转角度，你该如何优雅的编解码以实现更好的预测？**](IndustryAlgorithm/Reference.md)           | 
+| [**09. 鱼眼相机具备更大的视场角，因此常用在一些监控场景下，如何在鱼眼图像下做检测或分割任务？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
