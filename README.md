@@ -75,6 +75,7 @@
 | [**31. 知识蒸馏是将复杂模型的知识转移到简单模型的方法，针对知识蒸馏有哪些改进点？**](LLMs/Reference.md)           | 
 | [**42. 推理优化技术 Flash Attention 的作用是什么？**](LLMs/Reference.md)           | 
 | [**43. ZeRO，零冗余优化器的三个阶段？**](LLMs/Reference.md)           | 
+| [**44. Mamba 对 RNN 做了哪些改变，从而在GPU上可以算的比较快？**](LLMs/Reference.md)           | 
 
 - 多模态模型/强化学习/AGI等
 
@@ -158,6 +159,8 @@
 | [**05. 基座模型：VIT直接用于分割检测等预测密集型的任务上存在什么问题？**](VisionPerception/Reference.md) |
 | [**06. 模型问题：分割网络采用编解码的方式，在解码器中使用反池化/空洞卷积/双线性插值对特征图进行上采样的区别？**](VisionPerception/Reference.md) |
 | [**07. 模型问题：分割网络编码部分常用的最大池化和下采样的组合实现了不变性，但对定位精度有一定的影响，与一个全连接条件随机场(CRF)相结合实现定位的优化？**](VisionPerception/Reference.md) |
+| [**08. 模型问题：SAM中的prompt_encoder部分支持几种类型的输入，针对点提示如何编码？**](VisionPerception/Reference.md) |
+| [**08. 模型问题：matting与传统分割的区别，介绍matting的原理？**](VisionPerception/Reference.md) |
 
 - 3D目标检测
 
@@ -270,6 +273,7 @@
 | [**01. 数据标注：医学影像由于标注专业性差异，出现多人标注不一致情况怎么解决？如何用算法的方式减少误差？**](IndustryAlgorithm/Reference.md) |
 | :------------------------------------------- |
 | [**02. 模型问题：模型中如何添加病史信息来增强最终的分类效果？**](IndustryAlgorithm/Reference.md) |      |  
+| [**03. 模型问题：分割存在硬边缘问题，比如在视网膜血管分割中，如何优化边缘分割效果？？**](IndustryAlgorithm/Reference.md) |      |  
 
 - 自然语言处理/智慧商业/搜广推
 

@@ -292,3 +292,7 @@ Flash Attention 是一种高效的注意力机制实现，如共享张量核心�
 # 27. Stable Diffusion XL是一个二阶段的级联扩散模型，简述其工作流？
 
 https://zhuanlan.zhihu.com/p/643420260
+
+# 44. Mamba 对 RNN 做了哪些改变，从而在GPU上可以算的比较快？
+
+https://www.zhihu.com/question/644981978
