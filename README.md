@@ -320,6 +320,11 @@
 | [**18. Numpy 完成稀疏矩阵的类，并实现add和multiply的操作**](CodeAnything/Reference.md) |      |  
 | [**19. C++ 描述图像resize的过程并实现**](CodeAnything/Reference.md) |      |  
 | [**20. C++ Conv2D卷积的实现**](CodeAnything/Reference.md) |      |  
+| [**21. Numpy 实现线性回归损失函数最小二乘法，输入直线对应的坐标点，输出损失**](CodeAnything/Reference.md) |      |  
+| [**22. Numpy 实现线性回归，输入学习率、迭代次数及坐标点**](CodeAnything/Reference.md) |      |  
+| [**23. Numpy 实现目标实数类别的one-hot编码**](CodeAnything/Reference.md) |      |  
+| [**24. Numpy 实现交叉熵损失函数**](CodeAnything/Reference.md) |      |  
+| [**25. Pytorch 实现图像归一化的操作**](CodeAnything/Reference.md) |      |  
 
 
 

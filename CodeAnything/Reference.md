@@ -488,6 +488,76 @@ class SGD(Optimizer):
                 p.data -= self.lr * p.grad.data
 ```
 
+# 21. Numpy 实现线性回归损失函数，输入直线对应的坐标点，输出损失？
+
+```python
+# y = mx + b
+def compute_error_for_line_given_points(b, m, coordinates):
+    totalError = 0
+    for i in range(0, len(coordinates)):
+        x = coordinates[i][0]
+        y = coordinates[i][1]
+        totalError += (y - (m * x + b)) ** 2
+    return totalError / float(len(coordinates))
+
+# example 
+compute_error_for_line_given_points(1, 2, [[3,6],[6,9],[12,18]])
+```
+
+# 22. Numpy 实现线性回归，输入学习率、迭代次数及坐标点
+
+```python
+def step_gradient(b_current, m_current, points, learningRate):
+    b_gradient = 0
+    m_gradient = 0
+    N = float(len(points))
+    for i in range(0, len(points)):
+        x = points[i][0]
+        y = points[i][1]
+        b_gradient += -(2/N) * (y - ((m_current * x) + b_current))
+        m_gradient += -(2/N) * x * (y - ((m_current * x) + b_current))
+    new_b = b_current - (learningRate * b_gradient)
+    new_m = m_current - (learningRate * m_gradient)
+    return [new_b, new_m]
+
+def gradient_descent_runner(points, starting_b, starting_m, learning_rate, num_iterations):
+    b = starting_b
+    m = starting_m    
+    for i in range(num_iterations):
+        b, m = step_gradient(b, m, points, learning_rate)
+    return [b, m]
+    
+gradient_descent_runner(wheat_and_bread, 1, 1, 0.01, 100)
+```
+
+# 23. Numpy 实现目标实数类别的one-hot编码
+
+```python
+def one_hot(x, num_class=None):
+    if not num_class:
+        num_class = np.max(x) + 1
+    ohx = np.zeros((len(x), num_class))
+    ohx[range(len(x)), x] = 1
+    return ohx
+```
+
+# 25. Pytorch 实现图像归一化的操作
+
+```python
+# 定义模型
+class WhiteningLayer(nn.Module):
+    def __init__(self, kernel, bias):
+        super(WhiteningLayer, self).__init__()
+        self.conv = nn.Conv2d(in_channels=3, out_channels=3, kernel_size=1, bias=True)
+        self.conv.weight.data = kernel
+        self.conv.bias.data = bias
+
+    def forward(self, x):
+        return self.conv(x)
+
+# 实例化模型
+model = WhiteningLayer(torch.FloatTensor(kernel), torch.FloatTensor(bias))
+```
 
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
 
