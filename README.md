@@ -352,4 +352,5 @@
 | [**14. 快速的场景分割FastSAM**](AwesomeProjects/Reference.md)           |  
 | [**15. 语言大模型面试题**](AwesomeProjects/Reference.md)           |  
 | [**16. Awesome Chinese LLM 整理开源的中文大语言模型**](AwesomeProjects/Reference.md)           |  
+| [**17. 科技爱好者周刊，集结优秀的开源项目，每周五发布**](AwesomeProjects/Reference.md)           |  
 

@@ -82,3 +82,7 @@ https://www.mlstack.cafe/blog/large-language-models-llms-interview-questions
 # 16. 整理开源的中文大语言模型
 
 https://github.com/HqWu-HITCS/Awesome-Chinese-LLM
+
+# 17. 科技爱好者周刊，集结优秀的开源项目，每周五发布
+
+https://github.com/ruanyf/weekly
