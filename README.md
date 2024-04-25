@@ -17,7 +17,9 @@
 
 欢迎关注微信公众号：***码科智能***，每日八点一刻更新计算机视觉及大模型相关开源项目/代码指南/论文解读等内容。如若下述题目真正帮到你，可以请我喝杯咖啡🆒by Wechat, Thks.
 
-<img src="assert/markai.png" alt="Alt" style="display: block; margin: 0 auto; height: 190px;">
+<!-- <img src="assert/markai.png" alt="Alt" style="display: block; margin: 0 auto; height: 190px;"> -->
+
+![Alt](assert/markai.png#pic_center=600x400)
 
 ### 六大专题及题目列表
 
