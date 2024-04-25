@@ -15,7 +15,7 @@
 
 ### 更多干货 
 
-欢迎关注微信公众号：***码科智能***，每日八点一刻更新计算机视觉及大模型相关开源项目/代码指南/论文解读等内容。
+欢迎关注微信公众号：***码科智能***，每日八点一刻更新计算机视觉及大模型相关开源项目/代码指南/论文解读等内容。如若下述题目真正帮到你，可以请我喝杯咖啡🆒by Wechat, Thks.
 
 <img src="assert/markai.png" alt="Alt" style="display: block; margin: 0 auto; width: 200px; height: 190px;">
 
@@ -62,6 +62,8 @@
 | [**31. 将文本与图像的语义信息进行Attention机制，而Text Condition是三维的，而Latent Feature是四维的？**](LLMs/Reference.md)           | 
 | [**32. 举例介绍SDXL模型的文本编码全过程？**](LLMs/Reference.md)           | 
 | [**33. 在SD 1.4和SD 1.5的经典失败案例中，生成图像中的猫出现头部缺失的问题的本质原因及优化方案？**](LLMs/Reference.md)           | 
+| [**34. DINOv2创建了一个新的高质量数据集, 其中处理过程中用到了去重和检索，简述其步骤？**](LLMs/Reference.md)           | 
+| [**35. 简述DINOv2训练中 Image-level 和 Patch-level 的目标函数？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
