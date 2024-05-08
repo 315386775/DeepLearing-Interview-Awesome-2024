@@ -47,6 +47,7 @@
 | [**23. BERT的预训练任务有什么？为什么引入下一个句子预测任务？**](LLMs/Reference.md)           | 
 | [**37. BERT的预训练过程中是否使用了位置编码和注意力机制？**](LLMs/Reference.md)           | 
 | [**38. LangChain 通常被用作「粘合剂」，将构建 LLM 应用所需的各个模块连接在一起，请介绍下其核心模块？**](LLMs/Reference.md)           | 
+| [**39. 模型优化：为了提升Llama 3 的推理效率，模型结构采用分组查询注意 (GQA)，简述该模块？**](LLMs/Reference.md)           | 
 
 - 视觉模型
 
@@ -80,6 +81,9 @@
 | [**42. 推理优化技术 Flash Attention 的作用是什么？**](LLMs/Reference.md)           | 
 | [**43. ZeRO，零冗余优化器的三个阶段？**](LLMs/Reference.md)           | 
 | [**44. Mamba 对 RNN 做了哪些改变，从而在GPU上可以算的比较快？**](LLMs/Reference.md)           | 
+| [**45. 多头注意力机制MHA是Transformer模型中的核心组件, KV Cache和GQA优化的核心思想？**](LLMs/Reference.md)           | 
+| [**46. BPE（Byte Pair Encoding）、Tokenization如何影响模型性能和训练过程？**](LLMs/Reference.md)           | 
+
 
 - 多模态模型/强化学习/AGI等
 
@@ -271,6 +275,7 @@
 | [**34. 单目3D目标检测的预测信息包含哪些，在预测3D框中心偏差时针对截断目标如何处理？**](IndustryAlgorithm/Reference.md)           | 
 | [**35. 通过几何关系估计深度过程中，由于高度的误差使得深度的估计不确定性高，如何缓解？**](IndustryAlgorithm/Reference.md)           |
 | [**36. Nuscenes数据集中相机传感器配置，及标注内容包含哪些？**](IndustryAlgorithm/Reference.md)           |
+| [**37. 简述BEVformer模型在特征提取过程中，张量流的变换情况？**](IndustryAlgorithm/Reference.md)           |
 
 - 智慧医疗
 
@@ -330,6 +335,7 @@
 | [**23. Numpy 实现目标实数类别的one-hot编码**](CodeAnything/Reference.md) |      |  
 | [**24. Numpy 实现交叉熵损失函数**](CodeAnything/Reference.md) |      |  
 | [**25. Pytorch 实现图像归一化的操作**](CodeAnything/Reference.md) |      |  
+| [**26. Numpy 实现maxpooling操作**](CodeAnything/Reference.md) |      |  
 
 
 

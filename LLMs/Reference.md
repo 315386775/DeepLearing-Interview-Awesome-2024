@@ -296,3 +296,17 @@ https://zhuanlan.zhihu.com/p/643420260
 # 44. Mamba 对 RNN 做了哪些改变，从而在GPU上可以算的比较快？
 
 https://www.zhihu.com/question/644981978
+
+# 45. 多头注意力机制MHA是Transformer模型中的核心组件, KV Cache和GQA优化的核心思想？
+
+KV Cache（Key-Value Cache）：
+
+- KV Cache是一种在自回归生成模型中使用的优化技术，它通过缓存历史输入的Key（K）和Value（V）来减少重复计算，从而提高推理效率。
+- 在生成式模型的推理过程中，由于每个新生成的token都会与之前的token一起作为下一次输入，因此可以利用- KV Cache来避免对相同token的重复计算。
+- KV Cache的显存占用会随着输入序列长度和输出序列长度的增加而线性增长，因此需要对其进行优化以适应更长的序列
+
+Grouped Query Attention (GQA)：
+
+- GQA是一种介于MHA和MQA之间的折中方案，它将查询头（Query Heads）分组，并在每组中共享一个键头（Key Head）和一个值头（Value Head）。
+- GQA既保留了多头注意力的一定表达能力，又通过减少内存访问压力来加速推理速度。
+- GQA可以通过对已经训练好的模型进行微调来实现，使用mean pooling来生成共享的KV，这种方法在保持推理速度的同时也能保持较高的模型质量
