@@ -151,3 +151,7 @@ Step 4 Fuse by weight
 
 https://arxiv.org/pdf/2404.08187.pdf
 
+# 10. 昼夜跨域车辆重识别车辆重识别如何处理，即在包括白天和夜间域在内的不同域中识别相同的车辆？
+
+Day-Night Cross-domain Vehicle Re-identification，一种用于车辆重识别的 GAN-Siamese 网络结构
+

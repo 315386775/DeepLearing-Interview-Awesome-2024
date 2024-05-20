@@ -303,6 +303,7 @@
 | [**07. 提供一个图片数据集，其中一部分是噪声图片也就是标签是错误的，请问怎么训练模型尽可能把效果达到最好？**](IndustryAlgorithm/Reference.md)           | 
 | [**08. 现在要预测目标在图像上的旋转角度，比如遥感影像场景下的车辆目标旋转角度，你该如何优雅的编解码以实现更好的预测？**](IndustryAlgorithm/Reference.md)           | 
 | [**09. 鱼眼相机具备更大的视场角，因此常用在一些监控场景下，如何在鱼眼图像下做检测或分割任务？**](IndustryAlgorithm/Reference.md)           | 
+| [**10. 昼夜跨域车辆重识别车辆重识别如何处理，即在包括白天和夜间域在内的不同域中识别相同的车辆？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
