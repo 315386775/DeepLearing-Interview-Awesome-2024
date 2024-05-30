@@ -28,7 +28,7 @@
 
 - 大语言模型
 
-| [**01. 模型微调：大模型常用微调方法LORA和Ptuning的原理**](LLMs/Reference.md) |
+| [**01. 模型微调：大模型常用微调方法LORA和Ptuning的原理，与传统fine-tuning微调有何不同?**](LLMs/Reference.md) |
 | :------------------------------------------- |
 | [**30. 模型微调：Instruction Tuning与Prompt tuning方法的区别？**](LLMs/Reference.md)           | 
 | [**07. 模型微调：监督微调SFT后LLM表现下降的原因**](LLMs/Reference.md)           | 
@@ -49,6 +49,9 @@
 | [**37. BERT的预训练过程中是否使用了位置编码和注意力机制？**](LLMs/Reference.md)           | 
 | [**38. LangChain 通常被用作「粘合剂」，将构建 LLM 应用所需的各个模块连接在一起，请介绍下其核心模块？**](LLMs/Reference.md)           | 
 | [**39. 模型优化：为了提升Llama 3 的推理效率，模型结构采用分组查询注意 (GQA)，简述该模块？**](LLMs/Reference.md)           | 
+| [**40. 模型架构：llama2中使用的注意力机制是什么？**](LLMs/Reference.md)           | 
+| [**41. 模型架构：在预训练阶段，几种主流大模型的 Loss 了解过吗? 有哪些异同？**](LLMs/Reference.md)           | 
+| [**42. 模型架构：旋转位置编码（RoPE）和ALiBi位置编码分别的特点和应用场景？**](LLMs/Reference.md)           | 
 
 - 视觉模型
 
