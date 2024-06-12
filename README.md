@@ -91,6 +91,7 @@
 | [**44. Mamba 对 RNN 做了哪些改变，从而在GPU上可以算的比较快？**](LLMs/Reference.md)           | 
 | [**45. 多头注意力机制MHA是Transformer模型中的核心组件, KV Cache和GQA优化的核心思想？**](LLMs/Reference.md)           | 
 | [**46. BPE（Byte Pair Encoding）、Tokenization如何影响模型性能和训练过程？**](LLMs/Reference.md)           | 
+| [**47. 100B以上的大模型预训练中出现loss spike的原因及解决方法？**](LLMs/Reference.md)           | 
 
 
 - 多模态模型/强化学习/AGI等

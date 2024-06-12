@@ -314,3 +314,8 @@ Grouped Query Attention (GQA)：
 - GQA是一种介于MHA和MQA之间的折中方案，它将查询头（Query Heads）分组，并在每组中共享一个键头（Key Head）和一个值头（Value Head）。
 - GQA既保留了多头注意力的一定表达能力，又通过减少内存访问压力来加速推理速度。
 - GQA可以通过对已经训练好的模型进行微调来实现，使用mean pooling来生成共享的KV，这种方法在保持推理速度的同时也能保持较高的模型质量
+
+# 47. 100B以上的大模型预训练中出现loss spike的原因及解决方法？
+
+- 参考论文 < A Theory on Adam Instability in Large-Scale Machine Learning >
+- 知乎解读 https://zhuanlan.zhihu.com/p/675421518
