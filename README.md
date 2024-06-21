@@ -212,6 +212,8 @@
 | [**08. PyTorch 中的 ModuleList 和 Sequential的区别和使用场景**](DeepLearning/Reference.md)           | 
 | [**09. PyTorch 中 ConcatDataset的使用场景及用法**](DeepLearning/Reference.md)           | 
 | [**10. PyTorch 中 nn.Upsample和interpolate插值的区别**](DeepLearning/Reference.md)           | 
+| [**11. PyTorch 中 dataset与 dataloder的区别，自定义dataset需要哪些操作？**](DeepLearning/Reference.md)           | 
+| [**12. PyTorch 中 主要且常用的归一化操作有BN，LN，IN，GN，介绍下他们的区别？**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 
@@ -226,6 +228,7 @@
 | [**08. 简述 MMdetection 中 正/负样本采样器的类型，比如RandomSampler？**](DeepLearning/Reference.md) | 
 | [**09. torch.onnx.export()中该如何设置 input_names, output_names, dynamic_axes？**](DeepLearning/Reference.md) | 
 | [**10. 使用 torch.onnx.is_in_onnx_export()来使模型在转换到 ONNX 时有何不同的行为？**](DeepLearning/Reference.md) | 
+| [**11. 大模型训练一般都采用torch2.0以上版本，其中torch.compile可加速训练，介绍下如何使用以及其是否对普通的python代码起作用？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
@@ -251,6 +254,7 @@
 | [**18. 场景问题：多任务学习中各个任务损失的权重应该如何设计呢？**](DeepLearning/Reference.md)           |  
 | [**19. 场景问题：如何处理不平衡的数据集？**](DeepLearning/Reference.md)           |  
 | [**20. 场景问题：如何将大模型有效地切割成若干个子模型？如何将切割后的子模型分配到多个节点上进行并行训练？**](DeepLearning/Reference.md)           |  
+| [**21. 优化问题：神经网络权重为什么不能初始化为0，而逻辑回归参数可以初始化为0？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
