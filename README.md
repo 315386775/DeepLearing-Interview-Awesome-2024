@@ -352,6 +352,11 @@
 | [**24. Numpy 实现交叉熵损失函数**](CodeAnything/Reference.md) |      |  
 | [**25. Pytorch 实现图像归一化的操作**](CodeAnything/Reference.md) |      |  
 | [**26. Numpy 实现maxpooling操作**](CodeAnything/Reference.md) |      |  
+| [**27. Pytorch 使用torch.utils.data.Dataset类来构建自定义的数据集，根据文件名后缀来创建一个图像分类的数据集**](CodeAnything/Reference.md) |      |  
+| [**28. Python 实现逆透视变换IPM（鸟瞰图）**](CodeAnything/Reference.md) |      |  
+| [**29. Numpy 实现两个矩阵的乘法，并验证结果是否与PyTorch中的torch.matmul相同**](CodeAnything/Reference.md) |      |  
+| [**30. PyTorch 构建一个自定义层，该层实现一个简单的LReLU激活函数**](CodeAnything/Reference.md) |      |  
+| [**30. PyTorch 编写一个数据增强类，实现随机水平翻转和通道变换**](CodeAnything/Reference.md) |      |  
 
 
 

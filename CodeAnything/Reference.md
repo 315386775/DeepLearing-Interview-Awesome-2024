@@ -559,6 +559,87 @@ class WhiteningLayer(nn.Module):
 model = WhiteningLayer(torch.FloatTensor(kernel), torch.FloatTensor(bias))
 ```
 
+# 27. Pytorch 使用torch.utils.data.Dataset类来构建自定义的数据集，根据文件名后缀来创建一个图像分类的数据集
+
+```python
+import os
+from PIL import Image
+from torch.utils.data import Dataset
+from torchvision import transforms
+
+class CustomDataset(Dataset):
+    def __init__(self, root_dir, transform=None):
+        """
+        初始化数据集。
+        :param root_dir: 包含图像文件的根目录。
+        :param transform: 应用于图像的可选变换。
+        """
+        self.root_dir = root_dir
+        self.transform = transform
+        self.images = []
+        self.labels = []
+
+        # 遍历目录，收集图像路径和标签
+        for filename in os.listdir(root_dir):
+            if filename.endswith('.jpg'):  # 假设图像文件后缀为.jpg
+                label = filename.split('_')[0]  # 从文件名中提取标签
+                image_path = os.path.join(root_dir, filename)
+                self.images.append(image_path)
+                self.labels.append(label)
+
+    def __len__(self):
+        """
+        返回数据集中的图像数量。
+        """
+        return len(self.images)
+
+    def __getitem__(self, idx):
+        """
+        根据索引获取一个图像和它的标签。
+        """
+        image_path = self.images[idx]
+        image = Image.open(image_path).convert('RGB')  # 确保图像是RGB格式
+
+        if self.transform:
+            image = self.transform(image)
+
+        label = self.labels[idx]
+        return image, label
+
+# 创建数据集的变换
+transform = transforms.Compose([
+    transforms.Resize((256, 256)),  # 调整图像大小
+    transforms.ToTensor(),  # 转换为Tensor
+])
+
+# 创建数据集实例
+dataset = CustomDataset(root_dir='path_to_your_dataset', transform=transform)
+
+# 现在可以使用PyTorch的DataLoader来加载数据集
+from torch.utils.data import DataLoader
+
+data_loader = DataLoader(dataset, batch_size=32, shuffle=True)
+```
+
+# 30. PyTorch 构建一个自定义层，该层实现一个简单的LReLU激活函数。
+
+```python
+class LReLU(nn.Module):
+    def __init__(self, leak=0.01):
+        super(LReLU, self).__init__()
+        self.leak = leak
+
+    def forward(self, x):
+        return F.leaky_relu(x, negative_slope=self.leak)
+
+# 使用自定义层
+model = nn.Sequential(
+    nn.Linear(10, 5),
+    LReLU(),
+    nn.Linear(5, 2)
+)
+```
+
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
 
 ```c++
