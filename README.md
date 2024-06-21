@@ -165,6 +165,7 @@
 | [**21. 场景问题：如何修改Yolov5目标检测，从而实现旋转目标检测？**](VisionPerception/Reference.md) | 
 | [**22. 场景问题：在目标Crowded的场景下，经常在两个真正目标中间会出现误检的原因?**](VisionPerception/Reference.md) |
 | [**23. 场景问题：通过设置更多的先验anchor能否改善小目标及非正常尺寸目标的性能，除计算速度外还存在什么问题**](VisionPerception/Reference.md) |
+| [**24. 场景问题：目前检测常需要NMS非极大值阈值算法作为后处理，有没有什么可以避免NMS后处理的方案？**](VisionPerception/Reference.md) |
 
 - 目标分割
 
