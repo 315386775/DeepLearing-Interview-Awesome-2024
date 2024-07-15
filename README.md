@@ -158,7 +158,7 @@
 | [**14. 细节问题：Yolov5与Yolov4相比neck部分有什么不同**](VisionPerception/Reference.md)           | 
 | [**15. 细节问题：Yolov5的Foucs层和Passthrough层有什么区别**](VisionPerception/Reference.md)           | 
 | [**16. 细节问题：Yolov5中objectness的作用，最后输出的概率分数如何得到**](VisionPerception/Reference.md)           | 
-| [**17. 模型问题：DETR的检测算法的创新点介绍**](VisionPerception/Reference.md)           | 
+| [**17. 模型问题：介绍DETR中从图像输入到Encoder处理的序列化数据的过程。**](VisionPerception/Reference.md)           | 
 | [**18. 解码问题：解释YOLOv5模型输出(1, 25200, 85)的含义，及解码过程？**](VisionPerception/Reference.md) | 
 | [**19. 解码问题：解释Centernet模型输出offset/scale/heatmap三个头的含义，及解码过程？**](VisionPerception/Reference.md) |
 | [**20. 场景问题：目标检测中旋转框IOU的计算方式**](VisionPerception/Reference.md)           | 
@@ -166,6 +166,7 @@
 | [**22. 场景问题：在目标Crowded的场景下，经常在两个真正目标中间会出现误检的原因?**](VisionPerception/Reference.md) |
 | [**23. 场景问题：通过设置更多的先验anchor能否改善小目标及非正常尺寸目标的性能，除计算速度外还存在什么问题**](VisionPerception/Reference.md) |
 | [**24. 场景问题：目前检测常需要NMS非极大值阈值算法作为后处理，有没有什么可以避免NMS后处理的方案？**](VisionPerception/Reference.md) |
+| [**25. 模型问题：如何理解DETR中的object query的概念，要为 cross attention 提供更好的位置先验该如何设计模型？**](VisionPerception/Reference.md) |
 
 - 目标分割
 
@@ -188,6 +189,7 @@
 | [**03. 单目3D：简述FCOS3D的解码过程，及其中在2D图像上的三维目标框如何获取？**](VisionPerception/Reference.md)           |
 | [**04. 单目3D：FCOS3D及大多数单目3D都是基于孤立的实例或像素来估计深度，而忽略了不同物体之间的几何关系，你有什么改进策略？**](VisionPerception/Reference.md)           |
 | [**05. 点云3D：PointPillars将点云转换为稀疏伪图像的过程，其中Scatter运算的步骤详述？**](VisionPerception/Reference.md)           |
+| [**06. BEV：PV2BEV视角变换的几种方式，基于模型的方式除相机内外参外还至少需要哪些参数？**](VisionPerception/Reference.md)           |
 
 
 - 对抗网络/视频理解/图像增强/深度估计等

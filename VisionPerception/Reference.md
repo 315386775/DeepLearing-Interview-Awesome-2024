@@ -405,3 +405,8 @@ def process_output(output):
 
 - YOLOV10的一对一的头；
 - DETR的头
+
+# 25. 模型问题：如何理解DETR中的object query的概念，要为 cross attention 提供更好的位置先验该如何设计模型？
+
+- 位置部分则来自于 learnable queries；
+- 引入anchor box作为query提供位置先验，可参考DAB-DETR；
