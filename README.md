@@ -290,6 +290,7 @@
 | [**35. 通过几何关系估计深度过程中，由于高度的误差使得深度的估计不确定性高，如何缓解？**](IndustryAlgorithm/Reference.md)           |
 | [**36. Nuscenes数据集中相机传感器配置，及标注内容包含哪些？**](IndustryAlgorithm/Reference.md)           |
 | [**37. 简述BEVformer模型在特征提取过程中，张量流的变换情况？**](IndustryAlgorithm/Reference.md)           |
+| [**38. 简述生成BEV特征图的几种方式，其中LSS的lift操作具体做了什么？**](IndustryAlgorithm/Reference.md)           |
 
 - 智慧医疗
 

@@ -155,3 +155,6 @@ https://arxiv.org/pdf/2404.08187.pdf
 
 Day-Night Cross-domain Vehicle Re-identification，一种用于车辆重识别的 GAN-Siamese 网络结构
 
+# 38. 简述生成BEV特征图的几种方式，其中LSS的lift操作具体做了什么？
+
+https://zhuanlan.zhihu.com/p/567880155
