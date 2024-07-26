@@ -158,3 +158,10 @@ Day-Night Cross-domain Vehicle Re-identification，一种用于车辆重识别�
 # 38. 简述生成BEV特征图的几种方式，其中LSS的lift操作具体做了什么？
 
 https://zhuanlan.zhihu.com/p/567880155
+
+
+# 11. 如果一个数据集在图像的某个区域中几乎没有猫这个物体，那么目标检测器会不会也在这个区域不擅长检测猫？
+
+- 第一，检测器并没有表现出明显的"不擅长", 主要依靠的是CNN的平移不变性。
+- 第二，检测器确实在此区域不擅长检测猫了, CNN可以学习出物体的绝对位置，并把它当作额外的信息辅助分类。
+- https://zhuanlan.zhihu.com/p/602113455

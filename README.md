@@ -322,6 +322,7 @@
 | [**08. 现在要预测目标在图像上的旋转角度，比如遥感影像场景下的车辆目标旋转角度，你该如何优雅的编解码以实现更好的预测？**](IndustryAlgorithm/Reference.md)           | 
 | [**09. 鱼眼相机具备更大的视场角，因此常用在一些监控场景下，如何在鱼眼图像下做检测或分割任务？**](IndustryAlgorithm/Reference.md)           | 
 | [**10. 昼夜跨域车辆重识别车辆重识别如何处理，即在包括白天和夜间域在内的不同域中识别相同的车辆？**](IndustryAlgorithm/Reference.md)           | 
+| [**11. 如果一个数据集在图像的某个区域中几乎没有猫这个物体，那么目标检测器会不会也在这个区域不擅长检测猫？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 
