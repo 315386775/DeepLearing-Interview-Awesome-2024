@@ -231,6 +231,7 @@
 | [**09. torch.onnx.export()中该如何设置 input_names, output_names, dynamic_axes？**](DeepLearning/Reference.md) | 
 | [**10. 使用 torch.onnx.is_in_onnx_export()来使模型在转换到 ONNX 时有何不同的行为？**](DeepLearning/Reference.md) | 
 | [**11. 大模型训练一般都采用torch2.0以上版本，其中torch.compile可加速训练，介绍下如何使用以及其是否对普通的python代码起作用？**](DeepLearning/Reference.md) | 
+| [**12. 简述你认为 MMCV 的优缺点**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
