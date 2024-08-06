@@ -58,8 +58,9 @@
 
 - 视觉模型
 
-| [**01. Stable Diffusion里是如何用文本来控制生成的？**](LLMs/Reference.md) |
+| [**02. 在视觉大模型中，DINOv2的架构设计有哪些关键创新点？**](LLMs/Reference.md) |
 | :------------------------------------------- |
+| [**01. Stable Diffusion里是如何用文本来控制生成的？**](LLMs/Reference.md) |
 | [**21. Stable Diffusion相比Diffusion主要解决的问题是什么？**](LLMs/Reference.md)           | 
 | [**22. Stable Diffusion每一轮训练样本选择一个随机时间步长？**](LLMs/Reference.md)           | 
 | [**39. Stable Diffusion的训练过程和预测过程是什么样的？**](LLMs/Reference.md)           | 
@@ -120,7 +121,8 @@
 | [**09. 通用模块：在设计轻量化模型时，有哪些一些基本的原则？concat和add相比哪个更耗时？**](VisionPerception/Reference.md) | 
 | [**10. 通用模块：轻量级CNN网络，常采用深度可分离卷积，其中的点卷积FLOPs和MAC如何计算？**](VisionPerception/Reference.md) | 
 | [**11. 损失函数：Focal loss支持0/1这样的离散类别标签，如果标签是0~1连续值该如何处理？**](VisionPerception/Reference.md)           | 
-| [**11. 损失函数：Focal loss过多关注难分样本，因此会受到离群点的影响，怎么同时衰减易分样本和特别难分的样本呢？**](VisionPerception/Reference.md)           | 
+| [**12. 损失函数：Focal loss过多关注难分样本，因此会受到离群点的影响，怎么同时衰减易分样本和特别难分的样本呢？**](VisionPerception/Reference.md)           | 
+| [**13. 通用模块：Dropout训练和推理时的差异，训练阶段将某层的神经元输出以p的概率随机置为零，推理时如何处理？**](VisionPerception/Reference.md)           | 
 
 - 目标分类
 
@@ -303,6 +305,7 @@
 | [**03. 模型问题：分割存在硬边缘问题，比如在视网膜血管分割中，如何优化边缘分割效果？？**](IndustryAlgorithm/Reference.md) |      |  
 | [**04. 模型问题：多个物体堆叠会形成潜在目标被部分遮挡，而目标的完整性又是进一步判断的依据，如何补全被遮挡目标的分割边界？**](IndustryAlgorithm/Reference.md) |      |  
 | [**05. 模型问题：基于数字病理切片的目标检测算法会受到扫描成像设备的影响，比如扫描过程中的离焦模糊、运动模糊等，请问有什么可行的优化方案？**](IndustryAlgorithm/Reference.md) |      |  
+| [**06. 模型问题：如何给模型加入先验知识，有哪几种方法？**](IndustryAlgorithm/Reference.md) |      |  
 
 - 自然语言处理/智慧商业/搜广推
 
@@ -386,4 +389,5 @@
 | [**15. 语言大模型面试题**](AwesomeProjects/Reference.md)           |  
 | [**16. Awesome Chinese LLM 整理开源的中文大语言模型**](AwesomeProjects/Reference.md)           |  
 | [**17. 科技爱好者周刊，集结优秀的开源项目，每周五发布**](AwesomeProjects/Reference.md)           |  
+| [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
 

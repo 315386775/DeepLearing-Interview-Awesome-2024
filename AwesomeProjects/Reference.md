@@ -86,3 +86,7 @@ https://github.com/HqWu-HITCS/Awesome-Chinese-LLM
 # 17. 科技爱好者周刊，集结优秀的开源项目，每周五发布
 
 https://github.com/ruanyf/weekly
+
+# 18. 大模型显存在线估算开源项目
+
+https://rahulschand.github.io/gpu_poor/
