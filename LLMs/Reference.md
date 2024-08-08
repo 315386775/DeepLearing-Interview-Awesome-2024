@@ -319,3 +319,7 @@ Grouped Query Attention (GQA)：
 
 - 参考论文 < A Theory on Adam Instability in Large-Scale Machine Learning >
 - 知乎解读 https://zhuanlan.zhihu.com/p/675421518
+
+# 37. 模型问题：多模态大模型常采用MLP作为视觉映射器，将视觉特征到token一对一地映射到文本空间, 如何压缩视觉token量以提升效率？
+
+- 知乎解读 https://zhuanlan.zhihu.com/p/707021763

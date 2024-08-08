@@ -76,6 +76,7 @@
 | [**34. DINOv2创建了一个新的高质量数据集, 其中处理过程中用到了去重和检索，简述其步骤？**](LLMs/Reference.md)           | 
 | [**35. 简述DINOv2训练中 Image-level 和 Patch-level 的目标函数？**](LLMs/Reference.md)           | 
 | [**36. 视觉预训练MAE模型decoder中的unmask和mask部分分别对应的隐向量是什么？**](LLMs/Reference.md)           | 
+| [**37. 模型问题：多模态大模型常采用MLP作为视觉映射器，将视觉特征到token一对一地映射到文本空间, 如何压缩视觉token量以提升效率？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
