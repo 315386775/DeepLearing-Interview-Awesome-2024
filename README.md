@@ -365,7 +365,8 @@
 | [**28. Python 实现逆透视变换IPM（鸟瞰图）**](CodeAnything/Reference.md) |      |  
 | [**29. Numpy 实现两个矩阵的乘法，并验证结果是否与PyTorch中的torch.matmul相同**](CodeAnything/Reference.md) |      |  
 | [**30. PyTorch 构建一个自定义层，该层实现一个简单的LReLU激活函数**](CodeAnything/Reference.md) |      |  
-| [**30. PyTorch 编写一个数据增强类，实现随机水平翻转和通道变换**](CodeAnything/Reference.md) |      |  
+| [**31. PyTorch 编写一个数据增强类，实现随机水平翻转和通道变换**](CodeAnything/Reference.md) |      |  
+| [**32. PyTorch 实现图像到Patch Embedding过程，提示可用卷积实现**](CodeAnything/Reference.md) |      |  
 
 
 

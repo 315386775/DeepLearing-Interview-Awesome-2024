@@ -640,6 +640,35 @@ model = nn.Sequential(
 )
 ```
 
+# 32. PyTorch 实现图像到Patch Embedding过程，提示可用卷积实现？
+
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class PatchEmbedding(nn.Module):
+    def __init__(self, img_size=224, patch_size=16, in_channels=3, embed_dim=768):
+        super(PatchEmbedding, self).__init__()
+        self.img_size = img_size
+        self.patch_size = patch_size
+        self.in_channels = in_channels
+        self.embed_dim = embed_dim
+
+        self.num_patches = (img_size // patch_size) ** 2
+
+        self.proj = nn.Conv2d(in_channels, embed_dim, kernel_size=patch_size, stride=patch_size)
+
+    def forward(self, x):
+        x = self.proj(x)  # (batch_size, embed_dim, num_patches, num_patches)
+        x = x.flatten(2, 3)  # (batch_size, embed_dim, num_patches ** 2)
+        x = x.transpose(1, 2)  # (batch_size, num_patches ** 2, embed_dim)
+        return x
+
+```
+
+# 使用自定义的PatchEmbedding层
+```
 # 111. C++中与类型转换相关的4个关键字特点及应用场合
 
 ```c++
