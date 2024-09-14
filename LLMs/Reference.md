@@ -323,3 +323,11 @@ Grouped Query Attention (GQA)：
 # 37. 模型问题：多模态大模型常采用MLP作为视觉映射器，将视觉特征到token一对一地映射到文本空间, 如何压缩视觉token量以提升效率？
 
 - 知乎解读 https://zhuanlan.zhihu.com/p/707021763
+
+# 47. 数据准备：在处理对话及语料数据时，针对数据去重用了哪些算法，针对语料训练阶段的数据增强做了哪些？
+
+- 知乎解读 https://zhuanlan.zhihu.com/p/712494477
+
+# 48. 数据准备：LLaMa3.1的微调进行了几轮，奖励模型的训练数据和SFT的训练数据用了什么？
+
+- 关于LLaMa3.1的相关问题，https://zhuanlan.zhihu.com/p/712494477
