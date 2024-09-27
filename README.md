@@ -81,6 +81,7 @@
 | [**35. 简述DINOv2训练中 Image-level 和 Patch-level 的目标函数？**](LLMs/Reference.md)           | 
 | [**36. 视觉预训练MAE模型decoder中的unmask和mask部分分别对应的隐向量是什么？**](LLMs/Reference.md)           | 
 | [**37. 模型问题：多模态大模型常采用MLP作为视觉映射器，将视觉特征到token一对一地映射到文本空间, 如何压缩视觉token量以提升效率？**](LLMs/Reference.md)           | 
+| [**38. 模型问题：VLM模型中高分辨率图像降低token数的几种方式？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
@@ -223,6 +224,7 @@
 | [**10. PyTorch 中 nn.Upsample和interpolate插值的区别**](DeepLearning/Reference.md)           | 
 | [**11. PyTorch 中 dataset与 dataloder的区别，自定义dataset需要哪些操作？**](DeepLearning/Reference.md)           | 
 | [**12. PyTorch 中 主要且常用的归一化操作有BN，LN，IN，GN，介绍下他们的区别？**](DeepLearning/Reference.md)           | 
+| [**13. PyTorch 中 nn.Linear()和nn.Embedding()有什么区别？**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 

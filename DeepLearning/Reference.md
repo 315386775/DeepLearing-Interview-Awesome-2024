@@ -144,6 +144,11 @@ def parameters(self, recurse=True):
 - 参考链接：http://giantpandacv.com/academic/%E7%AE%97%E6%B3%95%E7%A7%91%E6%99%AE/%E7%BB%BC%E8%BF%B0%E7%B1%BB/%E7%9B%98%E7%82%B9%E5%BD%93%E5%89%8D%E6%9C%80%E6%B5%81%E8%A1%8C%E7%9A%84%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0%E5%8F%8A%E9%80%89%E6%8B%A9%E7%BB%8F%E9%AA%8C/
 
 
+# 13. PyTorch 中 nn.Linear()和nn.Embedding()有什么区别？
+
+nn.Linear的输入为一个向量，输出也为一个向量，向量的各个维的元素取值范围是连续的。而nn.Embedding的输入只能为离散值，只输入一个离散值也能获取结果，而这个离散值实际上相当于取one-hot之后的向量。
+
+
 # 13. Transformer/CNN/RNN的时间复杂度对比
 
 - https://zhuanlan.zhihu.com/p/264749298
