@@ -335,3 +335,8 @@ Grouped Query Attention (GQA)：
 # 38. 模型问题：VLM模型中高分辨率图像降低token数的几种方式？
 
 - https://zhuanlan.zhihu.com/p/720428373
+
+# 49. 模型推理：现有技术范式下，广义幻觉？
+
+现有技术范式下，广义幻觉只能靠外挂 RAG、function_call 的方式来解决；
+狭义幻觉的缓解方式其实还是调参数；

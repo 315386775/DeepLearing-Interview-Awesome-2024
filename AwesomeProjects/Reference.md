@@ -90,3 +90,9 @@ https://github.com/ruanyf/weekly
 # 18. 大模型显存在线估算开源项目
 
 https://rahulschand.github.io/gpu_poor/
+
+# 19. 几种可免费阅读Medium文章的方式
+
+https://paywallbuster.com/
+https://freedium.cfd/
+https://greasyfork.org/en/scripts/481493-medium-unlocker-2023-12-06-updated

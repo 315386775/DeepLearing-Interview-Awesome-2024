@@ -59,6 +59,7 @@
 | [**46. 模型微调：监督微调（SFT）相比于RLHF的局限在哪？如果用RM清洗和制造SFT数据能不能取代rlhf呢？**](LLMs/Reference.md)           | 
 | [**47. 数据准备：在处理对话及语料数据时，针对数据去重用了哪些算法，针对语料训练阶段的数据增强做了哪些？**](LLMs/Reference.md)           | 
 | [**48. 数据准备：LLaMa3.1的微调进行了几轮，奖励模型的训练数据和SFT的训练数据用了什么？**](LLMs/Reference.md)           | 
+| [**49. 模型推理：现有技术范式下，如何缓解大模型出现的广义幻觉和狭义幻觉？**](LLMs/Reference.md)           | 
 
 - 视觉模型
 
@@ -398,4 +399,5 @@
 | [**16. Awesome Chinese LLM 整理开源的中文大语言模型**](AwesomeProjects/Reference.md)           |  
 | [**17. 科技爱好者周刊，集结优秀的开源项目，每周五发布**](AwesomeProjects/Reference.md)           |  
 | [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
+| [**19. 2024年几种可免费阅读Medium文章的方式**](AwesomeProjects/Reference.md)           |  
 
