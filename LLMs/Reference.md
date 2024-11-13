@@ -340,3 +340,7 @@ Grouped Query Attention (GQA)：
 
 现有技术范式下，广义幻觉只能靠外挂 RAG、function_call 的方式来解决；
 狭义幻觉的缓解方式其实还是调参数；
+
+# 52. 模型推理：LLM推理时Decode阶段一次迭代一个token，内存耗时更多，有什么对应的加速方法？
+
+- https://zhuanlan.zhihu.com/p/699776257

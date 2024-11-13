@@ -60,6 +60,10 @@
 | [**47. 数据准备：在处理对话及语料数据时，针对数据去重用了哪些算法，针对语料训练阶段的数据增强做了哪些？**](LLMs/Reference.md)           | 
 | [**48. 数据准备：LLaMa3.1的微调进行了几轮，奖励模型的训练数据和SFT的训练数据用了什么？**](LLMs/Reference.md)           | 
 | [**49. 模型推理：现有技术范式下，如何缓解大模型出现的广义幻觉和狭义幻觉？**](LLMs/Reference.md)           | 
+| [**50. 模型训练：分布式训练框架 DeepSpeed 相较于Pytorch原生的 torchrun 有什么优点？**](LLMs/Reference.md)           | 
+| [**51. 模型推理：LLM推理时Prefill阶段多数据并行，属于计算瓶颈，有什么对应的加速方法？**](LLMs/Reference.md)           | 
+| [**52. 模型推理：LLM推理时Decode阶段一次迭代一个token，内存耗时更多，有什么对应的加速方法？**](LLMs/Reference.md)           | 
+| [**52. 模型优化：LLM从架构上来说，主要是针对Attention和FFN进行优化，其中Attention优化有哪些？**](LLMs/Reference.md)           | 
 
 - 视觉模型
 
@@ -304,6 +308,8 @@
 | [**36. Nuscenes数据集中相机传感器配置，及标注内容包含哪些？**](IndustryAlgorithm/Reference.md)           |
 | [**37. 简述BEVformer模型在特征提取过程中，张量流的变换情况？**](IndustryAlgorithm/Reference.md)           |
 | [**38. 简述生成BEV特征图的几种方式，其中LSS的lift操作具体做了什么？**](IndustryAlgorithm/Reference.md)           |
+| [**39. 感知算法既希望获得高分辨率的输入图像又希望获得大FOV的输入图像，业内一般做法是设置ROI区域，怎么选？**](IndustryAlgorithm/Reference.md)           |
+| [**40. 现在要开发一个视觉语言模型来解决通用感知面临的Corner Case自动驾驶任务，该如何做？**](IndustryAlgorithm/Reference.md)           |
 
 - 智慧医疗
 
