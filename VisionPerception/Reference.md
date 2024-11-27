@@ -410,3 +410,10 @@ def process_output(output):
 
 - 位置部分则来自于 learnable queries；
 - 引入anchor box作为query提供位置先验，可参考DAB-DETR；
+
+# 26. 模型问题：YOLOV5和YOLOV8的Head输出通道数分别是多少，假设现在是2个类别的检测任务
+
+```python
+self.reg_max = 16  # DFL channels (ch[0] // 16 to scale 4/8/12/16/20 for n/s/m/l/x)
+self.no = nc + self.reg_max * 4  # number of outputs per anchor
+```

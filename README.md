@@ -180,6 +180,7 @@
 | [**23. 场景问题：通过设置更多的先验anchor能否改善小目标及非正常尺寸目标的性能，除计算速度外还存在什么问题**](VisionPerception/Reference.md) |
 | [**24. 场景问题：目前检测常需要NMS非极大值阈值算法作为后处理，有没有什么可以避免NMS后处理的方案？**](VisionPerception/Reference.md) |
 | [**25. 模型问题：如何理解DETR中的object query的概念，要为 cross attention 提供更好的位置先验该如何设计模型？**](VisionPerception/Reference.md) |
+| [**26. 模型问题：YOLOV5和YOLOV8的Head输出通道数分别是多少，假设现在是2个类别的检测任务？**](VisionPerception/Reference.md) |
 
 - 目标分割
 
