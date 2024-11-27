@@ -180,3 +180,9 @@ https://zhuanlan.zhihu.com/p/188572028
 - 这里面的关键问题是ROI区域怎么选？ROI的目标是利用高分辨率信息检测到更远处的物体，在大幅度转弯时，远方车辆可能在画面的两边，或者远处岔路深处的车辆也可能分布在图像两边，所以，为了覆盖全面需要横跨整个图像。剩下的就是ROI高度和中线位置的确定。显然不需要原始分辨率的高度，因为天空和挡风玻璃下部的座舱内部都可以被剔除。难以确定的是中线位置，因为上下坡时的天地分割线会随之发生改变。
 
 https://zhuanlan.zhihu.com/p/888151027
+
+
+
+# 03. 图像识别：在实际应用中部署人脸识别算法的一个重要方面是它们能够从连续数据流中学习新的人脸身份，如何做？
+
+CLFace: A Scalable and Resource-Efficient Continual Learning Framework for Lifelong Face Recognition

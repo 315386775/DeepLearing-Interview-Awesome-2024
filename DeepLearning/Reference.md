@@ -330,6 +330,12 @@ ConcatDataset继承自Dataset类, 构造函数要求一个列表L作为输入，
 
 https://zhuanlan.zhihu.com/p/222772996
 
+# 22. 常见问题：当Batch Size增大时，学习率该如何随之变化，具体该怎么变化？
+
+当 Batch Size 增大时，每个 Batch 的梯度将会更准，所以步子就可以迈大一点，也就是增大学习率，以求更快达到终点，缩短训练时间，问题就是，增大多少才是最合适的呢？
+
+推导原理是让 SGD 增量的方差保持不变。即 Batch Size 扩大到 N 倍，则学习率扩大到 根号N 倍
+
 
 # 05. Pytorch Lighting的设计哲学，及你觉得好用的点
 
@@ -340,3 +346,10 @@ Pytorch-lightning 的核心设计哲学是将 深度学习项目中的 研究代
 - 非必要代码 （Non-essential research code，logging, etc...），用户通过调用Callbacks实现。
 - 数据 (Data)，用户通过torch.utils.data.DataLoader实现，也可以封装成pl.LightningDataModule。
 
+# 13. 训练问题：多级多卡训练中的参数设置以2机8卡为例：分布式训练输出rank/local_rank/world_size分别是多少？
+
+以2机8卡为例：分布式训练输出rank/local_rank/world_size。rank序号为0-15，world_size为16，local_rank为0-7。
+
+# 15. 训练问题：Pytorch训练的过程中内存一直增加的问题，如何解决？
+
+https://zhuanlan.zhihu.com/p/384298855, 代码中存在累加loss，但每步的loss没加item()

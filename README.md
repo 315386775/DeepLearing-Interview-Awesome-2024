@@ -230,6 +230,7 @@
 | [**11. PyTorch 中 dataset与 dataloder的区别，自定义dataset需要哪些操作？**](DeepLearning/Reference.md)           | 
 | [**12. PyTorch 中 主要且常用的归一化操作有BN，LN，IN，GN，介绍下他们的区别？**](DeepLearning/Reference.md)           | 
 | [**13. PyTorch 中 nn.Linear()和nn.Embedding()有什么区别？**](DeepLearning/Reference.md)           | 
+| [**14. PyTorch 中 Dataset 是用于表示数据集的基本类。要创建自定义数据集，需要重写哪些函数？**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 
@@ -246,6 +247,9 @@
 | [**10. 使用 torch.onnx.is_in_onnx_export()来使模型在转换到 ONNX 时有何不同的行为？**](DeepLearning/Reference.md) | 
 | [**11. 大模型训练一般都采用torch2.0以上版本，其中torch.compile可加速训练，介绍下如何使用以及其是否对普通的python代码起作用？**](DeepLearning/Reference.md) | 
 | [**12. 简述你认为 MMCV 的优缺点**](DeepLearning/Reference.md) | 
+| [**13. 训练问题：多机多卡训练中的参数设置以2机8卡为例：分布式训练输出rank/local_rank/world_size分别是多少？**](DeepLearning/Reference.md) | 
+| [**14. 训练问题：多机多卡训练数据的读取，若直接将batch切分到不同的卡，会因为多机之间直接进行数据传输会严重影响效率，如何解决？**](DeepLearning/Reference.md) | 
+| [**15. 训练问题：Pytorch训练的过程中内存一直增加的问题，如何解决？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
 
@@ -272,6 +276,7 @@
 | [**19. 场景问题：如何处理不平衡的数据集？**](DeepLearning/Reference.md)           |  
 | [**20. 场景问题：如何将大模型有效地切割成若干个子模型？如何将切割后的子模型分配到多个节点上进行并行训练？**](DeepLearning/Reference.md)           |  
 | [**21. 优化问题：神经网络权重为什么不能初始化为0，而逻辑回归参数可以初始化为0？**](DeepLearning/Reference.md)           |  
+| [**22. 常见问题：当Batch Size增大时，学习率该如何随之变化，具体该怎么变化？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -326,6 +331,7 @@
 | [**01. 自然语言处理：NLP中给定当前query和历史query以及对应实体，如何对当前query的实体进行建模？**](IndustryAlgorithm/Reference.md) |
 | :------------------------------------------- |
 | [**02. 机器学习：银行经理收到一个数据集，其中包含数千名申请贷款的申请人的记录。AI算法如何帮助经理了解他可以批准哪些贷款？**](IndustryAlgorithm/Reference.md)           | 
+| [**03. 图像识别：在实际应用中部署人脸识别算法需要能够从连续数据流中学习新的人脸身份，如何做类增量学习？**](IndustryAlgorithm/Reference.md)           | 
 
 - 场景实战
 
