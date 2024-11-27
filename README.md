@@ -249,7 +249,7 @@
 | [**11. 大模型训练一般都采用torch2.0以上版本，其中torch.compile可加速训练，介绍下如何使用以及其是否对普通的python代码起作用？**](DeepLearning/Reference.md) | 
 | [**12. 简述你认为 MMCV 的优缺点**](DeepLearning/Reference.md) | 
 | [**13. 训练问题：多机多卡训练中的参数设置以2机8卡为例：分布式训练输出rank/local_rank/world_size分别是多少？**](DeepLearning/Reference.md) | 
-| [**14. 训练问题：多机多卡训练数据的读取，若直接将batch切分到不同的卡，会因为多机之间直接进行数据传输会严重影响效率，如何解决？**](DeepLearning/Reference.md) | 
+| [**14. 训练问题：分布式训练数据分片有哪几种实现方式？**](DeepLearning/Reference.md) | 
 | [**15. 训练问题：Pytorch训练的过程中内存一直增加的问题，如何解决？**](DeepLearning/Reference.md) | 
 
 - 深度学习常见问题
