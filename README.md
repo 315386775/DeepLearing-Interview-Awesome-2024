@@ -63,7 +63,9 @@
 | [**50. 模型训练：分布式训练框架 DeepSpeed 相较于Pytorch原生的 torchrun 有什么优点？**](LLMs/Reference.md)           | 
 | [**51. 模型推理：LLM推理时Prefill阶段多数据并行，属于计算瓶颈，有什么对应的加速方法？**](LLMs/Reference.md)           | 
 | [**52. 模型推理：LLM推理时Decode阶段一次迭代一个token，内存耗时更多，有什么对应的加速方法？**](LLMs/Reference.md)           | 
-| [**52. 模型优化：LLM从架构上来说，主要是针对Attention和FFN进行优化，其中Attention优化有哪些？**](LLMs/Reference.md)           | 
+| [**53. 模型优化：LLM从架构上来说，主要是针对Attention和FFN进行优化，其中Attention优化有哪些？**](LLMs/Reference.md)           | 
+| [**54. 模型推理：大模型训练及微调的显存占用情况？**](LLMs/Reference.md)           | 
+| [**55. 模型训练：大模型训练阶段的耗时在哪里？比如涉及到千卡的训练。**](LLMs/Reference.md)           | 
 
 - 视觉模型
 

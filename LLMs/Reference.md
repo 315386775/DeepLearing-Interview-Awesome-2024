@@ -344,3 +344,12 @@ Grouped Query Attention (GQA)：
 # 52. 模型推理：LLM推理时Decode阶段一次迭代一个token，内存耗时更多，有什么对应的加速方法？
 
 - https://zhuanlan.zhihu.com/p/699776257
+
+# 53. 模型推理：大模型训练及微调的显存占用情况？
+
+![Alt](assert/infer.png#pic_center)
+
+
+# 55. 模型训练：大模型训练阶段的耗时在哪里？比如涉及到千卡的训练。
+
+- https://www.zhihu.com/question/650979052/answer/3501160453
