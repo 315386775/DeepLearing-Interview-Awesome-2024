@@ -353,3 +353,7 @@ Grouped Query Attention (GQA)：
 # 55. 模型训练：大模型训练阶段的耗时在哪里？比如涉及到千卡的训练。
 
 - https://www.zhihu.com/question/650979052/answer/3501160453
+
+# 56. 模型优化：在SFT过程中Prompt优化是重要的一步，比如在商品分类的任务中，原提示词可能只包含了类别信息？
+
+https://zhuanlan.zhihu.com/p/17193156687
