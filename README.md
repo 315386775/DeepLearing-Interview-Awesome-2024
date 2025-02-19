@@ -64,7 +64,7 @@
 | [**51. 模型推理：LLM推理时Prefill阶段多数据并行，属于计算瓶颈，有什么对应的加速方法？**](LLMs/Reference.md)           | 
 | [**52. 模型推理：LLM推理时Decode阶段一次迭代一个token，内存耗时更多，有什么对应的加速方法？**](LLMs/Reference.md)           | 
 | [**53. 模型优化：LLM从架构上来说，主要是针对Attention和FFN进行优化，其中Attention优化有哪些？**](LLMs/Reference.md)           | 
-| [**54. 模型推理：大模型训练及微调的显存占用情况？**](LLMs/Reference.md)           | 
+| [**54. 模型推理：大模型训练及微调的显存占用情况，如何估算推理阶段所需显存？**](LLMs/Reference.md)           | 
 | [**55. 模型训练：大模型训练阶段的耗时在哪里？比如涉及到千卡的训练。**](LLMs/Reference.md)           | 
 | [**56. 模型优化：在SFT过程中Prompt优化是重要的一步，比如在商品分类的任务中，原提示词可能只包含了类别信息？**](LLMs/Reference.md)           | 
 
@@ -419,4 +419,5 @@
 | [**17. 科技爱好者周刊，集结优秀的开源项目，每周五发布**](AwesomeProjects/Reference.md)           |  
 | [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
 | [**19. 2024年几种可免费阅读Medium文章的方式**](AwesomeProjects/Reference.md)           |  
+| [**20. 2025年,来自李沐大神的AI育儿小工具分享**](AwesomeProjects/Reference.md)           |  
 

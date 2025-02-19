@@ -96,3 +96,8 @@ https://rahulschand.github.io/gpu_poor/
 https://paywallbuster.com/
 https://freedium.cfd/
 https://greasyfork.org/en/scripts/481493-medium-unlocker-2023-12-06-updated
+
+# 20. AI育儿分享
+
+https://readtogether.ai/
+https://readtogether.ai/?url=https://bit.ly/kidsbooklib
