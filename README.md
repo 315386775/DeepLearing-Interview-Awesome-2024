@@ -69,6 +69,10 @@
 | [**56. 模型优化：在SFT过程中Prompt优化是重要的一步，比如在商品分类的任务中，原提示词可能只包含了类别信息？**](LLMs/Reference.md)           | 
 | [**57. 模型训练：SFT和RL分别对基座大模型的作用和影响是什么？**](LLMs/Reference.md)           | 
 | [**58. 模型训练：RL/SFT 如何影响视觉语言模型（VLM）中的视觉识别能力？**](LLMs/Reference.md)           | 
+| [**59. 模型训练：Qwen-VL 的三个训练流程分别是什么，有什么作用？**](LLMs/Reference.md)           | 
+| [**60. 模型架构：视觉编码器和 LLM 连接时，使用 BLIP2 中 Q-Former 那种复杂的 Adaptor 好还是 LLaVA 中简单的 MLP 好，说说各自的优缺点？**](LLMs/Reference.md)           | 
+| [**60. 模型训练：大模型预训练和SFT的loss的差别是什么？**](LLMs/Reference.md)           | 
+| [**60. 模型问题：Deepseed旨在减少内存使用并提高训练效率，其三个stage分别是什么？**](LLMs/Reference.md)           | 
 
 
 - 视觉模型
@@ -93,6 +97,7 @@
 | [**36. 视觉预训练MAE模型decoder中的unmask和mask部分分别对应的隐向量是什么？**](LLMs/Reference.md)           | 
 | [**37. 模型问题：多模态大模型常采用MLP作为视觉映射器，将视觉特征到token一对一地映射到文本空间, 如何压缩视觉token量以提升效率？**](LLMs/Reference.md)           | 
 | [**38. 模型问题：VLM模型中高分辨率图像降低token数的几种方式？**](LLMs/Reference.md)           | 
+| [**39. 模型问题：BLIP2 相对于 BLIP 有哪些改进，BLIP3 又有哪些改进？**](LLMs/Reference.md)           | 
 
 - 通用问题
 
@@ -238,7 +243,7 @@
 | [**11. PyTorch 中 dataset与 dataloder的区别，自定义dataset需要哪些操作？**](DeepLearning/Reference.md)           | 
 | [**12. PyTorch 中 主要且常用的归一化操作有BN，LN，IN，GN，介绍下他们的区别？**](DeepLearning/Reference.md)           | 
 | [**13. PyTorch 中 nn.Linear()和nn.Embedding()有什么区别？**](DeepLearning/Reference.md)           | 
-| [**14. PyTorch 中 Dataset 是用于表示数据集的基本类。要创建自定义数据集，需要重写哪些函数？**](DeepLearning/Reference.md)           | 
+| [**14. PyTorch 中 Dataset 是用于表示数据集的基本类。获取一个batch数据的步骤？**](DeepLearning/Reference.md)           | 
 
 - 那些常用的训练框架
 
