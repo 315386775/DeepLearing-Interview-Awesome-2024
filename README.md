@@ -428,4 +428,5 @@
 | [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
 | [**19. 2024年几种可免费阅读Medium文章的方式**](AwesomeProjects/Reference.md)           |  
 | [**20. 2025年,来自李沐大神的AI育儿小工具分享**](AwesomeProjects/Reference.md)           |  
+| [**21. LLM时代最聪明的文档解析工具EasyDoc：从文档大纲到布局，从图表公式到图像理解！**](AwesomeProjects/Reference.md)           |  
 

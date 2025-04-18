@@ -101,3 +101,19 @@ https://greasyfork.org/en/scripts/481493-medium-unlocker-2023-12-06-updated
 
 https://readtogether.ai/
 https://readtogether.ai/?url=https://bit.ly/kidsbooklib
+
+
+# 21. LLM时代最聪明的文档解析工具EasyDoc：从文档大纲到布局，从图表公式到图像理解！
+
+一款EasyDoc智能文档解析工具，其能深度理解文档的布局、文本、表格乃至图表，使得输出数据非常适合AI应用（如RAG、知识库构建、数据提取、报告分析）。
+
+```js
+# 博客链接
+https://mp.weixin.qq.com/s/P_NlxIEVciBJTXp5QbnyTw
+# 代码链接
+https://github.com/easydoc-ai/easydoc
+# 中文教程
+https://apifox.com/apidoc/shared/704f7d88-99d0-495d-b775-dcfeb96621be
+# 官网链接
+https://easydoc.sh/zh
+```
