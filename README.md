@@ -330,6 +330,7 @@
 | [**38. 简述生成BEV特征图的几种方式，其中LSS的lift操作具体做了什么？**](IndustryAlgorithm/Reference.md)           |
 | [**39. 感知算法既希望获得高分辨率的输入图像又希望获得大FOV的输入图像，业内一般做法是设置ROI区域，怎么选？**](IndustryAlgorithm/Reference.md)           |
 | [**40. 现在要开发一个视觉语言模型来解决通用感知面临的Corner Case自动驾驶任务，该如何做？**](IndustryAlgorithm/Reference.md)           |
+| [**41. 单目3D车道线检测的意义是什么，该如何做？**](IndustryAlgorithm/Reference.md)           |
 
 - 智慧医疗
 
@@ -340,6 +341,7 @@
 | [**04. 模型问题：多个物体堆叠会形成潜在目标被部分遮挡，而目标的完整性又是进一步判断的依据，如何补全被遮挡目标的分割边界？**](IndustryAlgorithm/Reference.md) |      |  
 | [**05. 模型问题：基于数字病理切片的目标检测算法会受到扫描成像设备的影响，比如扫描过程中的离焦模糊、运动模糊等，请问有什么可行的优化方案？**](IndustryAlgorithm/Reference.md) |      |  
 | [**06. 模型问题：如何给模型加入先验知识，有哪几种方法？**](IndustryAlgorithm/Reference.md) |      |  
+| [**07. 模型问题：当应用于非自然领域（如显微成像）时，SAM的性能显著下降，如何改进？**](IndustryAlgorithm/Reference.md) |      |  
 
 - 自然语言处理/智慧商业/搜广推
 
@@ -362,6 +364,7 @@
 | [**09. 鱼眼相机具备更大的视场角，因此常用在一些监控场景下，如何在鱼眼图像下做检测或分割任务？**](IndustryAlgorithm/Reference.md)           | 
 | [**10. 昼夜跨域车辆重识别车辆重识别如何处理，即在包括白天和夜间域在内的不同域中识别相同的车辆？**](IndustryAlgorithm/Reference.md)           | 
 | [**11. 如果一个数据集在图像的某个区域中几乎没有猫这个物体，那么目标检测器会不会也在这个区域不擅长检测猫？**](IndustryAlgorithm/Reference.md)           | 
+| [**12. 针对目标计数的任务，除了传统的检测每个目标再统计的做法外，有什么其它你了解的更优的解决思路吗？**](IndustryAlgorithm/Reference.md)           | 
 
 <b><summary>🏳‍🌈手撕项目代码专题</summary></b>
 

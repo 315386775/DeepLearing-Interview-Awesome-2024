@@ -186,3 +186,12 @@ https://zhuanlan.zhihu.com/p/888151027
 # 03. 图像识别：在实际应用中部署人脸识别算法的一个重要方面是它们能够从连续数据流中学习新的人脸身份，如何做？
 
 CLFace: A Scalable and Resource-Efficient Continual Learning Framework for Lifelong Face Recognition
+
+# 41. 单目3D车道线检测的意义是什么，该如何做？
+
+一种常见策略是通过逆透视映射（IPM）将前视（FV）图像转换为鸟瞰图（BEV）空间，从而利用BEV特征进行车道检测。论文：《Depth3DLane: Monocular 3D Lane Detection via Depth Prior Distillation》
+
+
+# 12. 针对目标计数的任务，除了传统的检测每个目标再统计的做法外，有什么其它你了解的更优的解决思路吗？
+
+CountingDINO: A Training-free Pipeline for Class-Agnostic Counting using Unsupervised Backbones
