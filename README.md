@@ -72,8 +72,10 @@
 | [**58. 模型训练：RL/SFT 如何影响视觉语言模型（VLM）中的视觉识别能力？**](LLMs/Reference.md)           | 
 | [**59. 模型训练：Qwen-VL 的三个训练流程分别是什么，有什么作用？**](LLMs/Reference.md)           | 
 | [**60. 模型架构：视觉编码器和 LLM 连接时，使用 BLIP2 中 Q-Former 那种复杂的 Adaptor 好还是 LLaVA 中简单的 MLP 好，说说各自的优缺点？**](LLMs/Reference.md)           | 
-| [**60. 模型训练：大模型预训练和SFT的loss的差别是什么？**](LLMs/Reference.md)           | 
-| [**60. 模型问题：Deepseed旨在减少内存使用并提高训练效率，其三个stage分别是什么？**](LLMs/Reference.md)           | 
+| [**61. 模型训练：大模型预训练和SFT的loss的差别是什么？**](LLMs/Reference.md)           | 
+| [**62. 模型问题：Deepseed旨在减少内存使用并提高训练效率，其三个stage分别是什么？**](LLMs/Reference.md)           | 
+| [**63. 模型架构：Janus-Pro将视觉编码解耦以进行多模态理解和生成，分别是什么？**](LLMs/Reference.md)           | 
+| [**64. 模型架构：Janus-Pro将图像都被调整为 384×384 像素，对于多模态理解数据和生成数据有什么不同？**](LLMs/Reference.md)           | 
 
 
 - 视觉模型
