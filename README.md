@@ -76,6 +76,7 @@
 | [**62. 模型问题：Deepseed旨在减少内存使用并提高训练效率，其三个stage分别是什么？**](LLMs/Reference.md)           | 
 | [**63. 模型架构：Janus-Pro将视觉编码解耦以进行多模态理解和生成，分别是什么？**](LLMs/Reference.md)           | 
 | [**64. 模型架构：Janus-Pro将图像都被调整为 384×384 像素，对于多模态理解数据和生成数据有什么不同？**](LLMs/Reference.md)           | 
+| [**65. 模型架构：为什么 qwen2-vl 比qwen-vl 更多保留图片信息？**](LLMs/Reference.md)           | 
 
 
 - 视觉模型
