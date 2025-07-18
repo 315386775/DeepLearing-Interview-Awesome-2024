@@ -110,10 +110,13 @@ https://readtogether.ai/?url=https://bit.ly/kidsbooklib
 ```js
 # 博客链接
 https://mp.weixin.qq.com/s/P_NlxIEVciBJTXp5QbnyTw
-# 代码链接
-https://github.com/easydoc-ai/easydoc
-# 中文教程
-https://apifox.com/apidoc/shared/704f7d88-99d0-495d-b775-dcfeb96621be
-# 官网链接
-https://easydoc.sh/zh
+```
+
+22. 最具洞察力与前沿性的视觉大模型文章！
+
+关于DINO、SAM、CLIP的结合与变体相关视觉大模型文章
+
+```js
+# 博客链接
+https://mp.weixin.qq.com/s/cQBmldrhwKdzj30njKy_BA
 ```
