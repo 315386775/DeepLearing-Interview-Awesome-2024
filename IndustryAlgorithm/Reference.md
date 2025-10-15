@@ -195,3 +195,8 @@ CLFace: A Scalable and Resource-Efficient Continual Learning Framework for Lifel
 # 12. 针对目标计数的任务，除了传统的检测每个目标再统计的做法外，有什么其它你了解的更优的解决思路吗？
 
 CountingDINO: A Training-free Pipeline for Class-Agnostic Counting using Unsupervised Backbones
+
+# 01. 大模型的幻觉问题的本质与几种常见的解决办法？
+
+
+# 02. SFT模型经常在上下文比较长或者调查轮次多了之后就会出现查询工具的重复调用现象，如何消除这种现象？

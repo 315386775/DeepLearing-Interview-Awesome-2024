@@ -5,7 +5,7 @@
 
 ### 项目简介
 
-2024算法面试题目持续更新，具体请 follow [2024年深度学习算法与大模型面试指南](https://github.com/315386775/DeepLearing-Interview-Awesome-2024)，喜欢本项目的请右上角点个star，同时也欢迎大家一起共创该项目。
+2025年算法面试题目继续更新，具体请 follow [2024年深度学习算法与大模型面试指南](https://github.com/315386775/DeepLearing-Interview-Awesome-2024)，喜欢本项目的请右上角点个star，同时也欢迎大家一起共创该项目。
 
 该项目持续更新：
 
@@ -79,6 +79,9 @@
 | [**65. 模型架构：为什么 qwen2-vl 比qwen-vl 更多保留图片信息？**](LLMs/Reference.md)           | 
 | [**66. 模型架构：LLM 中的上下文窗口是什么，为什么它很重要？**](LLMs/Reference.md)           | 
 | [**67. 模型问题：温度在控制 LLM 输出方面起什么作用？**](LLMs/Reference.md)           | 
+| [**68. 模型问题：三角位置编码与RoPE位置编码的不同？**](LLMs/Reference.md)           | 
+| [**69. 模型问题：为什么现在的llm大模型主要都是用RoPE位置编码而非其他？**](LLMs/Reference.md)           | 
+| [**70. 模型问题：Qwen2.5-VL的原生分辨率具体是如何做的？**](LLMs/Reference.md)           | 
 
 
 - 视觉模型
@@ -296,7 +299,8 @@
 | [**20. 场景问题：如何将大模型有效地切割成若干个子模型？如何将切割后的子模型分配到多个节点上进行并行训练？**](DeepLearning/Reference.md)           |  
 | [**21. 优化问题：神经网络权重为什么不能初始化为0，而逻辑回归参数可以初始化为0？**](DeepLearning/Reference.md)           |  
 | [**22. 优化问题：当Batch Size增大时，学习率该如何随之变化，具体该怎么变化？**](DeepLearning/Reference.md)           |  
-| [**22. 优化问题：深度网络中loss除以10和学习率除以10等价吗？**](DeepLearning/Reference.md)           |  
+| [**23. 优化问题：深度网络中loss除以10和学习率除以10等价吗？**](DeepLearning/Reference.md)           |  
+| [**24. 算子问题：大模型训练中bf16与fp16有什么区别？**](DeepLearning/Reference.md)           |  
 
 
 <b><summary>🛺自动驾驶、智慧医疗等行业垂域专题</summary></b>
@@ -355,6 +359,13 @@
 | [**02. 机器学习：银行经理收到一个数据集，其中包含数千名申请贷款的申请人的记录。AI算法如何帮助经理了解他可以批准哪些贷款？**](IndustryAlgorithm/Reference.md)           | 
 | [**03. 图像识别：在实际应用中部署人脸识别算法需要能够从连续数据流中学习新的人脸身份，如何做类增量学习？**](IndustryAlgorithm/Reference.md)           | 
 
+
+- 多模态大模型
+
+| [**01. 大模型的幻觉问题的本质与几种常见的解决办法？**](IndustryAlgorithm/Reference.md) |
+| :------------------------------------------- |
+| [**02. SFT模型经常在上下文比较长或者调查轮次多了之后就会出现查询工具的重复调用现象，如何消除这种现象？**](IndustryAlgorithm/Reference.md) |
+
 - 场景实战
 
 | [**01. 如何在标注存在错误的数据上训练模型？**](IndustryAlgorithm/Reference.md) |
@@ -411,8 +422,6 @@
 | [**32. PyTorch 实现图像到Patch Embedding过程，提示可用卷积实现**](CodeAnything/Reference.md) |      |  
 
 
-
-
 <b><summary>🚩优异开源资源推荐专题</summary></b>
 
 | [**01. 多个优异的数据结构与算法项目推荐**](AwesomeProjects/Reference.md) |
@@ -436,6 +445,5 @@
 | [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
 | [**19. 2024年几种可免费阅读Medium文章的方式**](AwesomeProjects/Reference.md)           |  
 | [**20. 2025年,来自李沐大神的AI育儿小工具分享**](AwesomeProjects/Reference.md)           |  
-| [**21. LLM时代最聪明的文档解析工具EasyDoc：从文档大纲到布局，从图表公式到图像理解！**](AwesomeProjects/Reference.md)           |  
 | [**22. 最具洞察力与前沿性的视觉大模型文章！**](AwesomeProjects/Reference.md)           |  
 
