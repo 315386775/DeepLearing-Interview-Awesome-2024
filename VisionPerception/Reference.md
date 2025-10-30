@@ -417,3 +417,11 @@ def process_output(output):
 self.reg_max = 16  # DFL channels (ch[0] // 16 to scale 4/8/12/16/20 for n/s/m/l/x)
 self.no = nc + self.reg_max * 4  # number of outputs per anchor
 ```
+
+# 12. 基座模型：DINO v2 方法比类似的自监督判别方法好在哪里？
+
+| 特性/方面 | 之前的自监督方法 (如 MoCo, SimCLR) | DINOv2 |
+| :--- | :--- | :--- |
+| **核心目标** | 学习判别性特征，用于图像分类 | 学习通用、密集的视觉特征 |
+| **训练范式** | 对比学习（需要负样本/大批次） | 自蒸馏（无需负样本） |
+| **下游任务适用性** | 主要需微调，擅长图像级任务（分类） | **开箱即用**，擅长像素级任务（分割、深度估计）和图像级任务 |

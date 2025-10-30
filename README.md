@@ -169,6 +169,7 @@
 | [**09. 基座模型：CLIP的核心创新点简介，其如何处理文本输入**](VisionPerception/Reference.md) |      |  
 | [**10. 基座模型：ViT、DEIT是如何处理变长序列输入的？**](VisionPerception/Reference.md) | 
 | [**11. 基座模型：VIT中对输入图像的处理是如何将patch变化为token的？**](VisionPerception/Reference.md) |
+| [**12. 基座模型：DINO v2 方法比类似的自监督判别方法好在哪里？**](VisionPerception/Reference.md) |
 
 - 目标检测
 
