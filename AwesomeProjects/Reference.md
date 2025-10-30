@@ -112,7 +112,7 @@ https://readtogether.ai/?url=https://bit.ly/kidsbooklib
 https://mp.weixin.qq.com/s/P_NlxIEVciBJTXp5QbnyTw
 ```
 
-22. 最具洞察力与前沿性的视觉大模型文章！
+# 21. 最具洞察力与前沿性的视觉大模型文章！
 
 关于DINO、SAM、CLIP的结合与变体相关视觉大模型文章
 
@@ -120,3 +120,13 @@ https://mp.weixin.qq.com/s/P_NlxIEVciBJTXp5QbnyTw
 # 博客链接
 https://mp.weixin.qq.com/s/cQBmldrhwKdzj30njKy_BA
 ```
+
+# 22. 一站式文档解析工具TextIn xParse，为LLM训练而生
+
+TextIn xParse 文档解析是一款大模型友好的解析工具，能够精准还原pdf、word、excel、ppt、图片等十余种格式的非结构化文件，将其快速转换为Markdown 或 JSON 格式返回，同时包含精确的页面元素和坐标信息。
+
+支持识别文本、图像、表格、公式、手写体、表单字段、页眉页脚等各种元素，并支持印章、二维码、条形码等子类型，为LLM推理、训练输入高质量数据，帮助完成数据清洗和文档问答任务，适用于各类AI应用程序，如知识库、RAG、Agent或其他自定义工作流程。
+
+其提供了一个在线的Web平台，可以通过浏览器直接使用，无需编写任何代码即可快速试用API并感受效果。
+
+网站链接：https://cc.co/16YSYk

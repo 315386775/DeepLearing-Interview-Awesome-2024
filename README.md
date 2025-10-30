@@ -446,5 +446,6 @@
 | [**18. 大模型显存在线估算开源项目**](AwesomeProjects/Reference.md)           |  
 | [**19. 2024年几种可免费阅读Medium文章的方式**](AwesomeProjects/Reference.md)           |  
 | [**20. 2025年,来自李沐大神的AI育儿小工具分享**](AwesomeProjects/Reference.md)           |  
-| [**22. 最具洞察力与前沿性的视觉大模型文章！**](AwesomeProjects/Reference.md)           |  
+| [**21. 最具洞察力与前沿性的视觉大模型文章！**](AwesomeProjects/Reference.md)           |  
+| [**22. 一站式大模型文档解析工具TextIn xParse，为LLM训练而生**](AwesomeProjects/Reference.md)           |  
 
